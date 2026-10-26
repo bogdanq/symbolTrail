@@ -84,7 +84,7 @@
 }
 
 .VPSidebarItem.level-1 > .item {
-  margin: 3px -8px;
+  margin: 3px 0;
   padding: 0 8px;
   border: 1px solid transparent;
   border-radius: 6px;
@@ -178,6 +178,46 @@
   background: var(--vp-c-bg-soft);
   color: var(--vp-c-text-2);
   border: 1px solid transparent;
+}
+
+.st-use-cases-page .vp-doc .custom-block.info,
+.st-use-cases-page .vp-doc .custom-block.tip {
+  margin: 20px 0 24px;
+  padding: 16px 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid var(--vp-c-text-3);
+  border-radius: 8px;
+  background: var(--vp-c-bg-alt);
+}
+
+.st-use-cases-page .vp-doc .custom-block.info {
+  border-color: var(--st-nav-active-border);
+  border-left-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.st-use-cases-page .vp-doc .custom-block.info .custom-block-title,
+.st-use-cases-page .vp-doc .custom-block.tip .custom-block-title {
+  margin: 0 0 8px;
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.st-use-cases-page .vp-doc .custom-block.info .custom-block-title {
+  color: var(--vp-c-brand-1);
+}
+
+.st-use-cases-page .vp-doc .custom-block.info p:not(.custom-block-title),
+.st-use-cases-page .vp-doc .custom-block.tip p:not(.custom-block-title) {
+  margin: 0;
+  color: var(--vp-c-text-1);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 .st-figure {
