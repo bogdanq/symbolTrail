@@ -4,6 +4,10 @@ description: "Откройте UI SymbolTrail в браузере: выбор и
 section: Локальный интерфейс
 ---
 
+<script setup>
+import { withBase } from "vitepress";
+</script>
+
 # Локальный интерфейс
 
 <p class="st-lead">Исследуйте код и его связи прямо в браузере.</p>
@@ -56,7 +60,7 @@ npm run filegraph:watch
 На стартовом экране собраны независимые индексы. В карточке видны путь к базе, её размер и дата обновления; если база ещё не собрана, интерфейс покажет сообщение.
 
 <figure class="st-figure">
-  <a href="/images/index.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Индексы» в полном размере">
+  <a :href="withBase('/images/index.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Индексы» в полном размере">
     <img src="/images/index.png" alt="Каталог индексов SymbolTrail с путями к базам, размерами и датами обновления." width="3360" height="1860" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -66,7 +70,7 @@ npm run filegraph:watch
 Внутри индекса можно перейти к репозиториям, файлам, вершинам и циклам зависимостей. Здесь показаны циклы между репозиториями и таблица с данными каждого участника индекса.
 
 <figure class="st-figure">
-  <a href="/images/repo-list.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Репозитории и межрепозиторные связи» в полном размере">
+  <a :href="withBase('/images/repo-list.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Репозитории и межрепозиторные связи» в полном размере">
     <img src="/images/repo-list.png" alt="Граф циклов между репозиториями и таблица репозиториев выбранного индекса." width="3354" height="1844" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -76,7 +80,7 @@ npm run filegraph:watch
 Карта помогает изучить структуру выбранного репозитория. Ниже расположен список файлов с показателями связей и переходами к подробностям; сверху доступны теплокарта, циклы и скрытие тестовых файлов.
 
 <figure class="st-figure">
-  <a href="/images/current-repo.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Репозиторий» в полном размере">
+  <a :href="withBase('/images/current-repo.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Репозиторий» в полном размере">
     <img src="/images/current-repo.png" alt="Карта выбранного репозитория, переключатели режимов и таблица файлов со связями." width="3360" height="1858" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -86,7 +90,7 @@ npm run filegraph:watch
 Граф импортов дополняется исходным кодом и двумя списками: кто импортирует выбранный файл и какие модули импортирует он сам. Из этих списков можно продолжить навигацию по зависимостям.
 
 <figure class="st-figure">
-  <a href="/images/current-file.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Файл» в полном размере">
+  <a :href="withBase('/images/current-file.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Файл» в полном размере">
     <img src="/images/current-file.png" alt="Страница файла с графом импортов, исходным кодом и входящими и исходящими зависимостями." width="3360" height="1854" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -96,7 +100,7 @@ npm run filegraph:watch
 Карточка символа объединяет граф связей, исходник и показатели вызовов. Ниже можно изучить места использования, связанные коммиты и похожий по смыслу код.
 
 <figure class="st-figure">
-  <a href="/images/current-symbol.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Символ» в полном размере">
+  <a :href="withBase('/images/current-symbol.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Символ» в полном размере">
     <img src="/images/current-symbol.png" alt="Карточка функции с графом, исходником, показателями вызовов и местами использования." width="3360" height="1860" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -106,7 +110,7 @@ npm run filegraph:watch
 Область поиска задаётся тегами `индекс:`, `репо:` и `файл:`. Пока запрос не введён, страница показывает доступные индексы и входящие в них репозитории.
 
 <figure class="st-figure">
-  <a href="/images/search.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Поиск и каталог репозиториев» в полном размере">
+  <a :href="withBase('/images/search.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Поиск и каталог репозиториев» в полном размере">
     <img src="/images/search.png" alt="Страница поиска с полем запроса и каталогом репозиториев, сгруппированных по индексам." width="3360" height="1854" loading="lazy" decoding="async" />
   </a>
 </figure>
@@ -116,7 +120,7 @@ npm run filegraph:watch
 Результаты сгруппированы по файлам и содержат исходники и экспорты. Для выбранного экспорта можно посмотреть места использования, а конкретное место открыть в боковой панели с подсвеченной строкой.
 
 <figure class="st-figure">
-  <a href="/images/index-search.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Результаты поиска и места использования» в полном размере">
+  <a :href="withBase('/images/index-search.png')" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот «Результаты поиска и места использования» в полном размере">
     <img src="/images/index-search.png" alt="Результаты поиска по файлам, экспорты, места использования и боковая панель с фрагментом кода." width="3358" height="1856" loading="lazy" decoding="async" />
   </a>
 </figure>

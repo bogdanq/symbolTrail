@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
 import { useData, withBase } from "vitepress";
+import { computed } from "vue";
 
-const { frontmatter, page } = useData();
+const { frontmatter, page, site } = useData();
+
+const helpLink = computed(() =>
+  withBase(`/troubleshooting${site.value.cleanUrls ? "" : ".html"}`),
+);
 </script>
 
 <template>
@@ -24,7 +29,7 @@ const { frontmatter, page } = useData();
           <strong>Нужна помощь?</strong>
           <p>Проверьте типичные причины ошибок и пустых ответов.</p>
         </div>
-        <a :href="withBase('/troubleshooting')"
+        <a :href="helpLink"
           >Решение проблем <span aria-hidden="true">→</span></a
         >
       </aside>

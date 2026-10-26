@@ -11,7 +11,9 @@
     "docs:dev": "vitepress dev docs --host 127.0.0.1",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --host 127.0.0.1",
-    "check": "vue-tsc --noEmit"
+    "check": "vue-tsc --noEmit",
+    "docs:build:pages": "node scripts/build-pages.mjs",
+    "docs:preview:pages": "vitepress preview docs --host 127.0.0.1 --base /symbolTrail/"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

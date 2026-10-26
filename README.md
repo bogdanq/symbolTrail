@@ -17,6 +17,27 @@ npm run docs:preview
 
 Сборка находится в `docs/.vitepress/dist`. Для статического хостинга публикуйте содержимое этого каталога. Текущая база URL — `/`; при размещении в подпапке задайте `base` в `docs/.vitepress/config.ts`.
 
+## GitHub Pages
+
+Сборка для репозитория `bogdanq/symbolTrail`:
+
+```sh
+npm run docs:build:pages
+npm run docs:preview:pages
+```
+
+Предпросмотр: `http://localhost:4173/symbolTrail/`. Сборка находится в `docs/.vitepress/dist`, использует базу `/symbolTrail/` и ссылки с `.html`; файл `.nojekyll` копируется из `docs/public`.
+
+Ветка `gh-pages` содержит готовую статику в корне. Для публикации отправьте её:
+
+```sh
+git push origin gh-pages
+```
+
+В репозитории откройте **Settings → Pages → Build and deployment**, выберите **Deploy from a branch**, ветку **gh-pages** и папку **/(root)**. После публикации ожидаемый адрес — `https://bogdanq.github.io/symbolTrail/`. Порядок настройки описан в [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+Для следующего выпуска заново выполните `npm run docs:build:pages`, замените содержимое ветки `gh-pages` новой сборкой и создайте коммит. Обычные `docs:dev` и `docs:build` используют базу `/`.
+
 ## Содержание
 
 Одиннадцать страниц: основы, сценарии использования, быстрый старт, индексация, подключение MCP, инструменты, три страницы сравнений и замеров, локальный интерфейс и решение проблем. Тексты находятся в `docs/*.md` и `docs/benchmarks/*.md`, меню и SEO — в `docs/.vitepress/config.ts`, оформление — в `docs/.vitepress/theme/`.

@@ -3,14 +3,16 @@ import { defineConfig } from "vitepress";
 const description =
   "SymbolTrail — локальный инструмент индексации и анализа JavaScript/TypeScript-кода. Поиск символов, граф зависимостей, анализ влияния изменений и MCP для AI-агентов.";
 
+const isGitHubPages = process.env.DOCS_TARGET === "github-pages";
+
 export default defineConfig({
   lang: "ru-RU",
   title: "SymbolTrail",
   description,
-  cleanUrls: true,
+  base: isGitHubPages ? "/symbolTrail/" : "/",
+  cleanUrls: !isGitHubPages,
   appearance: true,
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/symboltrail.svg" }],
     ["meta", { name: "theme-color", content: "#f9fafb" }],
     ["meta", { name: "application-name", content: "SymbolTrail" }],
     ["meta", { property: "og:site_name", content: "SymbolTrail" }],
@@ -18,12 +20,20 @@ export default defineConfig({
     ["meta", { property: "og:locale", content: "ru_RU" }],
     ["meta", { name: "twitter:card", content: "summary" }],
   ],
-  transformHead({ pageData }) {
+  transformHead({ pageData, siteData }) {
     const pageTitle = pageData.frontmatter.title ?? pageData.title;
     const title = pageTitle ? `${pageTitle} | SymbolTrail` : "SymbolTrail";
     const pageDescription = pageData.description || description;
 
     return [
+      [
+        "link",
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: `${siteData.base}symboltrail.svg`,
+        },
+      ],
       ["meta", { property: "og:title", content: title }],
       ["meta", { property: "og:description", content: pageDescription }],
       ["meta", { name: "twitter:title", content: title }],
