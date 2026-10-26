@@ -1,0 +1,8615 @@
+import { _ as _sfc_main$2 } from "./chunks/BenchmarkTable.vue_vue_type_script_setup_true_lang.COQgz7M1.js";
+import { d as defineComponent, o as openBlock, c as createElementBlock, F as Fragment, B as renderList, j as createBaseVNode, t as toDisplayString, e as createCommentVNode, E as createVNode, a2 as createStaticVNode, k as unref, a as createTextVNode } from "./chunks/framework.DiR_5bBd.js";
+const _hoisted_1 = { class: "st-bench-cases" };
+const _hoisted_2 = ["aria-labelledby"];
+const _hoisted_3 = ["id"];
+const _hoisted_4 = { class: "st-bench-kicker" };
+const _hoisted_5 = { key: 0 };
+const _hoisted_6 = { class: "st-bench-sources" };
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+  __name: "ParserCases",
+  props: {
+    cases: {}
+  },
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", _hoisted_1, [
+        (openBlock(true), createElementBlock(Fragment, null, renderList(__props.cases, (item, index) => {
+          return openBlock(), createElementBlock("section", {
+            key: item.id,
+            class: "st-bench-case",
+            "aria-labelledby": `parser-case-${item.id}`
+          }, [
+            createBaseVNode("h3", {
+              id: `parser-case-${item.id}`
+            }, toDisplayString(index + 1) + ". " + toDisplayString(item.title) + " · " + toDisplayString(item.language), 9, _hoisted_3),
+            createBaseVNode("p", _hoisted_4, toDisplayString(item.group) + " · Файлов: " + toDisplayString(item.files.length), 1),
+            item.group !== "Базовые примеры" ? (openBlock(), createElementBlock("p", _hoisted_5, toDisplayString(item.description), 1)) : createCommentVNode("", true),
+            createVNode(_sfc_main$2, {
+              table: item.table
+            }, null, 8, ["table"]),
+            createBaseVNode("details", _hoisted_6, [
+              createBaseVNode("summary", null, "Исходники примера · файлов: " + toDisplayString(item.files.length), 1),
+              (openBlock(true), createElementBlock(Fragment, null, renderList(item.files, (file) => {
+                return openBlock(), createElementBlock("details", {
+                  key: file.path,
+                  class: "st-bench-source-file"
+                }, [
+                  createBaseVNode("summary", null, toDisplayString(file.path), 1),
+                  createBaseVNode("pre", null, [
+                    createBaseVNode("code", null, toDisplayString(file.code), 1)
+                  ])
+                ]);
+              }), 128))
+            ])
+          ], 8, _hoisted_2);
+        }), 128))
+      ]);
+    };
+  }
+});
+const table = {
+  caption: "Общие результаты · 37 примеров",
+  columns: [
+    {
+      key: "declarations",
+      label: "Объявления",
+      precision: 0,
+      direction: "higher"
+    },
+    {
+      key: "dependencies",
+      label: "Зависимости файлов",
+      precision: 0,
+      direction: "higher"
+    },
+    {
+      key: "relations",
+      label: "Конкретные call/ref",
+      precision: 0,
+      direction: "higher"
+    },
+    {
+      key: "score",
+      label: "Оценка связей / 10",
+      precision: 1,
+      direction: "higher"
+    },
+    {
+      key: "reachable",
+      label: "Цель через call/ref",
+      precision: 0,
+      direction: "higher"
+    },
+    {
+      key: "context",
+      label: "Цель через любые связи",
+      precision: 0,
+      direction: "higher"
+    }
+  ],
+  rows: [
+    {
+      id: "graph",
+      label: "SymbolTrail",
+      note: "Снимок проекта",
+      cells: {
+        declarations: {
+          value: 324,
+          suffix: "/ 324",
+          note: "Полнота 100,0%"
+        },
+        dependencies: {
+          value: 184,
+          suffix: "/ 184",
+          note: "Лишних 0"
+        },
+        relations: {
+          value: 182,
+          suffix: "/ 189",
+          note: "Лишних 0 · пропущено 7"
+        },
+        score: {
+          value: 9.81132075471698,
+          suffix: "/ 10",
+          note: ""
+        },
+        reachable: {
+          value: 188,
+          suffix: "/ 189",
+          note: "В несколько переходов: 6"
+        },
+        context: {
+          value: 189,
+          suffix: "/ 189",
+          note: "Структура и типы — не доказательство вызова"
+        }
+      }
+    },
+    {
+      id: "codegraph",
+      label: "CodeGraph",
+      note: "1.6.0",
+      cells: {
+        declarations: {
+          value: 310,
+          suffix: "/ 324",
+          note: "Полнота 95,7%"
+        },
+        dependencies: {
+          value: 168,
+          suffix: "/ 184",
+          note: "Лишних 8"
+        },
+        relations: {
+          value: 157,
+          suffix: "/ 189",
+          note: "Лишних 37 · пропущено 32"
+        },
+        score: {
+          value: 8.198433420365536,
+          suffix: "/ 10",
+          note: ""
+        },
+        reachable: {
+          value: 162,
+          suffix: "/ 189",
+          note: "В несколько переходов: 5"
+        },
+        context: {
+          value: 172,
+          suffix: "/ 189",
+          note: "Структура и типы — не доказательство вызова"
+        }
+      }
+    },
+    {
+      id: "graphify",
+      label: "Graphify",
+      note: "0.9.93 · локальный AST",
+      cells: {
+        declarations: {
+          value: 317,
+          suffix: "/ 324",
+          note: "Полнота 97,8%"
+        },
+        dependencies: {
+          value: 184,
+          suffix: "/ 184",
+          note: "Лишних 10"
+        },
+        relations: {
+          value: 147,
+          suffix: "/ 189",
+          note: "Лишних 8 · пропущено 42"
+        },
+        score: {
+          value: 8.546511627906977,
+          suffix: "/ 10",
+          note: ""
+        },
+        reachable: {
+          value: 149,
+          suffix: "/ 189",
+          note: "В несколько переходов: 2"
+        },
+        context: {
+          value: 165,
+          suffix: "/ 189",
+          note: "Структура и типы — не доказательство вызова"
+        }
+      }
+    },
+    {
+      id: "scip",
+      label: "SCIP",
+      note: "scip-typescript 0.4.0",
+      cells: {
+        declarations: {
+          value: 324,
+          suffix: "/ 324",
+          note: "Полнота 100,0%"
+        },
+        dependencies: {
+          value: 184,
+          suffix: "/ 184",
+          note: "Лишних 0"
+        },
+        relations: {
+          value: 179,
+          suffix: "/ 189",
+          note: "Лишних 0 · пропущено 10"
+        },
+        score: {
+          value: 9.728260869565217,
+          suffix: "/ 10",
+          note: ""
+        },
+        reachable: {
+          value: 187,
+          suffix: "/ 189",
+          note: "В несколько переходов: 8"
+        },
+        context: {
+          value: 187,
+          suffix: "/ 189",
+          note: "Структура и типы — не доказательство вызова"
+        }
+      }
+    }
+  ]
+};
+const cases = [
+  {
+    id: "01-named-alias-js",
+    title: "Именованный импорт с псевдонимом",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "01-named-alias-js/bridge.js",
+        code: 'import { leaf as renamed } from "./dep.js";\nexport function invoke() { return renamed(); }\n'
+      },
+      {
+        path: "01-named-alias-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "01-named-alias-js/entry.js",
+        code: 'import { invoke } from "./bridge.js";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Именованный импорт с псевдонимом",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "02-barrel-alias-js",
+    title: "Реэкспорт с псевдонимом",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "02-barrel-alias-js/barrel.js",
+        code: 'export { leaf as publicName } from "./dep.js";\n'
+      },
+      {
+        path: "02-barrel-alias-js/bridge.js",
+        code: 'export { publicName as api } from "./barrel.js";\n'
+      },
+      {
+        path: "02-barrel-alias-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "02-barrel-alias-js/entry.js",
+        code: 'import { api as local } from "./bridge.js";\nexport function run() { return local(); }\n'
+      }
+    ],
+    table: {
+      caption: "Реэкспорт с псевдонимом",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 3",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "03-namespace-import-js",
+    title: "Импорт пространства имён",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "03-namespace-import-js/bridge.js",
+        code: 'import * as ns from "./dep.js";\nexport function invoke() { return ns.leaf(); }\n'
+      },
+      {
+        path: "03-namespace-import-js/dep.js",
+        code: 'export function leaf() { return "L"; }\nexport function spare() { return "S"; }\n'
+      },
+      {
+        path: "03-namespace-import-js/entry.js",
+        code: 'import { invoke } from "./bridge.js";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Импорт пространства имён",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "04-receiver-identity-js",
+    title: "Идентичность объекта-получателя",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "04-receiver-identity-js/entry.js",
+        code: 'import { Left } from "./left.js";\nimport { Right } from "./right.js";\nexport function runLeft() { const v = new Left(); return v.work(); }\nexport function runRight() { const v = new Right(); return v.work(); }\n'
+      },
+      {
+        path: "04-receiver-identity-js/left.js",
+        code: 'export class Left { work() { return "L"; } }\n'
+      },
+      {
+        path: "04-receiver-identity-js/right.js",
+        code: 'export class Right { work() { return "R"; } }\n'
+      }
+    ],
+    table: {
+      caption: "Идентичность объекта-получателя",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 1 · пропущено 1"
+            },
+            score: {
+              value: 5,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "05-inheritance-super-js",
+    title: "Наследование и super",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "05-inheritance-super-js/base.js",
+        code: 'export class Base { work() { return "B"; } }\n'
+      },
+      {
+        path: "05-inheritance-super-js/child.js",
+        code: 'import { Base } from "./base.js";\nexport class Child extends Base { work() { return super.work() + "C"; } }\n'
+      },
+      {
+        path: "05-inheritance-super-js/entry.js",
+        code: 'import { Child } from "./child.js";\nexport function run() { return new Child().work(); }\n'
+      }
+    ],
+    table: {
+      caption: "Наследование и super",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 0,
+              suffix: "/ 2",
+              note: "Лишних 2 · пропущено 2"
+            },
+            score: {
+              value: 0,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 0,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 0,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 0,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "06-returned-method-js",
+    title: "Возвращаемый метод",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "06-returned-method-js/dep.js",
+        code: 'export const obb = { somep: () => "A" };\nexport const other = { somep: () => "B" };\n'
+      },
+      {
+        path: "06-returned-method-js/entry.js",
+        code: 'import { Fff } from "./facade.js";\nexport function run() { const f = new Fff(); return f.indirect().method(); }\n'
+      },
+      {
+        path: "06-returned-method-js/facade.js",
+        code: 'import { obb } from "./dep.js";\nexport class Fff {\n  direct() { return obb.somep(); }\n  indirect() { return { method: obb.somep }; }\n}\n'
+      }
+    ],
+    table: {
+      caption: "Возвращаемый метод",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 6",
+              note: "Полнота 66,7%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 3"
+            },
+            score: {
+              value: 4,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8.571428571428571,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "07-callback-binding-js",
+    title: "Связывание callback",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "07-callback-binding-js/bridge.js",
+        code: "export function invoke(fn) { return fn(); }\n"
+      },
+      {
+        path: "07-callback-binding-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "07-callback-binding-js/entry.js",
+        code: 'import { leaf } from "./dep.js";\nimport { invoke } from "./bridge.js";\nexport function run() { return invoke(leaf); }\n'
+      }
+    ],
+    table: {
+      caption: "Связывание callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "08-destructure-return-js",
+    title: "Деструктуризация возвращённого объекта",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "08-destructure-return-js/bridge.js",
+        code: 'import { leaf } from "./dep.js";\nexport function create() { return { act: leaf }; }\n'
+      },
+      {
+        path: "08-destructure-return-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "08-destructure-return-js/entry.js",
+        code: 'import { create } from "./bridge.js";\nexport function run() { const { act: alias } = create(); return alias(); }\n'
+      }
+    ],
+    table: {
+      caption: "Деструктуризация возвращённого объекта",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "09-lexical-shadow-js",
+    title: "Затенение имени",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "09-lexical-shadow-js/bridge.js",
+        code: 'import { leaf } from "./dep.js";\nexport function outer() { return leaf(); }\nexport function inner() { function leaf() { return "INNER"; } return leaf(); }\n'
+      },
+      {
+        path: "09-lexical-shadow-js/dep.js",
+        code: 'export function leaf() { return "OUTER"; }\n'
+      },
+      {
+        path: "09-lexical-shadow-js/entry.js",
+        code: 'import { inner, outer } from "./bridge.js";\nexport function run() { return outer() + inner(); }\n'
+      }
+    ],
+    table: {
+      caption: "Затенение имени",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Лишних 1 · пропущено 1"
+            },
+            score: {
+              value: 7.5,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 2 · пропущено 0"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "10-reexport-cycle-js",
+    title: "Цикл реэкспортов",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "10-reexport-cycle-js/barrel.js",
+        code: 'export { leaf } from "./dep.js";\nexport * from "./bridge.js";\n'
+      },
+      {
+        path: "10-reexport-cycle-js/bridge.js",
+        code: 'export * from "./barrel.js";\nexport function spare() { return "S"; }\n'
+      },
+      {
+        path: "10-reexport-cycle-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "10-reexport-cycle-js/entry.js",
+        code: 'import { leaf } from "./bridge.js";\nexport function run() { return leaf(); }\n'
+      }
+    ],
+    table: {
+      caption: "Цикл реэкспортов",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "11-dynamic-import-js",
+    title: "Динамический импорт",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "11-dynamic-import-js/bridge.js",
+        code: 'export async function invoke() { const m = await import("./dep.js"); return m.leaf(); }\n'
+      },
+      {
+        path: "11-dynamic-import-js/dep.js",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "11-dynamic-import-js/entry.js",
+        code: 'import { invoke } from "./bridge.js";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Динамический импорт",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "12-callback-contract-js",
+    title: "Контракт callback",
+    language: "JavaScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "12-callback-contract-js/bridge.js",
+        code: "export function execute(worker) { return worker.work(); }\n"
+      },
+      {
+        path: "12-callback-contract-js/dep.js",
+        code: 'export class Impl { work() { return "REAL"; } }\nexport class Decoy { work() { return "DECOY"; } }\n'
+      },
+      {
+        path: "12-callback-contract-js/entry.js",
+        code: 'import { Impl } from "./dep.js";\nimport { execute } from "./bridge.js";\nexport function run() { return execute(new Impl()); }\n'
+      }
+    ],
+    table: {
+      caption: "Контракт callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "13-named-alias-ts",
+    title: "Именованный импорт с псевдонимом",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "13-named-alias-ts/bridge.ts",
+        code: 'import { leaf as renamed } from "./dep.ts";\nexport function invoke() { return renamed(); }\n'
+      },
+      {
+        path: "13-named-alias-ts/dep.ts",
+        code: 'export function leaf(): string { return "L"; }\n'
+      },
+      {
+        path: "13-named-alias-ts/entry.ts",
+        code: 'import { invoke } from "./bridge.ts";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Именованный импорт с псевдонимом",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "14-barrel-alias-ts",
+    title: "Реэкспорт с псевдонимом",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "14-barrel-alias-ts/barrel.ts",
+        code: 'export { leaf as publicName } from "./dep.ts";\n'
+      },
+      {
+        path: "14-barrel-alias-ts/bridge.ts",
+        code: 'export { publicName as api } from "./barrel.ts";\n'
+      },
+      {
+        path: "14-barrel-alias-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "14-barrel-alias-ts/entry.ts",
+        code: 'import { api as local } from "./bridge.ts";\nexport function run() { return local(); }\n'
+      }
+    ],
+    table: {
+      caption: "Реэкспорт с псевдонимом",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 3",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "15-namespace-import-ts",
+    title: "Импорт пространства имён",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "15-namespace-import-ts/bridge.ts",
+        code: 'import * as ns from "./dep.ts";\nexport function invoke() { return ns.leaf(); }\n'
+      },
+      {
+        path: "15-namespace-import-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\nexport function spare() { return "S"; }\n'
+      },
+      {
+        path: "15-namespace-import-ts/entry.ts",
+        code: 'import { invoke } from "./bridge.ts";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Импорт пространства имён",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "16-receiver-identity-ts",
+    title: "Идентичность объекта-получателя",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "16-receiver-identity-ts/entry.ts",
+        code: 'import { Left } from "./left.ts";\nimport { Right } from "./right.ts";\nexport function runLeft() { const v = new Left(); return v.work(); }\nexport function runRight() { const v = new Right(); return v.work(); }\n'
+      },
+      {
+        path: "16-receiver-identity-ts/left.ts",
+        code: 'export class Left { work() { return "L"; } }\n'
+      },
+      {
+        path: "16-receiver-identity-ts/right.ts",
+        code: 'export class Right { work() { return "R"; } }\n'
+      }
+    ],
+    table: {
+      caption: "Идентичность объекта-получателя",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 1 · пропущено 1"
+            },
+            score: {
+              value: 5,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "17-inheritance-super-ts",
+    title: "Наследование и super",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "17-inheritance-super-ts/base.ts",
+        code: 'export class Base { work() { return "B"; } }\n'
+      },
+      {
+        path: "17-inheritance-super-ts/child.ts",
+        code: 'import { Base } from "./base.ts";\nexport class Child extends Base { work() { return super.work() + "C"; } }\n'
+      },
+      {
+        path: "17-inheritance-super-ts/entry.ts",
+        code: 'import { Child } from "./child.ts";\nexport function run() { return new Child().work(); }\n'
+      }
+    ],
+    table: {
+      caption: "Наследование и super",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 0,
+              suffix: "/ 2",
+              note: "Лишних 2 · пропущено 2"
+            },
+            score: {
+              value: 0,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 0,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 0,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 0,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "18-returned-method-ts",
+    title: "Возвращаемый метод",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "18-returned-method-ts/dep.ts",
+        code: 'export const obb = { somep: () => "A" };\nexport const other = { somep: () => "B" };\n'
+      },
+      {
+        path: "18-returned-method-ts/entry.ts",
+        code: 'import { Fff } from "./facade.ts";\nexport function run() { const f = new Fff(); return f.indirect().method(); }\n'
+      },
+      {
+        path: "18-returned-method-ts/facade.ts",
+        code: 'import { obb } from "./dep.ts";\nexport class Fff {\n  direct() { return obb.somep(); }\n  indirect() { return { method: obb.somep }; }\n}\n'
+      }
+    ],
+    table: {
+      caption: "Возвращаемый метод",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 4,
+              suffix: "/ 6",
+              note: "Полнота 66,7%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 3"
+            },
+            score: {
+              value: 4,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8.571428571428571,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "19-callback-binding-ts",
+    title: "Связывание callback",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "19-callback-binding-ts/bridge.ts",
+        code: "export function invoke(fn: () => string) { return fn(); }\n"
+      },
+      {
+        path: "19-callback-binding-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "19-callback-binding-ts/entry.ts",
+        code: 'import { leaf } from "./dep.ts";\nimport { invoke } from "./bridge.ts";\nexport function run() { return invoke(leaf); }\n'
+      }
+    ],
+    table: {
+      caption: "Связывание callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "20-destructure-return-ts",
+    title: "Деструктуризация возвращённого объекта",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "20-destructure-return-ts/bridge.ts",
+        code: 'import { leaf } from "./dep.ts";\nexport function create() { return { act: leaf }; }\n'
+      },
+      {
+        path: "20-destructure-return-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "20-destructure-return-ts/entry.ts",
+        code: 'import { create } from "./bridge.ts";\nexport function run() { const { act: alias } = create(); return alias(); }\n'
+      }
+    ],
+    table: {
+      caption: "Деструктуризация возвращённого объекта",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 3",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 3",
+              note: ""
+            },
+            context: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "21-lexical-shadow-ts",
+    title: "Затенение имени",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "21-lexical-shadow-ts/bridge.ts",
+        code: 'import { leaf } from "./dep.ts";\nexport function outer() { return leaf(); }\nexport function inner() { function leaf() { return "INNER"; } return leaf(); }\n'
+      },
+      {
+        path: "21-lexical-shadow-ts/dep.ts",
+        code: 'export function leaf() { return "OUTER"; }\n'
+      },
+      {
+        path: "21-lexical-shadow-ts/entry.ts",
+        code: 'import { inner, outer } from "./bridge.ts";\nexport function run() { return outer() + inner(); }\n'
+      }
+    ],
+    table: {
+      caption: "Затенение имени",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 3,
+              suffix: "/ 4",
+              note: "Лишних 1 · пропущено 1"
+            },
+            score: {
+              value: 7.5,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 3,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 2 · пропущено 0"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 4",
+              note: ""
+            },
+            context: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "22-reexport-cycle-ts",
+    title: "Цикл реэкспортов",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "22-reexport-cycle-ts/barrel.ts",
+        code: 'export { leaf } from "./dep.ts";\nexport * from "./bridge.ts";\n'
+      },
+      {
+        path: "22-reexport-cycle-ts/bridge.ts",
+        code: 'export * from "./barrel.ts";\nexport function spare() { return "S"; }\n'
+      },
+      {
+        path: "22-reexport-cycle-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "22-reexport-cycle-ts/entry.ts",
+        code: 'import { leaf } from "./bridge.ts";\nexport function run() { return leaf(); }\n'
+      }
+    ],
+    table: {
+      caption: "Цикл реэкспортов",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 4",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 1"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 4,
+              suffix: "/ 4",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "23-dynamic-import-ts",
+    title: "Динамический импорт",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "23-dynamic-import-ts/bridge.ts",
+        code: 'export async function invoke() { const m = await import("./dep.ts"); return m.leaf(); }\n'
+      },
+      {
+        path: "23-dynamic-import-ts/dep.ts",
+        code: 'export function leaf() { return "L"; }\n'
+      },
+      {
+        path: "23-dynamic-import-ts/entry.ts",
+        code: 'import { invoke } from "./bridge.ts";\nexport function run() { return invoke(); }\n'
+      }
+    ],
+    table: {
+      caption: "Динамический импорт",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 6.666666666666666,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 2,
+              suffix: "/ 2",
+              note: ""
+            },
+            context: {
+              value: 2,
+              suffix: "/ 2",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "24-callback-contract-ts",
+    title: "Контракт callback",
+    language: "TypeScript",
+    group: "Базовые примеры",
+    description: "Проверка объявлений, конкретных целей call/ref и зависимостей файлов на небольшом независимом примере.",
+    files: [
+      {
+        path: "24-callback-contract-ts/bridge.ts",
+        code: 'import type { Worker } from "./dep.ts";\nexport function execute(worker: Worker) { return worker.work(); }\n'
+      },
+      {
+        path: "24-callback-contract-ts/dep.ts",
+        code: 'export interface Worker { work(): string; }\nexport class Impl { work() { return "REAL"; } }\nexport class Decoy { work() { return "DECOY"; } }\n'
+      },
+      {
+        path: "24-callback-contract-ts/entry.ts",
+        code: 'import { Impl } from "./dep.ts";\nimport { execute } from "./bridge.ts";\nexport function run() { return execute(new Impl()); }\n'
+      }
+    ],
+    table: {
+      caption: "Контракт callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 7,
+              suffix: "/ 8",
+              note: "Полнота 87,5%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 3,
+              suffix: "/ 3",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 1,
+              suffix: "/ 1",
+              note: ""
+            },
+            context: {
+              value: 1,
+              suffix: "/ 1",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "01-barrel-depth-js",
+    title: "12 уровней вызовов за двумя реэкспортами",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: "Контроль глубины: run → alias/barrel → hop1…hop12 → persist. Реэкспорт не является runtime-кадром. never не вызывается.",
+    files: [
+      {
+        path: "01-barrel-depth-js/bridge.js",
+        code: 'export { hop1 } from "./stage1.js";\n'
+      },
+      {
+        path: "01-barrel-depth-js/entry.js",
+        code: 'import { start } from "./public.js";\n\nexport function run() {\n  return start();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/public.js",
+        code: 'export { hop1 as start } from "./bridge.js";\n'
+      },
+      {
+        path: "01-barrel-depth-js/sink.js",
+        code: 'export function persist() {\n  return "PERSISTED";\n}\n\nexport function never() {\n  throw new Error("wrong branch");\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage1.js",
+        code: 'import { hop2 as next } from "./stage2.js";\n\nexport function hop1() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage10.js",
+        code: 'import { hop11 as next } from "./stage11.js";\n\nexport function hop10() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage11.js",
+        code: 'import { hop12 as next } from "./stage12.js";\n\nexport function hop11() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage12.js",
+        code: 'import { persist as next } from "./sink.js";\n\nexport function hop12() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage2.js",
+        code: 'import { hop3 as next } from "./stage3.js";\n\nexport function hop2() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage3.js",
+        code: 'import { hop4 as next } from "./stage4.js";\n\nexport function hop3() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage4.js",
+        code: 'import { hop5 as next } from "./stage5.js";\n\nexport function hop4() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage5.js",
+        code: 'import { hop6 as next } from "./stage6.js";\n\nexport function hop5() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage6.js",
+        code: 'import { hop7 as next } from "./stage7.js";\n\nexport function hop6() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage7.js",
+        code: 'import { hop8 as next } from "./stage8.js";\n\nexport function hop7() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage8.js",
+        code: 'import { hop9 as next } from "./stage9.js";\n\nexport function hop8() {\n  return next();\n}\n'
+      },
+      {
+        path: "01-barrel-depth-js/stage9.js",
+        code: 'import { hop10 as next } from "./stage10.js";\n\nexport function hop9() {\n  return next();\n}\n'
+      }
+    ],
+    table: {
+      caption: "12 уровней вызовов за двумя реэкспортами",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 14,
+              suffix: "/ 15",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "02-override-template-js",
+    title: "Наследуемый шаблон и три реализации transform",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: "dispatch принимает Base, объект создан как Retry. Base.execute вызывает override Retry.transform, затем super Cached.transform и Base.transform. Статическая цель this.transform не заменяет контекстный dispatch. Decoy имеет те же имена.",
+    files: [
+      {
+        path: "02-override-template-js/base.js",
+        code: 'import { normalize } from "./normalize.js";\n\nexport class Base {\n  execute() {\n    return this.transform();\n  }\n\n  transform() {\n    return normalize();\n  }\n}\n'
+      },
+      {
+        path: "02-override-template-js/cached.js",
+        code: 'import { Base } from "./base.js";\n\nexport class Cached extends Base {\n  transform() {\n    return super.transform();\n  }\n}\n'
+      },
+      {
+        path: "02-override-template-js/decoy.js",
+        code: 'export class Decoy {\n  execute() {\n    return this.transform();\n  }\n\n  transform() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "02-override-template-js/dispatch.js",
+        code: "export function dispatch(worker) {\n  return worker.execute();\n}\n"
+      },
+      {
+        path: "02-override-template-js/encode.js",
+        code: 'import { save } from "./repository.js";\n\nexport function encode() {\n  return save();\n}\n'
+      },
+      {
+        path: "02-override-template-js/entry.js",
+        code: 'import { make } from "./factory.js";\nimport { dispatch } from "./dispatch.js";\n\nexport function run() {\n  return dispatch(make());\n}\n'
+      },
+      {
+        path: "02-override-template-js/factory.js",
+        code: 'import { Retry } from "./retry.js";\n\nexport function make() {\n  return new Retry();\n}\n'
+      },
+      {
+        path: "02-override-template-js/normalize.js",
+        code: 'import { encode } from "./encode.js";\n\nexport function normalize() {\n  return encode();\n}\n'
+      },
+      {
+        path: "02-override-template-js/repository.js",
+        code: 'import { flush } from "./sink.js";\n\nexport function save() {\n  return flush();\n}\n'
+      },
+      {
+        path: "02-override-template-js/retry.js",
+        code: 'import { Cached } from "./cached.js";\n\nexport class Retry extends Cached {\n  transform() {\n    return super.transform();\n  }\n}\n'
+      },
+      {
+        path: "02-override-template-js/sink.js",
+        code: 'export function flush() {\n  return "FLUSHED";\n}\n'
+      }
+    ],
+    table: {
+      caption: "Наследуемый шаблон и три реализации transform",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 4 · пропущено 2"
+            },
+            score: {
+              value: 7,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 8.75,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "03-returned-bound-js",
+    title: "Цепочка возвращаемых объектов и bind после destructuring",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: "create().open().build() возвращает вложенный api; execute переименован в invoke и связан с Service.perform через bind. Вызовы фабрики и методов — отдельные шаги вычисления, а путь run → perform → … → write проверяется до конца.",
+    files: [
+      {
+        path: "03-returned-bound-js/builder.js",
+        code: 'import { Service } from "./service.js";\n\nexport class Builder {\n  build() {\n    const service = new Service();\n\n    return { api: { execute: service.perform.bind(service) } };\n  }\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/codec.js",
+        code: 'import { write } from "./sink.js";\n\nexport function encode() {\n  return write();\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/decoy.js",
+        code: 'export class Decoy {\n  perform() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/entry.js",
+        code: 'import { create } from "./factory.js";\n\nexport function run() {\n  const {\n    api: { execute: invoke },\n  } = create().open().build();\n\n  return invoke();\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/facade.js",
+        code: 'import { Builder } from "./builder.js";\n\nexport class Facade {\n  open() {\n    return new Builder();\n  }\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/factory.js",
+        code: 'import { Facade } from "./facade.js";\n\nexport function create() {\n  return new Facade();\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/repository.js",
+        code: 'import { commit } from "./transaction.js";\n\nexport class Repository {\n  save() {\n    return commit();\n  }\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/service.js",
+        code: 'import { Repository } from "./repository.js";\n\nexport class Service {\n  perform() {\n    return new Repository().save();\n  }\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/sink.js",
+        code: 'export function write() {\n  return "BOUND";\n}\n'
+      },
+      {
+        path: "03-returned-bound-js/transaction.js",
+        code: 'import { encode } from "./codec.js";\n\nexport function commit() {\n  return encode();\n}\n'
+      }
+    ],
+    table: {
+      caption: "Цепочка возвращаемых объектов и bind после destructuring",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 5"
+            },
+            score: {
+              value: 6.153846153846154,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "04-callback-pipeline-js",
+    title: "Возвращённая closure, scheduler и виртуальный callback",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: "job захватывает task, schedule передаёт его в invoke. Только после invoke(task) выполняется task → Impl.handle → super Base.handle. Передача task не является вызовом. Worker — контракт, конкретный Impl известен в run.",
+    files: [
+      {
+        path: "04-callback-pipeline-js/base.js",
+        code: 'import { normalize } from "./normalize.js";\n\nexport class Base {\n  handle() {\n    return normalize();\n  }\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/contract.js",
+        code: 'export const kind = "worker";\n'
+      },
+      {
+        path: "04-callback-pipeline-js/decoy.js",
+        code: 'export class Decoy {\n  handle() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/entry.js",
+        code: 'import { makePipeline } from "./factory.js";\nimport { Impl } from "./impl.js";\n\nexport function run() {\n  const job = makePipeline(new Impl());\n\n  return job();\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/factory.js",
+        code: 'import { schedule } from "./scheduler.js";\n\nexport function makePipeline(worker) {\n  function task() {\n    return worker.handle();\n  }\n\n  function job() {\n    return schedule(task);\n  }\n\n  return job;\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/impl.js",
+        code: 'import { Base } from "./base.js";\n\nexport class Impl extends Base {\n  handle() {\n    return super.handle();\n  }\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/normalize.js",
+        code: 'import { write } from "./sink.js";\n\nexport function normalize() {\n  return write();\n}\n'
+      },
+      {
+        path: "04-callback-pipeline-js/scheduler.js",
+        code: "export function schedule(task) {\n  return invoke(task);\n}\n\nexport function invoke(task) {\n  return task();\n}\n"
+      },
+      {
+        path: "04-callback-pipeline-js/sink.js",
+        code: 'export function write() {\n  return "CALLBACK";\n}\n'
+      }
+    ],
+    table: {
+      caption: "Возвращённая closure, scheduler и виртуальный callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 2 · пропущено 2"
+            },
+            score: {
+              value: 7.777777777777778,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 6,
+              suffix: "/ 6",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "05-async-registry-js",
+    title: "await import, registry, составной receiver и computed import",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: 'load делает literal dynamic import; resolve возвращает Handler из конструктора. resolve(...).execute() должен вести к Handler.execute и далее к flush. Неисполненный import(resolvePath("./decoy")) не является literal import; вложенная строка не должна становиться статической зависимостью.',
+    files: [
+      {
+        path: "05-async-registry-js/decoy.js",
+        code: 'export class Handler {\n  execute() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "05-async-registry-js/entry.js",
+        code: 'import { load } from "./loader.js";\n\nexport async function run() {\n  const registry = await load();\n\n  return registry.resolve("real").execute();\n}\n'
+      },
+      {
+        path: "05-async-registry-js/handler.js",
+        code: 'import { parse } from "./parse.js";\n\nexport class Handler {\n  execute() {\n    return parse();\n  }\n}\n'
+      },
+      {
+        path: "05-async-registry-js/loader.js",
+        code: 'export async function load() {\n  const module = await import("./plugin.js");\n\n  return module.create();\n}\n\nfunction resolvePath(name) {\n  return name;\n}\n\nexport function computedOnly() {\n  return import(resolvePath("./decoy.js"));\n}\n'
+      },
+      {
+        path: "05-async-registry-js/parse.js",
+        code: 'import { validate } from "./validate.js";\n\nexport function parse() {\n  return validate();\n}\n'
+      },
+      {
+        path: "05-async-registry-js/plugin.js",
+        code: 'import { Registry } from "./registry.js";\nimport { Handler } from "./handler.js";\n\nexport function create() {\n  return new Registry(new Handler());\n}\n'
+      },
+      {
+        path: "05-async-registry-js/registry.js",
+        code: 'export class Registry {\n  constructor(handler) {\n    this.handler = handler;\n  }\n\n  resolve(name) {\n    if (name !== "real") throw new Error("unknown");\n\n    return this.handler;\n  }\n}\n'
+      },
+      {
+        path: "05-async-registry-js/repository.js",
+        code: 'import { flush } from "./sink.js";\n\nexport function persist() {\n  return flush();\n}\n'
+      },
+      {
+        path: "05-async-registry-js/sink.js",
+        code: 'export function flush() {\n  return "PLUGIN";\n}\n'
+      },
+      {
+        path: "05-async-registry-js/validate.js",
+        code: 'import { persist } from "./repository.js";\n\nexport function validate() {\n  return persist();\n}\n'
+      }
+    ],
+    table: {
+      caption: "await import, registry, составной receiver и computed import",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 8,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 7,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 6,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 3"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 6,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 6,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 8,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "06-recursive-diamond-js",
+    title: "Рекурсия двух модулей, две ветки и общий sink",
+    language: "JavaScript",
+    group: "Углублённые примеры",
+    description: "ping ↔ pong образуют цикл импорта и вызовов; после трёх итераций исполняются обе ветки diamond. Проверяем обе полные цепочки, завершение BFS с visited, точную декларацию finish и отсутствие перехода к одноимённому decoy.",
+    files: [
+      {
+        path: "06-recursive-diamond-js/branch.js",
+        code: 'import { left } from "./left.js";\nimport { right } from "./right.js";\n\nexport function choose() {\n  return left() + ":" + right();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/decoy.js",
+        code: 'export function finish() {\n  throw new Error("decoy");\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/encode.js",
+        code: 'import { commit } from "./transaction.js";\n\nexport function encode() {\n  return commit();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/entry.js",
+        code: 'import { ping } from "./ping.js";\n\nexport function run() {\n  return ping(3);\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/left.js",
+        code: 'import { merge } from "./merge.js";\n\nexport function left() {\n  return merge();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/merge.js",
+        code: 'import { encode } from "./encode.js";\n\nexport function merge() {\n  return encode();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/ping.js",
+        code: 'import { pong } from "./pong.js";\nimport { choose } from "./branch.js";\n\nexport function ping(n) {\n  return n > 0 ? pong(n - 1) : choose();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/pong.js",
+        code: 'import { ping } from "./ping.js";\n\nexport function pong(n) {\n  return ping(n);\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/right.js",
+        code: 'import { merge } from "./merge.js";\n\nexport function right() {\n  return merge();\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/sink.js",
+        code: 'export function finish() {\n  return "CYCLE";\n}\n'
+      },
+      {
+        path: "06-recursive-diamond-js/transaction.js",
+        code: 'import { finish } from "./sink.js";\n\nexport function commit() {\n  return finish();\n}\n'
+      }
+    ],
+    table: {
+      caption: "Рекурсия двух модулей, две ветки и общий sink",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "07-barrel-depth-ts",
+    title: "12 уровней вызовов за двумя реэкспортами",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: "Контроль глубины: run → alias/barrel → hop1…hop12 → persist. Реэкспорт не является runtime-кадром. never не вызывается.",
+    files: [
+      {
+        path: "07-barrel-depth-ts/bridge.ts",
+        code: 'export { hop1 } from "./stage1.ts";\n'
+      },
+      {
+        path: "07-barrel-depth-ts/entry.ts",
+        code: 'import { start } from "./public.ts";\n\nexport function run() {\n  return start();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/public.ts",
+        code: 'export { hop1 as start } from "./bridge.ts";\n'
+      },
+      {
+        path: "07-barrel-depth-ts/sink.ts",
+        code: 'export function persist() {\n  return "PERSISTED";\n}\n\nexport function never() {\n  throw new Error("wrong branch");\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage1.ts",
+        code: 'import { hop2 as next } from "./stage2.ts";\n\nexport function hop1() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage10.ts",
+        code: 'import { hop11 as next } from "./stage11.ts";\n\nexport function hop10() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage11.ts",
+        code: 'import { hop12 as next } from "./stage12.ts";\n\nexport function hop11() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage12.ts",
+        code: 'import { persist as next } from "./sink.ts";\n\nexport function hop12() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage2.ts",
+        code: 'import { hop3 as next } from "./stage3.ts";\n\nexport function hop2() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage3.ts",
+        code: 'import { hop4 as next } from "./stage4.ts";\n\nexport function hop3() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage4.ts",
+        code: 'import { hop5 as next } from "./stage5.ts";\n\nexport function hop4() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage5.ts",
+        code: 'import { hop6 as next } from "./stage6.ts";\n\nexport function hop5() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage6.ts",
+        code: 'import { hop7 as next } from "./stage7.ts";\n\nexport function hop6() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage7.ts",
+        code: 'import { hop8 as next } from "./stage8.ts";\n\nexport function hop7() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage8.ts",
+        code: 'import { hop9 as next } from "./stage9.ts";\n\nexport function hop8() {\n  return next();\n}\n'
+      },
+      {
+        path: "07-barrel-depth-ts/stage9.ts",
+        code: 'import { hop10 as next } from "./stage10.ts";\n\nexport function hop9() {\n  return next();\n}\n'
+      }
+    ],
+    table: {
+      caption: "12 уровней вызовов за двумя реэкспортами",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 14,
+              suffix: "/ 15",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 2"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 13,
+              suffix: "/ 13",
+              note: ""
+            },
+            context: {
+              value: 13,
+              suffix: "/ 13",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "08-override-template-ts",
+    title: "Наследуемый шаблон и три реализации transform",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: "dispatch принимает Base, объект создан как Retry. Base.execute вызывает override Retry.transform, затем super Cached.transform и Base.transform. Статическая цель this.transform не заменяет контекстный dispatch. Decoy имеет те же имена.",
+    files: [
+      {
+        path: "08-override-template-ts/base.ts",
+        code: 'import { normalize } from "./normalize.ts";\n\nexport class Base {\n  execute() {\n    return this.transform();\n  }\n\n  transform() {\n    return normalize();\n  }\n}\n'
+      },
+      {
+        path: "08-override-template-ts/cached.ts",
+        code: 'import { Base } from "./base.ts";\n\nexport class Cached extends Base {\n  transform() {\n    return super.transform();\n  }\n}\n'
+      },
+      {
+        path: "08-override-template-ts/decoy.ts",
+        code: 'export class Decoy {\n  execute() {\n    return this.transform();\n  }\n\n  transform() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "08-override-template-ts/dispatch.ts",
+        code: 'import { Base } from "./base.ts";\n\nexport function dispatch(worker: Base) {\n  return worker.execute();\n}\n'
+      },
+      {
+        path: "08-override-template-ts/encode.ts",
+        code: 'import { save } from "./repository.ts";\n\nexport function encode() {\n  return save();\n}\n'
+      },
+      {
+        path: "08-override-template-ts/entry.ts",
+        code: 'import { make } from "./factory.ts";\nimport { dispatch } from "./dispatch.ts";\n\nexport function run() {\n  return dispatch(make());\n}\n'
+      },
+      {
+        path: "08-override-template-ts/factory.ts",
+        code: 'import { Retry } from "./retry.ts";\n\nexport function make() {\n  return new Retry();\n}\n'
+      },
+      {
+        path: "08-override-template-ts/normalize.ts",
+        code: 'import { encode } from "./encode.ts";\n\nexport function normalize() {\n  return encode();\n}\n'
+      },
+      {
+        path: "08-override-template-ts/repository.ts",
+        code: 'import { flush } from "./sink.ts";\n\nexport function save() {\n  return flush();\n}\n'
+      },
+      {
+        path: "08-override-template-ts/retry.ts",
+        code: 'import { Cached } from "./cached.ts";\n\nexport class Retry extends Cached {\n  transform() {\n    return super.transform();\n  }\n}\n'
+      },
+      {
+        path: "08-override-template-ts/sink.ts",
+        code: 'export function flush() {\n  return "FLUSHED";\n}\n'
+      }
+    ],
+    table: {
+      caption: "Наследуемый шаблон и три реализации transform",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 10,
+              suffix: "/ 10",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 10,
+              suffix: "/ 10",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 4 · пропущено 2"
+            },
+            score: {
+              value: 7,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 10,
+              suffix: "/ 10",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 2"
+            },
+            score: {
+              value: 8.75,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 10,
+              suffix: "/ 10",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "09-returned-bound-ts",
+    title: "Цепочка возвращаемых объектов и bind после destructuring",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: "create().open().build() возвращает вложенный api; execute переименован в invoke и связан с Service.perform через bind. Вызовы фабрики и методов — отдельные шаги вычисления, а путь run → perform → … → write проверяется до конца.",
+    files: [
+      {
+        path: "09-returned-bound-ts/builder.ts",
+        code: 'import { Service } from "./service.ts";\n\nexport class Builder {\n  build() {\n    const service = new Service();\n\n    return { api: { execute: service.perform.bind(service) } };\n  }\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/codec.ts",
+        code: 'import { write } from "./sink.ts";\n\nexport function encode() {\n  return write();\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/decoy.ts",
+        code: 'export class Decoy {\n  perform() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/entry.ts",
+        code: 'import { create } from "./factory.ts";\n\nexport function run() {\n  const {\n    api: { execute: invoke },\n  } = create().open().build();\n\n  return invoke();\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/facade.ts",
+        code: 'import { Builder } from "./builder.ts";\n\nexport class Facade {\n  open() {\n    return new Builder();\n  }\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/factory.ts",
+        code: 'import { Facade } from "./facade.ts";\n\nexport function create() {\n  return new Facade();\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/repository.ts",
+        code: 'import { commit } from "./transaction.ts";\n\nexport class Repository {\n  save() {\n    return commit();\n  }\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/service.ts",
+        code: 'import { Repository } from "./repository.ts";\n\nexport class Service {\n  perform() {\n    return new Repository().save();\n  }\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/sink.ts",
+        code: 'export function write() {\n  return "BOUND";\n}\n'
+      },
+      {
+        path: "09-returned-bound-ts/transaction.ts",
+        code: 'import { encode } from "./codec.ts";\n\nexport function commit() {\n  return encode();\n}\n'
+      }
+    ],
+    table: {
+      caption: "Цепочка возвращаемых объектов и bind после destructuring",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 4,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 5"
+            },
+            score: {
+              value: 6.153846153846154,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 4,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 15,
+              suffix: "/ 15",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 8",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "10-callback-pipeline-ts",
+    title: "Возвращённая closure, scheduler и виртуальный callback",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: "job захватывает task, schedule передаёт его в invoke. Только после invoke(task) выполняется task → Impl.handle → super Base.handle. Передача task не является вызовом. Worker — контракт, конкретный Impl известен в run.",
+    files: [
+      {
+        path: "10-callback-pipeline-ts/base.ts",
+        code: 'import { normalize } from "./normalize.ts";\n\nexport class Base {\n  handle() {\n    return normalize();\n  }\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/contract.ts",
+        code: 'export interface Worker {\n  handle(): string;\n}\n\nexport const kind = "worker";\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/decoy.ts",
+        code: 'export class Decoy {\n  handle() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/entry.ts",
+        code: 'import { makePipeline } from "./factory.ts";\nimport { Impl } from "./impl.ts";\n\nexport function run() {\n  const job = makePipeline(new Impl());\n\n  return job();\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/factory.ts",
+        code: 'import type { Worker } from "./contract.ts";\nimport { schedule } from "./scheduler.ts";\n\nexport function makePipeline(worker: Worker) {\n  function task() {\n    return worker.handle();\n  }\n\n  function job() {\n    return schedule(task);\n  }\n\n  return job;\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/impl.ts",
+        code: 'import { Base } from "./base.ts";\n\nexport class Impl extends Base {\n  handle() {\n    return super.handle();\n  }\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/normalize.ts",
+        code: 'import { write } from "./sink.ts";\n\nexport function normalize() {\n  return write();\n}\n'
+      },
+      {
+        path: "10-callback-pipeline-ts/scheduler.ts",
+        code: "export function schedule(task: () => string) {\n  return invoke(task);\n}\n\nexport function invoke(task: () => string) {\n  return task();\n}\n"
+      },
+      {
+        path: "10-callback-pipeline-ts/sink.ts",
+        code: 'export function write() {\n  return "CALLBACK";\n}\n'
+      }
+    ],
+    table: {
+      caption: "Возвращённая closure, scheduler и виртуальный callback",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 7,
+              suffix: "/ 7",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 7,
+              suffix: "/ 7",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 2 · пропущено 2"
+            },
+            score: {
+              value: 7.777777777777778,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 7,
+              suffix: "/ 7",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 14,
+              suffix: "/ 14",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 7,
+              suffix: "/ 7",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.411764705882353,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "11-async-registry-ts",
+    title: "await import, registry, составной receiver и computed import",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: 'load делает literal dynamic import; resolve возвращает Handler из конструктора. resolve(...).execute() должен вести к Handler.execute и далее к flush. Неисполненный import(resolvePath("./decoy")) не является literal import; вложенная строка не должна становиться статической зависимостью.',
+    files: [
+      {
+        path: "11-async-registry-ts/decoy.ts",
+        code: 'export class Handler {\n  execute() {\n    throw new Error("decoy");\n  }\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/entry.ts",
+        code: 'import { load } from "./loader.ts";\n\nexport async function run() {\n  const registry = await load();\n\n  return registry.resolve("real").execute();\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/handler.ts",
+        code: 'import { parse } from "./parse.ts";\n\nexport class Handler {\n  execute() {\n    return parse();\n  }\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/loader.ts",
+        code: 'export async function load() {\n  const module = await import("./plugin.ts");\n\n  return module.create();\n}\n\nfunction resolvePath(name: string) {\n  return name;\n}\n\nexport function computedOnly() {\n  return import(resolvePath("./decoy.ts"));\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/parse.ts",
+        code: 'import { validate } from "./validate.ts";\n\nexport function parse() {\n  return validate();\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/plugin.ts",
+        code: 'import { Registry } from "./registry.ts";\nimport { Handler } from "./handler.ts";\n\nexport function create() {\n  return new Registry(new Handler());\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/registry.ts",
+        code: 'import { Handler } from "./handler.ts";\n\nexport class Registry {\n  handler: Handler;\n\n  constructor(handler: Handler) {\n    this.handler = handler;\n  }\n\n  resolve(name: string) {\n    if (name !== "real") throw new Error("unknown");\n\n    return this.handler;\n  }\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/repository.ts",
+        code: 'import { flush } from "./sink.ts";\n\nexport function persist() {\n  return flush();\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/sink.ts",
+        code: 'export function flush() {\n  return "PLUGIN";\n}\n'
+      },
+      {
+        path: "11-async-registry-ts/validate.ts",
+        code: 'import { persist } from "./repository.ts";\n\nexport function validate() {\n  return persist();\n}\n'
+      }
+    ],
+    table: {
+      caption: "await import, registry, составной receiver и computed import",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 8,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Лишних 1 · пропущено 2"
+            },
+            score: {
+              value: 8.235294117647058,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 7,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 7,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 6,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 3"
+            },
+            score: {
+              value: 8,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 6,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 6,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 16,
+              suffix: "/ 16",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 9,
+              suffix: "/ 9",
+              note: ""
+            },
+            context: {
+              value: 9,
+              suffix: "/ 9",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "12-recursive-diamond-ts",
+    title: "Рекурсия двух модулей, две ветки и общий sink",
+    language: "TypeScript",
+    group: "Углублённые примеры",
+    description: "ping ↔ pong образуют цикл импорта и вызовов; после трёх итераций исполняются обе ветки diamond. Проверяем обе полные цепочки, завершение BFS с visited, точную декларацию finish и отсутствие перехода к одноимённому decoy.",
+    files: [
+      {
+        path: "12-recursive-diamond-ts/branch.ts",
+        code: 'import { left } from "./left.ts";\nimport { right } from "./right.ts";\n\nexport function choose() {\n  return left() + ":" + right();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/decoy.ts",
+        code: 'export function finish() {\n  throw new Error("decoy");\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/encode.ts",
+        code: 'import { commit } from "./transaction.ts";\n\nexport function encode() {\n  return commit();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/entry.ts",
+        code: 'import { ping } from "./ping.ts";\n\nexport function run() {\n  return ping(3);\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/left.ts",
+        code: 'import { merge } from "./merge.ts";\n\nexport function left() {\n  return merge();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/merge.ts",
+        code: 'import { encode } from "./encode.ts";\n\nexport function merge() {\n  return encode();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/ping.ts",
+        code: 'import { pong } from "./pong.ts";\nimport { choose } from "./branch.ts";\n\nexport function ping(n: number) {\n  return n > 0 ? pong(n - 1) : choose();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/pong.ts",
+        code: 'import { ping } from "./ping.ts";\n\nexport function pong(n: number) {\n  return ping(n);\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/right.ts",
+        code: 'import { merge } from "./merge.ts";\n\nexport function right() {\n  return merge();\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/sink.ts",
+        code: 'export function finish() {\n  return "CYCLE";\n}\n'
+      },
+      {
+        path: "12-recursive-diamond-ts/transaction.ts",
+        code: 'import { finish } from "./sink.ts";\n\nexport function commit() {\n  return finish();\n}\n'
+      }
+    ],
+    table: {
+      caption: "Рекурсия двух модулей, две ветки и общий sink",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 11,
+              suffix: "/ 11",
+              note: ""
+            },
+            context: {
+              value: 11,
+              suffix: "/ 11",
+              note: "Структура и типы — не доказательство вызова"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    id: "37-nested-contracts-ts",
+    title: "Вложенные типы и интерфейсы: контракты и реализации",
+    language: "TypeScript",
+    group: "Типовые контракты",
+    description: "Ромб и несколько уровней наследования, generic, alias/intersection, Pick/Record, вложенные именованные и анонимные типы, optional, callable property, перегрузки и ref. Контрактные цели и конкретные runtime-вызовы оцениваются отдельно.",
+    files: [
+      {
+        path: "37-nested-contracts-ts/derived.ts",
+        code: 'import type { Flushable, RootWorker } from "./foundation.ts";\n\nexport interface Left<T> extends RootWorker<T> {}\n\nexport interface Right<T> extends RootWorker<T> {}\n\nexport interface Child<T> extends Left<T>, Right<T>, Flushable {\n  audit(value: T): string;\n}\n\nexport type Finisher<T> = {\n  finish(value: T): string;\n};\n\nexport type Alias<T> = Child<T>;\n\nexport type Decorated<T> = Alias<T> & Finisher<T>;\n\nexport type PublicWorker<T> = Pick<Decorated<T>, "work" | "finish">;\n\nexport type WorkerBag<T> = Record<"primary" | "backup", Decorated<T>>;\n'
+      },
+      {
+        path: "37-nested-contracts-ts/entry.ts",
+        code: 'import type { Client } from "./nested.ts";\nimport type { Input } from "./foundation.ts";\nimport { reset, WorkerImpl } from "./implementation.ts";\nimport {\n  references,\n  throughAlias,\n  throughInherited,\n  throughInline,\n  throughMapped,\n  throughNested,\n  throughOptional,\n  throughOverload,\n  throughProperty,\n  throughRecord,\n} from "./probes.ts";\n\nexport function run() {\n  const worker = new WorkerImpl();\n  const input: Input = { value: "V" };\n\n  const client: Client<Input> = {\n    nested: { branch: { worker, reset } },\n    inline: { deep: { reset } },\n    optional: worker,\n  };\n\n  return [\n    throughInherited(worker, input),\n    throughAlias(worker, input),\n    throughNested(client, input),\n    throughInline(client, input),\n    throughMapped(worker, input),\n    throughRecord({ primary: worker, backup: worker }, input),\n    throughOptional(client, input),\n    throughProperty(worker, input),\n    throughOverload(worker),\n    references(worker),\n    worker.work(input),\n  ].join("|");\n}\n'
+      },
+      {
+        path: "37-nested-contracts-ts/foundation.ts",
+        code: "export interface Input {\n  value: string;\n}\n\nexport interface RootWorker<T> {\n  work(value: T): string;\n  write(value: T): string;\n}\n\nexport interface Flushable {\n  flush(): string;\n}\n\nexport interface Codec {\n  encode(value: number): string;\n  encode(value: string): string;\n}\n\nexport interface Hook<T> {\n  onValue: (value: T) => string;\n}\n"
+      },
+      {
+        path: "37-nested-contracts-ts/implementation.ts",
+        code: 'import type { Child, Finisher } from "./derived.ts";\nimport type { Codec, Hook, Input } from "./foundation.ts";\nimport { persist } from "./sink.ts";\n\nexport class WorkerImpl\n  implements Child<Input>, Finisher<Input>, Codec, Hook<Input>\n{\n  work(value: Input) {\n    return this.write(value);\n  }\n\n  write(value: Input) {\n    return persist(value.value);\n  }\n\n  flush() {\n    return "F";\n  }\n\n  audit(value: Input) {\n    return this.work(value);\n  }\n\n  finish(value: Input) {\n    return this.audit(value);\n  }\n\n  onValue(value: Input) {\n    return this.work(value);\n  }\n\n  encode(value: number | string) {\n    return String(value);\n  }\n}\n\nexport function reset(value: Input) {\n  return value.value === "V" ? "R" : "bad";\n}\n\nexport class Decoy {\n  work(value: Input) {\n    return "DECOY:" + value.value;\n  }\n\n  reset(value: Input) {\n    return "DECOY:" + value.value;\n  }\n}\n'
+      },
+      {
+        path: "37-nested-contracts-ts/nested.ts",
+        code: 'import type { Decorated } from "./derived.ts";\n\nexport type Branch<T> = {\n  worker: Decorated<T>;\n  reset(value: T): string;\n};\n\nexport interface Client<T> {\n  nested: {\n    branch: Branch<T>;\n  };\n  inline: {\n    deep: {\n      reset(value: T): string;\n    };\n  };\n  optional?: Decorated<T>;\n}\n'
+      },
+      {
+        path: "37-nested-contracts-ts/probes.ts",
+        code: 'import type { Child, Decorated, PublicWorker, WorkerBag } from "./derived.ts";\nimport type { Codec, Hook, Input } from "./foundation.ts";\nimport type { Client } from "./nested.ts";\n\nexport function throughInherited(worker: Child<Input>, input: Input) {\n  return worker.work(input) + worker.write(input) + worker.flush();\n}\n\nexport function throughAlias(worker: Decorated<Input>, input: Input) {\n  return worker.finish(input) + worker.audit(input);\n}\n\nexport function throughNested(client: Client<Input>, input: Input) {\n  return (\n    client.nested.branch.worker.work(input) + client.nested.branch.reset(input)\n  );\n}\n\nexport function throughInline(client: Client<Input>, input: Input) {\n  return client.inline.deep.reset(input);\n}\n\nexport function throughMapped(worker: PublicWorker<Input>, input: Input) {\n  return worker.work(input) + worker.finish(input);\n}\n\nexport function throughRecord(workers: WorkerBag<Input>, input: Input) {\n  return workers.primary.work(input);\n}\n\nexport function throughOptional(client: Client<Input>, input: Input) {\n  return client.optional?.work(input) ?? "none";\n}\n\nexport function throughProperty(hook: Hook<Input>, input: Input) {\n  return hook.onValue(input);\n}\n\nexport function throughOverload(codec: Codec) {\n  const first = codec.encode(1);\n  const second = codec.encode("x");\n\n  return first + second;\n}\n\nexport function references(worker: Child<Input>) {\n  const work = worker.work;\n  const write = worker.write;\n\n  return typeof work === typeof write ? "function" : "bad";\n}\n'
+      },
+      {
+        path: "37-nested-contracts-ts/sink.ts",
+        code: "export function persist(value: string) {\n  return value;\n}\n"
+      }
+    ],
+    table: {
+      caption: "Вложенные типы и интерфейсы: контракты и реализации",
+      columns: [
+        {
+          key: "declarations",
+          label: "Объявления",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "dependencies",
+          label: "Зависимости файлов",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "relations",
+          label: "Конкретные call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "score",
+          label: "Оценка связей / 10",
+          precision: 1,
+          direction: "higher"
+        },
+        {
+          key: "reachable",
+          label: "Цель через call/ref",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "context",
+          label: "Цель через любые связи",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "contracts",
+          label: "Типовые цели",
+          precision: 0,
+          direction: "higher"
+        },
+        {
+          key: "heritage",
+          label: "Наследование",
+          precision: 0,
+          direction: "higher"
+        }
+      ],
+      rows: [
+        {
+          id: "graph",
+          label: "SymbolTrail",
+          note: "",
+          cells: {
+            declarations: {
+              value: 48,
+              suffix: "/ 48",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 12,
+              suffix: "/ 12",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 17,
+              suffix: "/ 17",
+              note: ""
+            },
+            context: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Структура и типы — не доказательство вызова"
+            },
+            contracts: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Лишних 0 · пропущено 0"
+            },
+            heritage: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Лишних 0 · пропущено 0"
+            }
+          }
+        },
+        {
+          id: "codegraph",
+          label: "CodeGraph",
+          note: "",
+          cells: {
+            declarations: {
+              value: 35,
+              suffix: "/ 48",
+              note: "Полнота 72,9%"
+            },
+            dependencies: {
+              value: 12,
+              suffix: "/ 12",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 15,
+              suffix: "/ 17",
+              note: "Лишних 15 · пропущено 2"
+            },
+            score: {
+              value: 6.382978723404255,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 16,
+              suffix: "/ 17",
+              note: ""
+            },
+            context: {
+              value: 16,
+              suffix: "/ 17",
+              note: "Структура и типы — не доказательство вызова"
+            },
+            contracts: {
+              value: 0,
+              suffix: "/ 17",
+              note: "Лишних 15 · пропущено 17"
+            },
+            heritage: {
+              value: 0,
+              suffix: "/ 5",
+              note: "Лишних 0 · пропущено 5"
+            }
+          }
+        },
+        {
+          id: "graphify",
+          label: "Graphify",
+          note: "",
+          cells: {
+            declarations: {
+              value: 45,
+              suffix: "/ 48",
+              note: "Полнота 93,8%"
+            },
+            dependencies: {
+              value: 12,
+              suffix: "/ 12",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Лишних 0 · пропущено 0"
+            },
+            score: {
+              value: 10,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 17,
+              suffix: "/ 17",
+              note: ""
+            },
+            context: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Структура и типы — не доказательство вызова"
+            },
+            contracts: {
+              value: 1,
+              suffix: "/ 17",
+              note: "Лишних 0 · пропущено 16"
+            },
+            heritage: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Лишних 0 · пропущено 0"
+            }
+          }
+        },
+        {
+          id: "scip",
+          label: "SCIP",
+          note: "",
+          cells: {
+            declarations: {
+              value: 48,
+              suffix: "/ 48",
+              note: "Полнота 100,0%"
+            },
+            dependencies: {
+              value: 12,
+              suffix: "/ 12",
+              note: "Лишних 0"
+            },
+            relations: {
+              value: 16,
+              suffix: "/ 17",
+              note: "Лишних 0 · пропущено 1"
+            },
+            score: {
+              value: 9.696969696969697,
+              suffix: "/ 10",
+              note: ""
+            },
+            reachable: {
+              value: 16,
+              suffix: "/ 17",
+              note: ""
+            },
+            context: {
+              value: 16,
+              suffix: "/ 17",
+              note: "Структура и типы — не доказательство вызова"
+            },
+            contracts: {
+              value: 17,
+              suffix: "/ 17",
+              note: "Лишних 2 · пропущено 0"
+            },
+            heritage: {
+              value: 5,
+              suffix: "/ 5",
+              note: "Лишних 0 · пропущено 0"
+            }
+          }
+        }
+      ]
+    }
+  }
+];
+const data = {
+  table,
+  cases
+};
+const __pageData = JSON.parse('{"title":"Сравнение точности парсеров","description":"SymbolTrail, CodeGraph, Graphify и SCIP: качество связей и результаты 37 примеров JavaScript/TypeScript с исходниками.","frontmatter":{"title":"Сравнение точности парсеров","description":"SymbolTrail, CodeGraph, Graphify и SCIP: качество связей и результаты 37 примеров JavaScript/TypeScript с исходниками.","section":"Сравнения и замеры","aside":false,"pageClass":"st-bench-page"},"headers":[],"relativePath":"benchmarks/parsers.md","filePath":"benchmarks/parsers.md"}');
+const __default__ = { name: "benchmarks/parsers.md" };
+const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", null, [
+        _cache[0] || (_cache[0] = createStaticVNode("", 6)),
+        createVNode(_sfc_main$2, {
+          table: unref(data).table
+        }, null, 8, ["table"]),
+        _cache[1] || (_cache[1] = createBaseVNode("h2", {
+          id: "примеры-и-исходники",
+          tabindex: "-1"
+        }, [
+          createTextVNode("Примеры и исходники "),
+          createBaseVNode("a", {
+            class: "header-anchor",
+            href: "#примеры-и-исходники",
+            "aria-label": 'Permalink to "Примеры и исходники"'
+          }, "​")
+        ], -1)),
+        _cache[2] || (_cache[2] = createBaseVNode("p", null, [
+          createTextVNode("Для каждого примера приведена отдельная таблица со всеми показателями. "),
+          createBaseVNode("strong", null, "Верные"),
+          createTextVNode(" — связи, совпавшие с эталоном; "),
+          createBaseVNode("strong", null, "лишние"),
+          createTextVNode(" — связи вне эталона; "),
+          createBaseVNode("strong", null, "пропущенные"),
+          createTextVNode(" — ожидаемые связи, которых нет в индексе. Исходники можно раскрыть под таблицей.")
+        ], -1)),
+        createVNode(_sfc_main$1, {
+          cases: unref(data).cases
+        }, null, 8, ["cases"]),
+        _cache[3] || (_cache[3] = createBaseVNode("p", null, [
+          createTextVNode("Работу агента с готовым индексом сравниваем отдельно: "),
+          createBaseVNode("a", { href: "/symbolTrail/benchmarks/investigations.html" }, "сквозное исследование кода"),
+          createTextVNode(" и "),
+          createBaseVNode("a", { href: "/symbolTrail/benchmarks/engineering-tasks.html" }, "пять инженерных задач"),
+          createTextVNode(".")
+        ], -1))
+      ]);
+    };
+  }
+});
+export {
+  __pageData,
+  _sfc_main as default
+};
