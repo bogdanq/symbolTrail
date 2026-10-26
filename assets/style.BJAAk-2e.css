@@ -5053,6 +5053,7 @@ html:not(.dark) .VPImage.dark[data-v-8426fc1a] {
 }
 
 .VPNavBarTitle .title {
+  border-bottom: 0;
   font-size: 18px;
   font-weight: 650;
   letter-spacing: -0.6px;
@@ -5079,10 +5080,16 @@ html:not(.dark) .VPImage.dark[data-v-8426fc1a] {
   padding-bottom: 12px;
 }
 
-.VPSidebarItem.level-0 > .item > .text {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--vp-c-text-3);
+.VPSidebar .VPSidebarItem.level-0 > .item > .text {
+  margin: 0 0 8px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .VPSidebarItem.level-1 > .item {
