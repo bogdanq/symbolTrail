@@ -1,0 +1,239 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="760"
+  height="390"
+  viewBox="0 0 760 390"
+  fill="none"
+  role="img"
+  aria-labelledby="graph-title graph-description"
+>
+  <title id="graph-title">Основные индексированные связи React-счётчика</title>
+  <desc id="graph-description">
+    App использует Counter через JSX: индекс записал call. Counter вызывает
+    внешний useState и читает increment в атрибуте onClick. Обработчик increment
+    вызывает setCount, разрешённый в индексе как привязка переменной. Ссылка
+    onClick не представлена вызовом.
+  </desc>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#e5e7eb" />
+    </pattern>
+    <marker
+      id="call-arrow"
+      viewBox="0 0 10 10"
+      refX="8"
+      refY="5"
+      markerWidth="6"
+      markerHeight="6"
+      orient="auto"
+    >
+      <path d="M0 0 10 5 0 10" fill="#155dfc" />
+    </marker>
+    <marker
+      id="read-arrow"
+      viewBox="0 0 10 10"
+      refX="8"
+      refY="5"
+      markerWidth="6"
+      markerHeight="6"
+      orient="auto"
+    >
+      <path d="M0 0 10 5 0 10" fill="#1447e6" />
+    </marker>
+    <marker
+      id="external-arrow"
+      viewBox="0 0 10 10"
+      refX="8"
+      refY="5"
+      markerWidth="6"
+      markerHeight="6"
+      orient="auto"
+    >
+      <path d="M0 0 10 5 0 10" fill="#99a1af" />
+    </marker>
+  </defs>
+  <rect width="760" height="390" fill="#fff" />
+  <rect width="760" height="390" fill="url(#dots)" />
+
+  <path
+    id="edge-app-counter"
+    data-role="call"
+    data-evidence="App.jsx:4:11"
+    d="M140 192H216"
+    stroke="#155dfc"
+    stroke-width="1.8"
+    marker-end="url(#call-arrow)"
+  />
+  <path
+    id="edge-counter-state"
+    data-role="call"
+    data-evidence="Counter.jsx:4:29"
+    d="M366 177C438 177 450 94 522 94"
+    stroke="#99a1af"
+    stroke-width="1.6"
+    stroke-dasharray="3 5"
+    marker-end="url(#external-arrow)"
+  />
+  <path
+    id="edge-counter-increment"
+    data-role="read"
+    data-evidence="Counter.jsx:10:27"
+    d="M291 224V262Q291 292 321 292H414"
+    stroke="#1447e6"
+    stroke-width="1.8"
+    stroke-dasharray="6 4"
+    marker-end="url(#read-arrow)"
+  />
+  <path
+    id="edge-increment-setter"
+    data-role="call"
+    data-evidence="Counter.jsx:7:5"
+    d="M556 292H592"
+    stroke="#155dfc"
+    stroke-width="1.8"
+    marker-end="url(#call-arrow)"
+  />
+
+  <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a7282">
+    <text x="151" y="178">call · JSX</text>
+    <text x="395" y="90">call · external</text>
+    <text x="316" y="277" fill="#1447e6">read · onClick</text>
+    <text x="561" y="277">call</text>
+  </g>
+
+  <g id="node-app" transform="translate(28 160)">
+    <rect width="112" height="64" rx="8" fill="#101828" />
+    <text
+      x="13"
+      y="24"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="10.5"
+      fill="#d1d5dc"
+    >
+      App.jsx:3
+    </text>
+    <text
+      x="13"
+      y="47"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="15"
+      font-weight="600"
+      fill="#fff"
+    >
+      App
+    </text>
+  </g>
+  <g id="node-counter" transform="translate(216 160)">
+    <rect width="150" height="64" rx="8" fill="#eff6ff" stroke="#155dfc" />
+    <text
+      x="13"
+      y="24"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="10.5"
+      fill="#6a7282"
+    >
+      Counter.jsx:3
+    </text>
+    <text
+      x="13"
+      y="47"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="15"
+      font-weight="600"
+      fill="#101828"
+    >
+      Counter
+    </text>
+    <circle cx="133" cy="19" r="3" fill="#155dfc" />
+  </g>
+  <g id="node-use-state" transform="translate(522 62)">
+    <rect width="188" height="64" rx="8" fill="#f9fafb" stroke="#e5e7eb" />
+    <text
+      x="13"
+      y="24"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="10.5"
+      fill="#6a7282"
+    >
+      react · внешний вызов
+    </text>
+    <text
+      x="13"
+      y="47"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="15"
+      fill="#101828"
+    >
+      useState
+    </text>
+  </g>
+  <g id="node-increment" transform="translate(414 260)">
+    <rect width="142" height="64" rx="8" fill="#fff" stroke="#e5e7eb" />
+    <text
+      x="13"
+      y="24"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="10.5"
+      fill="#6a7282"
+    >
+      Counter.jsx:6
+    </text>
+    <text
+      x="13"
+      y="47"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="15"
+      fill="#101828"
+    >
+      increment
+    </text>
+  </g>
+  <g id="node-set-count" transform="translate(592 260)">
+    <rect width="144" height="64" rx="8" fill="#eff6ff" stroke="#e5e7eb" />
+    <text
+      x="13"
+      y="24"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="10"
+      fill="#6a7282"
+    >
+      binding · строка 4
+    </text>
+    <text
+      x="13"
+      y="47"
+      font-family="ui-monospace,Menlo,monospace"
+      font-size="15"
+      fill="#101828"
+    >
+      setCount
+    </text>
+  </g>
+
+  <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#6a7282">
+    <path
+      d="M28 365H50"
+      stroke="#155dfc"
+      stroke-width="1.5"
+      marker-end="url(#call-arrow)"
+    />
+    <text x="60" y="369">call</text>
+    <path
+      d="M123 365H145"
+      stroke="#1447e6"
+      stroke-width="1.5"
+      stroke-dasharray="6 4"
+      marker-end="url(#read-arrow)"
+    />
+    <text x="155" y="369">read</text>
+    <path
+      d="M221 365H243"
+      stroke="#99a1af"
+      stroke-width="1.5"
+      stroke-dasharray="3 5"
+      marker-end="url(#external-arrow)"
+    />
+    <text x="253" y="369">внешняя цель</text>
+    <text x="568" y="369">2 файла · 1 хук</text>
+  </g>
+</svg>

@@ -1,0 +1,948 @@
+{
+  "table": {
+    "caption": "Общие результаты · 5 задач на инструмент",
+    "columns": [
+      {
+        "key": "score",
+        "label": "Оценка / 100",
+        "precision": 2,
+        "direction": "higher"
+      },
+      {
+        "key": "input",
+        "label": "Входные токены",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "output",
+        "label": "Выходные токены",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "actions",
+        "label": "Действия",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "minutes",
+        "label": "Время, мин",
+        "precision": 2,
+        "direction": "lower"
+      },
+      {
+        "key": "cost",
+        "label": "Стоимость API, USD",
+        "precision": 2,
+        "direction": "lower"
+      }
+    ],
+    "rows": [
+      {
+        "id": "graph",
+        "label": "SymbolTrail",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 97.666,
+            "suffix": "/ 100",
+            "note": ""
+          },
+          "input": {
+            "value": 10201924,
+            "suffix": "",
+            "note": "Из них кэш: 9 573 760"
+          },
+          "output": {
+            "value": 80899,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 252,
+            "suffix": "",
+            "note": "shell: 222 · MCP: 9 · patch: 21"
+          },
+          "minutes": {
+            "value": 35.60458333333333,
+            "suffix": "",
+            "note": ""
+          },
+          "cost": {
+            "value": 3.022694,
+            "suffix": "",
+            "note": "≈ 75,57 расчётных кредитов"
+          }
+        }
+      },
+      {
+        "id": "codegraph",
+        "label": "CodeGraph",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 97.666,
+            "suffix": "/ 100",
+            "note": ""
+          },
+          "input": {
+            "value": 8254685,
+            "suffix": "",
+            "note": "Из них кэш: 7 734 144"
+          },
+          "output": {
+            "value": 72501,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 204,
+            "suffix": "",
+            "note": "shell: 163 · MCP: 19 · patch: 22"
+          },
+          "minutes": {
+            "value": 32.26481666666667,
+            "suffix": "",
+            "note": ""
+          },
+          "cost": {
+            "value": 2.5395064,
+            "suffix": "",
+            "note": "≈ 63,49 расчётных кредитов"
+          }
+        }
+      },
+      {
+        "id": "graphify",
+        "label": "Graphify",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 100.0,
+            "suffix": "/ 100",
+            "note": ""
+          },
+          "input": {
+            "value": 12201993,
+            "suffix": "",
+            "note": "Из них кэш: 11 470 080"
+          },
+          "output": {
+            "value": 83510,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 226,
+            "suffix": "",
+            "note": "shell: 203 · MCP: 4 · patch: 19"
+          },
+          "minutes": {
+            "value": 37.18033333333333,
+            "suffix": "",
+            "note": ""
+          },
+          "cost": {
+            "value": 3.4459340000000003,
+            "suffix": "",
+            "note": "≈ 86,15 расчётных кредитов"
+          }
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "01",
+      "title": "Скрытие тестовых файлов в поиске",
+      "table": {
+        "caption": "Задача 01 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 100",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          },
+          {
+            "key": "cost",
+            "label": "Стоимость API, USD",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2721874,
+                "suffix": "",
+                "note": "Из них кэш: 2 616 064"
+              },
+              "output": {
+                "value": 18896,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 69,
+                "suffix": "",
+                "note": "shell: 57 · MCP: 2 · patch: 10"
+              },
+              "minutes": {
+                "value": 7.436016666666666,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6621864000000001,
+                "suffix": "",
+                "note": "≈ 16,55 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1833138,
+                "suffix": "",
+                "note": "Из них кэш: 1 715 584"
+              },
+              "output": {
+                "value": 15988,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 51,
+                "suffix": "",
+                "note": "shell: 40 · MCP: 2 · patch: 9"
+              },
+              "minutes": {
+                "value": 6.785833333333334,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.5665464,
+                "suffix": "",
+                "note": "≈ 14,16 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 3835396,
+                "suffix": "",
+                "note": "Из них кэш: 3 618 432"
+              },
+              "output": {
+                "value": 20577,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 65,
+                "suffix": "",
+                "note": "shell: 54 · MCP: 1 · patch: 10"
+              },
+              "minutes": {
+                "value": 8.93225,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 1.0015412,
+                "suffix": "",
+                "note": "≈ 25,04 расчётных кредитов"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "title": "Потеря области unused=prod",
+      "table": {
+        "caption": "Задача 02 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 100",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          },
+          {
+            "key": "cost",
+            "label": "Стоимость API, USD",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 908028,
+                "suffix": "",
+                "note": "Из них кэш: 818 944"
+              },
+              "output": {
+                "value": 12832,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 40,
+                "suffix": "",
+                "note": "shell: 33 · MCP: 2 · patch: 5"
+              },
+              "minutes": {
+                "value": 5.446166666666667,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.3883824,
+                "suffix": "",
+                "note": "≈ 9,71 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1033941,
+                "suffix": "",
+                "note": "Из них кэш: 949 376"
+              },
+              "output": {
+                "value": 12492,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 35,
+                "suffix": "",
+                "note": "shell: 26 · MCP: 4 · patch: 5"
+              },
+              "minutes": {
+                "value": 5.4188,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.3889876,
+                "suffix": "",
+                "note": "≈ 9,72 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1078133,
+                "suffix": "",
+                "note": "Из них кэш: 981 760"
+              },
+              "output": {
+                "value": 12287,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 31,
+                "suffix": "",
+                "note": "shell: 28 · MCP: 0 · patch: 3"
+              },
+              "minutes": {
+                "value": 5.287633333333333,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.413792,
+                "suffix": "",
+                "note": "≈ 10,34 расчётных кредитов"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "title": "Ревью пакетных запросов MCP и CLI",
+      "table": {
+        "caption": "Задача 03 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 100",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          },
+          {
+            "key": "cost",
+            "label": "Стоимость API, USD",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2063213,
+                "suffix": "",
+                "note": "Из них кэш: 1 849 472"
+              },
+              "output": {
+                "value": 9211,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 37,
+                "suffix": "",
+                "note": "shell: 36 · MCP: 1 · patch: 0"
+              },
+              "minutes": {
+                "value": 5.601366666666666,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.7045391999999999,
+                "suffix": "",
+                "note": "≈ 17,61 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1334734,
+                "suffix": "",
+                "note": "Из них кэш: 1 235 712"
+              },
+              "output": {
+                "value": 8846,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 32,
+                "suffix": "",
+                "note": "shell: 28 · MCP: 4 · patch: 0"
+              },
+              "minutes": {
+                "value": 4.1524,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.41007520000000003,
+                "suffix": "",
+                "note": "≈ 10,25 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2159038,
+                "suffix": "",
+                "note": "Из них кэш: 1 991 424"
+              },
+              "output": {
+                "value": 15532,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 39,
+                "suffix": "",
+                "note": "shell: 36 · MCP: 3 · patch: 0"
+              },
+              "minutes": {
+                "value": 7.37635,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6896904,
+                "suffix": "",
+                "note": "≈ 17,24 расчётных кредитов"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "title": "Типизированная маршрутизация HTTP-срезов",
+      "table": {
+        "caption": "Задача 04 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 100",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          },
+          {
+            "key": "cost",
+            "label": "Стоимость API, USD",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2308866,
+                "suffix": "",
+                "note": "Из них кэш: 2 193 408"
+              },
+              "output": {
+                "value": 19543,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 58,
+                "suffix": "",
+                "note": "shell: 50 · MCP: 2 · patch: 6"
+              },
+              "minutes": {
+                "value": 8.168533333333333,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6456868,
+                "suffix": "",
+                "note": "≈ 16,14 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1441938,
+                "suffix": "",
+                "note": "Из них кэш: 1 333 888"
+              },
+              "output": {
+                "value": 13520,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 36,
+                "suffix": "",
+                "note": "shell: 31 · MCP: 4 · patch: 1"
+              },
+              "minutes": {
+                "value": 5.7678666666666665,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.48468880000000003,
+                "suffix": "",
+                "note": "≈ 12,12 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100.0,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2208858,
+                "suffix": "",
+                "note": "Из них кэш: 2 085 248"
+              },
+              "output": {
+                "value": 15237,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 37,
+                "suffix": "",
+                "note": "shell: 37 · MCP: 0 · patch: 0"
+              },
+              "minutes": {
+                "value": 6.603783333333333,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6081148000000001,
+                "suffix": "",
+                "note": "≈ 15,20 расчётных кредитов"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "title": "Сбой записи индекса и восстановление сервиса",
+      "table": {
+        "caption": "Задача 05 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 100",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          },
+          {
+            "key": "cost",
+            "label": "Стоимость API, USD",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 88.33,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2199943,
+                "suffix": "",
+                "note": "Из них кэш: 2 095 872"
+              },
+              "output": {
+                "value": 20417,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 48,
+                "suffix": "",
+                "note": "shell: 46 · MCP: 2 · patch: 0"
+              },
+              "minutes": {
+                "value": 8.9525,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6218992,
+                "suffix": "",
+                "note": "≈ 15,55 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 88.33,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2610934,
+                "suffix": "",
+                "note": "Из них кэш: 2 499 584"
+              },
+              "output": {
+                "value": 21655,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 50,
+                "suffix": "",
+                "note": "shell: 38 · MCP: 5 · patch: 7"
+              },
+              "minutes": {
+                "value": 10.139916666666666,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6892084,
+                "suffix": "",
+                "note": "≈ 17,23 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2920568,
+                "suffix": "",
+                "note": "Из них кэш: 2 793 216"
+              },
+              "output": {
+                "value": 19877,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 54,
+                "suffix": "",
+                "note": "shell: 48 · MCP: 0 · patch: 6"
+              },
+              "minutes": {
+                "value": 8.980316666666667,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.7327956000000001,
+                "suffix": "",
+                "note": "≈ 18,32 расчётных кредитов"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

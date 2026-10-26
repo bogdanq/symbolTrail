@@ -1,0 +1,23 @@
+{
+  "name": "symboltrail-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Документация SymbolTrail — локального инструмента индексации, поиска и анализа связей JavaScript/TypeScript-кода с MCP для AI-агентов.",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "check": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.3",
+    "vitepress": "1.6.4",
+    "vue": "^3.5.13",
+    "vue-tsc": "^3.1.0"
+  }
+}

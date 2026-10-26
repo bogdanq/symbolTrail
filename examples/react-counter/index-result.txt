@@ -1,0 +1,84 @@
+Проверка React-примера индексом SymbolTrail — 26.10.2026
+
+Источник: examples/react-counter/App.jsx и Counter.jsx в этом проекте.
+Обычный filegraph без векторов: 2 files, 12 facts, 1 file-edge.
+Реализация React не индексировалась: useState — внешний вызов, setCount — привязка переменной.
+
+callees({ queries: [{ file: "App.jsx", symbol: "App" }, { file: "Counter.jsx", symbol: "Counter" }, { file: "Counter.jsx", symbol: "increment" }] })
+
+[1]
+App  App.jsx:3:17-5  function App()
+callers 0 · testCall 0
+calls 1
+selection · total 1 · start 0 · shown 1 · remaining 0 · complete
+definitions 1 · new 1 · prior 0 (page targets)
+  App.jsx:4:11 call Counter
+definitions
+  Counter function Counter.jsx:3-11
+    via Counter App.jsx:4 likely imported
+source App.jsx:3-5
+3  export function App() {
+4    return <Counter />;
+5  }
+source App.jsx:1-1
+1  import { Counter } from "./Counter.jsx";
+source Counter.jsx:3-11
+3  export function Counter() {
+4    const [count, setCount] = useState(0);
+5  
+6    function increment() {
+7      setCount(count + 1);
+8    }
+9  
+10    return <button onClick={increment}>{count}</button>;
+11  }
+source Counter.jsx:1-1
+1  import { useState } from "react";
+
+[2]
+Counter  Counter.jsx:3:17-11  function Counter()
+callers 1 · testCall 0
+calls 1
+selection · total 1 · start 0 · shown 1 · remaining 0 · complete
+  Counter.jsx:4:29 call useState
+
+[3]
+increment  Counter.jsx:6:12-8  function increment()
+callers 0 · testCall 0
+calls 1
+selection · total 1 · start 0 · shown 1 · remaining 0 · complete
+definitions 1 · new 1 · prior 0 (page targets)
+  Counter.jsx:7:5 call setCount
+definitions
+  setCount variable Counter.jsx:4
+    via setCount Counter.jsx:7
+
+callers({ queries: [{ file: "Counter.jsx", symbol: "increment" }, { file: "Counter.jsx", symbol: "setCount" }] })
+
+[1]
+increment  Counter.jsx:6:12-8  function increment()
+fanIn 0 · fanOut 1 · testCall 0 · fragilityCallers 0
+callers 1 · 1 files
+selection · total 1 · start 0 · shown 1 · remaining 0 · complete
+read 1
+  Counter.jsx:10:27 read Counter:3:17-11  @onClick
+source Counter.jsx:3-11
+3  export function Counter() {
+4    const [count, setCount] = useState(0);
+5  
+6    function increment() {
+7      setCount(count + 1);
+8    }
+9  
+10    return <button onClick={increment}>{count}</button>;
+11  }
+source Counter.jsx:1-1
+1  import { useState } from "react";
+
+[2]
+setCount  Counter.jsx:4:17  variable
+fanIn 0 · fanOut 0 · testCall 0 · fragilityCallers 0
+callers 1 · 1 files
+selection · total 1 · start 0 · shown 1 · remaining 0 · complete
+Counter.jsx:7:5 call setCount increment:6:12-8
+

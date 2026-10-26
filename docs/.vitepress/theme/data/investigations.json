@@ -1,0 +1,1738 @@
+{
+  "table": {
+    "caption": "Общие результаты · 10 задач на инструмент",
+    "columns": [
+      {
+        "key": "score",
+        "label": "Оценка / 10",
+        "precision": 2,
+        "direction": "higher"
+      },
+      {
+        "key": "input",
+        "label": "Входные токены",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "output",
+        "label": "Выходные токены",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "actions",
+        "label": "Действия",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
+        "key": "usefulness",
+        "label": "Полезность графа / 10",
+        "precision": 1,
+        "direction": "higher"
+      },
+      {
+        "key": "minutes",
+        "label": "Время, мин",
+        "precision": 2,
+        "direction": "lower"
+      }
+    ],
+    "rows": [
+      {
+        "id": "graph",
+        "label": "SymbolTrail",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 9.416666666666666,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "input": {
+            "value": 4915369,
+            "suffix": "",
+            "note": "Из них кэш: 4 225 792"
+          },
+          "output": {
+            "value": 63120,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 590,
+            "suffix": "",
+            "note": "Индекс: 68 · исходники: 522"
+          },
+          "usefulness": {
+            "value": 6.2,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "minutes": {
+            "value": 29.12575,
+            "suffix": "",
+            "note": ""
+          }
+        }
+      },
+      {
+        "id": "codegraph",
+        "label": "CodeGraph",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 9.333333333333334,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "input": {
+            "value": 5816291,
+            "suffix": "",
+            "note": "Из них кэш: 5 078 656"
+          },
+          "output": {
+            "value": 57809,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 528,
+            "suffix": "",
+            "note": "Индекс: 26 · исходники: 502"
+          },
+          "usefulness": {
+            "value": 6,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "minutes": {
+            "value": 26.872066666666665,
+            "suffix": "",
+            "note": ""
+          }
+        }
+      },
+      {
+        "id": "graphify",
+        "label": "Graphify",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 9.333333333333334,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "input": {
+            "value": 5132784,
+            "suffix": "",
+            "note": "Из них кэш: 4 407 680"
+          },
+          "output": {
+            "value": 60610,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 661,
+            "suffix": "",
+            "note": "Индекс: 142 · исходники: 519"
+          },
+          "usefulness": {
+            "value": 6,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "minutes": {
+            "value": 26.491866666666667,
+            "suffix": "",
+            "note": ""
+          }
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "01",
+      "title": "Подсказки поиска: отмена, debounce и поздний ответ",
+      "table": {
+        "caption": "Задача 01 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 330612,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 4900,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 37,
+                "suffix": "",
+                "note": "Индекс: 7 · исходники: 30"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.606133333333333,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 325049,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5348,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 37,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 34"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.3658333333333332,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 323530,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 4639,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 43,
+                "suffix": "",
+                "note": "Индекс: 14 · исходники: 29"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.2367,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "title": "Две страницы связей и вложенный курсор имён",
+      "table": {
+        "caption": "Задача 02 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 457999,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6647,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 58,
+                "suffix": "",
+                "note": "Индекс: 7 · исходники: 51"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.19755,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 455830,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5006,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 52,
+                "suffix": "",
+                "note": "Индекс: 2 · исходники: 50"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.354616666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 473167,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6425,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 61,
+                "suffix": "",
+                "note": "Индекс: 13 · исходники: 48"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.772666666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "title": "Вкладки символа и отложенные запросы через callbacks",
+      "table": {
+        "caption": "Задача 03 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 281798,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5880,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 49,
+                "suffix": "",
+                "note": "Индекс: 7 · исходники: 42"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.577,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 235118,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5258,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 37,
+                "suffix": "",
+                "note": "Индекс: 2 · исходники: 35"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.5395666666666665,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 349655,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5431,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 59,
+                "suffix": "",
+                "note": "Индекс: 11 · исходники: 48"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 1.35455,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "title": "Текстовый поиск, unused и согласованность старой выдачи",
+      "table": {
+        "caption": "Задача 04 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 8.333333333333334,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 389628,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5505,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 48,
+                "suffix": "",
+                "note": "Индекс: 6 · исходники: 42"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.4715333333333334,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 8.333333333333334,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 582866,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6612,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 44,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 41"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.0515,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 8.333333333333334,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 369396,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5556,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 50,
+                "suffix": "",
+                "note": "Индекс: 12 · исходники: 38"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.45555,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "title": "Места экспорта через реэкспорты и соседний репозиторий",
+      "table": {
+        "caption": "Задача 05 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 472820,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5467,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 58,
+                "suffix": "",
+                "note": "Индекс: 9 · исходники: 49"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.67685,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 619765,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5274,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 57,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 54"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.44335,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 364812,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6386,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 57,
+                "suffix": "",
+                "note": "Индекс: 14 · исходники: 43"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.9505166666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "06",
+      "title": "Живой исходник и частичные ошибки batch-чтения",
+      "table": {
+        "caption": "Задача 06 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 498782,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6637,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 59,
+                "suffix": "",
+                "note": "Индекс: 5 · исходники: 54"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.2335166666666666,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 453296,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5464,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 48,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 45"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.5764,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 353649,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 4937,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 61,
+                "suffix": "",
+                "note": "Индекс: 16 · исходники: 45"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 1.8488666666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "07",
+      "title": "Один AST-проход и импортные ловушки",
+      "table": {
+        "caption": "Задача 07 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 360164,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5608,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 50,
+                "suffix": "",
+                "note": "Индекс: 5 · исходники: 45"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.3560666666666665,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 391536,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5166,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 51,
+                "suffix": "",
+                "note": "Индекс: 2 · исходники: 49"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.4797,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 523742,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5372,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 63,
+                "suffix": "",
+                "note": "Индекс: 11 · исходники: 52"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.6039666666666665,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "08",
+      "title": "Реэкспортный цикл и identity исходной декларации",
+      "table": {
+        "caption": "Задача 08 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 577941,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 7971,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 68,
+                "suffix": "",
+                "note": "Индекс: 6 · исходники: 62"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.0522833333333335,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 732104,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5702,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 58,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 55"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.667666666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 690125,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6218,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 76,
+                "suffix": "",
+                "note": "Индекс: 12 · исходники: 64"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.04315,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "09",
+      "title": "Объектная функция, класс и возвращаемый method",
+      "table": {
+        "caption": "Задача 09 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 753910,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6933,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 70,
+                "suffix": "",
+                "note": "Индекс: 8 · исходники: 62"
+              },
+              "usefulness": {
+                "value": 8,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.2447,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 784507,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5702,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 61,
+                "suffix": "",
+                "note": "Индекс: 2 · исходники: 59"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.7539833333333332,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 817773,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 7622,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 87,
+                "suffix": "",
+                "note": "Индекс: 15 · исходники: 72"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.57915,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "title": "Контракт, callback, реализация и отображение связи",
+      "table": {
+        "caption": "Задача 10 · результаты",
+        "columns": [
+          {
+            "key": "score",
+            "label": "Оценка / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "input",
+            "label": "Входные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "output",
+            "label": "Выходные токены",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "actions",
+            "label": "Действия",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
+            "key": "usefulness",
+            "label": "Полезность графа / 10",
+            "precision": 1,
+            "direction": "higher"
+          },
+          {
+            "key": "minutes",
+            "label": "Время, мин",
+            "precision": 2,
+            "direction": "lower"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 791715,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 7572,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 93,
+                "suffix": "",
+                "note": "Индекс: 8 · исходники: 85"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.7101166666666665,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 1236220,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 8277,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 83,
+                "suffix": "",
+                "note": "Индекс: 3 · исходники: 80"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.63945,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "input": {
+                "value": 866935,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 8024,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 104,
+                "suffix": "",
+                "note": "Индекс: 24 · исходники: 80"
+              },
+              "usefulness": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.64675,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
