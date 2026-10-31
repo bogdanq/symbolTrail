@@ -2,6 +2,7 @@
 import DefaultTheme from "vitepress/theme";
 import { useData, withBase } from "vitepress";
 import { computed } from "vue";
+import GraphBackground from "./components/GraphBackground.vue";
 
 const { frontmatter, page, site } = useData();
 
@@ -12,6 +13,9 @@ const helpLink = computed(() =>
 
 <template>
   <DefaultTheme.Layout>
+    <template #doc-top>
+      <GraphBackground />
+    </template>
     <template #doc-before>
       <nav
         v-if="frontmatter.section"
