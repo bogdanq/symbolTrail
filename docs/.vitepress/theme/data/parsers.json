@@ -1,6 +1,6 @@
 {
   "table": {
-    "caption": "Общие результаты · 37 примеров",
+    "caption": "Общие результаты · 38 примеров",
     "columns": [
       {
         "key": "declarations",
@@ -16,14 +16,14 @@
       },
       {
         "key": "relations",
-        "label": "Конкретные call/ref",
+        "label": "Точные цели call/ref",
         "precision": 0,
         "direction": "higher"
       },
       {
         "key": "score",
         "label": "Оценка связей / 10",
-        "precision": 1,
+        "precision": 2,
         "direction": "higher"
       },
       {
@@ -43,11 +43,11 @@
       {
         "id": "graph",
         "label": "SymbolTrail",
-        "note": "Снимок проекта",
+        "note": "Рабочая версия · повторная проверка 05.11.2026",
         "cells": {
           "declarations": {
-            "value": 324,
-            "suffix": "/ 324",
+            "value": 364,
+            "suffix": "/ 364",
             "note": "Полнота 100,0%"
           },
           "dependencies": {
@@ -56,23 +56,23 @@
             "note": "Лишних 0"
           },
           "relations": {
-            "value": 182,
-            "suffix": "/ 189",
+            "value": 222,
+            "suffix": "/ 229",
             "note": "Лишних 0 · пропущено 7"
           },
           "score": {
-            "value": 9.81132075471698,
+            "value": 9.84478935698448,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 188,
-            "suffix": "/ 189",
+            "value": 228,
+            "suffix": "/ 229",
             "note": "В несколько переходов: 6"
           },
           "context": {
-            "value": 189,
-            "suffix": "/ 189",
+            "value": 229,
+            "suffix": "/ 229",
             "note": "Структура и типы — не доказательство вызова"
           }
         }
@@ -83,9 +83,9 @@
         "note": "1.6.0",
         "cells": {
           "declarations": {
-            "value": 310,
-            "suffix": "/ 324",
-            "note": "Полнота 95,7%"
+            "value": 325,
+            "suffix": "/ 364",
+            "note": "Полнота 89,3%"
           },
           "dependencies": {
             "value": 168,
@@ -94,22 +94,22 @@
           },
           "relations": {
             "value": 157,
-            "suffix": "/ 189",
-            "note": "Лишних 37 · пропущено 32"
+            "suffix": "/ 229",
+            "note": "Лишних 38 · пропущено 72"
           },
           "score": {
-            "value": 8.198433420365536,
+            "value": 7.40566037735849,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
             "value": 162,
-            "suffix": "/ 189",
+            "suffix": "/ 229",
             "note": "В несколько переходов: 5"
           },
           "context": {
-            "value": 172,
-            "suffix": "/ 189",
+            "value": 174,
+            "suffix": "/ 229",
             "note": "Структура и типы — не доказательство вызова"
           }
         }
@@ -120,9 +120,9 @@
         "note": "0.9.93 · локальный AST",
         "cells": {
           "declarations": {
-            "value": 317,
-            "suffix": "/ 324",
-            "note": "Полнота 97,8%"
+            "value": 325,
+            "suffix": "/ 364",
+            "note": "Полнота 89,3%"
           },
           "dependencies": {
             "value": 184,
@@ -131,22 +131,22 @@
           },
           "relations": {
             "value": 147,
-            "suffix": "/ 189",
-            "note": "Лишних 8 · пропущено 42"
+            "suffix": "/ 229",
+            "note": "Лишних 9 · пропущено 82"
           },
           "score": {
-            "value": 8.546511627906977,
+            "value": 7.636363636363637,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
             "value": 149,
-            "suffix": "/ 189",
+            "suffix": "/ 229",
             "note": "В несколько переходов: 2"
           },
           "context": {
             "value": 165,
-            "suffix": "/ 189",
+            "suffix": "/ 229",
             "note": "Структура и типы — не доказательство вызова"
           }
         }
@@ -157,9 +157,9 @@
         "note": "scip-typescript 0.4.0",
         "cells": {
           "declarations": {
-            "value": 324,
-            "suffix": "/ 324",
-            "note": "Полнота 100,0%"
+            "value": 364,
+            "suffix": "/ 364",
+            "note": "Полнота 100,0% · вне эталона 2"
           },
           "dependencies": {
             "value": 184,
@@ -167,23 +167,23 @@
             "note": "Лишних 0"
           },
           "relations": {
-            "value": 179,
-            "suffix": "/ 189",
-            "note": "Лишних 0 · пропущено 10"
+            "value": 219,
+            "suffix": "/ 229",
+            "note": "Лишних 4 · пропущено 10"
           },
           "score": {
-            "value": 9.728260869565217,
+            "value": 9.690265486725663,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 187,
-            "suffix": "/ 189",
+            "value": 227,
+            "suffix": "/ 229",
             "note": "В несколько переходов: 8"
           },
           "context": {
-            "value": 187,
-            "suffix": "/ 189",
+            "value": 228,
+            "suffix": "/ 229",
             "note": "Структура и типы — не доказательство вызова"
           }
         }
@@ -228,14 +228,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -444,14 +444,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -656,14 +656,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -868,14 +868,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -1080,14 +1080,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -1169,7 +1169,7 @@
               "reachable": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 1,
@@ -1292,14 +1292,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -1455,7 +1455,7 @@
               "reachable": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 4,
@@ -1504,14 +1504,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -1716,14 +1716,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -1768,7 +1768,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -1805,7 +1805,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -1842,7 +1842,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -1879,7 +1879,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -1928,14 +1928,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -2144,14 +2144,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -2356,14 +2356,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -2568,14 +2568,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -2780,14 +2780,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -2996,14 +2996,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -3208,14 +3208,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -3420,14 +3420,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -3632,14 +3632,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -3721,7 +3721,7 @@
               "reachable": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 1,
@@ -3844,14 +3844,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -4007,7 +4007,7 @@
               "reachable": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 4,
@@ -4056,14 +4056,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -4268,14 +4268,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -4320,7 +4320,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -4357,7 +4357,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -4394,7 +4394,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -4431,7 +4431,7 @@
               "reachable": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 3,
@@ -4480,14 +4480,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -4696,14 +4696,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -4908,14 +4908,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -5120,14 +5120,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -5384,14 +5384,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -5628,14 +5628,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -5868,14 +5868,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -5920,7 +5920,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -6031,7 +6031,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -6104,14 +6104,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -6156,7 +6156,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -6267,7 +6267,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -6344,14 +6344,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -6510,7 +6510,7 @@
                 "note": ""
               },
               "context": {
-                "value": 8,
+                "value": 9,
                 "suffix": "/ 9",
                 "note": "Структура и типы — не доказательство вызова"
               }
@@ -6588,14 +6588,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -6852,14 +6852,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -7096,14 +7096,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -7336,14 +7336,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -7388,7 +7388,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -7499,7 +7499,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -7572,14 +7572,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -7624,7 +7624,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -7735,7 +7735,7 @@
               "reachable": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 9,
@@ -7812,14 +7812,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -8056,14 +8056,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -8284,14 +8284,14 @@
           },
           {
             "key": "relations",
-            "label": "Конкретные call/ref",
+            "label": "Точные цели call/ref",
             "precision": 0,
             "direction": "higher"
           },
           {
             "key": "score",
             "label": "Оценка связей / 10",
-            "precision": 1,
+            "precision": 2,
             "direction": "higher"
           },
           {
@@ -8303,18 +8303,6 @@
           {
             "key": "context",
             "label": "Цель через любые связи",
-            "precision": 0,
-            "direction": "higher"
-          },
-          {
-            "key": "contracts",
-            "label": "Типовые цели",
-            "precision": 0,
-            "direction": "higher"
-          },
-          {
-            "key": "heritage",
-            "label": "Наследование",
             "precision": 0,
             "direction": "higher"
           }
@@ -8354,16 +8342,6 @@
                 "value": 17,
                 "suffix": "/ 17",
                 "note": "Структура и типы — не доказательство вызова"
-              },
-              "contracts": {
-                "value": 17,
-                "suffix": "/ 17",
-                "note": "Лишних 0 · пропущено 0"
-              },
-              "heritage": {
-                "value": 5,
-                "suffix": "/ 5",
-                "note": "Лишних 0 · пропущено 0"
               }
             }
           },
@@ -8395,22 +8373,12 @@
               "reachable": {
                 "value": 16,
                 "suffix": "/ 17",
-                "note": ""
+                "note": "В несколько переходов: 1"
               },
               "context": {
                 "value": 16,
                 "suffix": "/ 17",
                 "note": "Структура и типы — не доказательство вызова"
-              },
-              "contracts": {
-                "value": 0,
-                "suffix": "/ 17",
-                "note": "Лишних 15 · пропущено 17"
-              },
-              "heritage": {
-                "value": 0,
-                "suffix": "/ 5",
-                "note": "Лишних 0 · пропущено 5"
               }
             }
           },
@@ -8448,16 +8416,6 @@
                 "value": 17,
                 "suffix": "/ 17",
                 "note": "Структура и типы — не доказательство вызова"
-              },
-              "contracts": {
-                "value": 1,
-                "suffix": "/ 17",
-                "note": "Лишних 0 · пропущено 16"
-              },
-              "heritage": {
-                "value": 5,
-                "suffix": "/ 5",
-                "note": "Лишних 0 · пропущено 0"
               }
             }
           },
@@ -8495,16 +8453,210 @@
                 "value": 16,
                 "suffix": "/ 17",
                 "note": "Структура и типы — не доказательство вызова"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "38-properties-nested-this-ts",
+      "title": "Поля объектов и вложенные области this",
+      "language": "TypeScript",
+      "group": "Поля и вложенный this",
+      "description": "Один объединённый пример: обычные поля объектов и классов, вложенные стрелки и классы, static и object-method this, а также ссылки на поля именованных типов и интерфейсов. Цели различаются по файлу, имени и строке объявления. Ссылка на типовой контракт не означает вызов его реализации.",
+      "files": [
+        {
+          "path": "38-properties-nested-this-ts/entry.ts",
+          "code": "export interface State {\n  nested: { value: number };\n}\n\nexport type Other = { nested: { value: number } };\n\nexport const plain = { nested: { value: 1 } };\nexport const decoy = { nested: { value: 2 } };\n\nexport class Box {\n  options = { nested: { value: 3 } };\n  static options = { nested: { value: 4 } };\n\n  read() {\n    const first = () => {\n      const second = () => this.options.nested.value;\n\n      return second();\n    };\n\n    const holder = {\n      options: { nested: { value: 5 } },\n      method() {\n        return this.options.nested.value;\n      },\n      arrow: () => this.options.nested.value,\n    };\n\n    class Box {\n      options = { nested: { value: 6 } };\n\n      read() {\n        return this.options.nested.value;\n      }\n    }\n\n    const inner = new Box();\n\n    return (\n      first() +\n      holder.method() +\n      holder.arrow() +\n      inner.read() +\n      this.options.nested.value +\n      plain.nested.value +\n      decoy.nested.value\n    );\n  }\n\n  static read() {\n    const step = () => this.options.nested.value;\n\n    return step();\n  }\n}\n\nexport function readState(this: State) {\n  const first = () => {\n    const second = () => this.nested.value;\n\n    this.nested.value = second();\n\n    return this.nested.value;\n  };\n\n  return first();\n}\n\nexport function readOther(this: Other) {\n  return this.nested.value;\n}\n"
+        }
+      ],
+      "table": {
+        "caption": "Поля объектов и вложенные области this",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": "Полнота 100,0%"
               },
-              "contracts": {
-                "value": 17,
-                "suffix": "/ 17",
-                "note": "Лишних 2 · пропущено 0"
+              "dependencies": {
+                "value": 0,
+                "suffix": "/ 0",
+                "note": "Лишних 0"
               },
-              "heritage": {
-                "value": 5,
-                "suffix": "/ 5",
+              "relations": {
+                "value": 40,
+                "suffix": "/ 40",
                 "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": ""
+              },
+              "context": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": "Структура и типы — не доказательство вызова"
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 15,
+                "suffix": "/ 40",
+                "note": "Полнота 37,5%"
+              },
+              "dependencies": {
+                "value": 0,
+                "suffix": "/ 0",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 0,
+                "suffix": "/ 40",
+                "note": "Лишних 1 · пропущено 40"
+              },
+              "score": {
+                "value": 0.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 0,
+                "suffix": "/ 40",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 40",
+                "note": "Структура и типы — не доказательство вызова"
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 8,
+                "suffix": "/ 40",
+                "note": "Полнота 20,0%"
+              },
+              "dependencies": {
+                "value": 0,
+                "suffix": "/ 0",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 0,
+                "suffix": "/ 40",
+                "note": "Лишних 1 · пропущено 40"
+              },
+              "score": {
+                "value": 0.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 0,
+                "suffix": "/ 40",
+                "note": ""
+              },
+              "context": {
+                "value": 0,
+                "suffix": "/ 40",
+                "note": "Структура и типы — не доказательство вызова"
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": "Полнота 100,0% · вне эталона 2"
+              },
+              "dependencies": {
+                "value": 0,
+                "suffix": "/ 0",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": "Лишних 4 · пропущено 0"
+              },
+              "score": {
+                "value": 9.523809523809524,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": ""
+              },
+              "context": {
+                "value": 40,
+                "suffix": "/ 40",
+                "note": "Структура и типы — не доказательство вызова"
               }
             }
           }
