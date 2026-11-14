@@ -1,0 +1,1 @@
+import{_ as a,o as i,c as e,a2 as t}from"./chunks/framework.BFIoSwgX.js";const k=JSON.parse('{"title":"Подключение MCP","description":"","frontmatter":{},"headers":[],"relativePath":"mcp.md","filePath":"mcp.md"}'),o={name:"mcp.md"};function l(p,s,n,d,c,h){return i(),e("div",null,[...s[0]||(s[0]=[t("",37)])])}const g=a(o,[["render",l]]);export{k as __pageData,g as default};
