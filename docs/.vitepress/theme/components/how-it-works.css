@@ -1,0 +1,405 @@
+.st-how-page .st-how-nav {
+  margin: 24px 0 32px;
+  padding: 12px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-alt);
+}
+
+.st-how-page .st-how-nav p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.st-how-page .st-how-diagram {
+  container-type: inline-size;
+  margin: 24px 0;
+}
+
+.st-how-page .st-how-diagram figcaption {
+  margin-top: 12px;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.st-how-page .st-how-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-how-page .st-how-flow-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.st-how-page .st-how-step {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-alt);
+}
+
+.st-how-page .st-how-step:not(:last-child)::after {
+  position: absolute;
+  top: 25px;
+  right: -11px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid var(--vp-c-text-3);
+  border-right: 1px solid var(--vp-c-text-3);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.st-how-page .st-how-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 50%;
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.st-how-page .st-how-step strong,
+.st-how-page .st-how-node strong,
+.st-how-page .st-how-benefit strong {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.st-how-page .st-how-step p,
+.st-how-page .st-how-benefit p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.st-how-page .st-how-step-accent,
+.st-how-page .st-how-result {
+  border-color: var(--st-nav-active-border);
+  background: var(--vp-c-brand-soft);
+}
+
+.st-how-page .st-how-step-accent .st-how-number {
+  border-color: var(--st-nav-active-border);
+  color: var(--vp-c-brand-1);
+}
+
+.st-how-page .st-how-panel {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-alt);
+}
+
+.st-how-page .st-how-store {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18px minmax(0, 1.1fr) 18px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.st-how-page .st-how-stack {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.st-how-page .st-how-node,
+.st-how-page .st-how-benefit {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+.st-how-page .st-how-node > span,
+.st-how-page .st-how-node > code {
+  display: block;
+  margin-top: 4px;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.st-how-page .st-how-arrow {
+  color: var(--vp-c-text-3);
+  font-size: 23px;
+  text-align: center;
+}
+
+.st-how-page .st-how-database {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 14px;
+  border: 1px solid var(--st-nav-active-border);
+  border-radius: 8px;
+  background: var(--vp-c-brand-soft);
+  text-align: center;
+}
+
+.st-how-page .st-how-database svg {
+  width: 60px;
+  height: 54px;
+  color: var(--vp-c-brand-1);
+}
+
+.st-how-page .st-how-database > strong {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.st-how-page .st-how-database > span {
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+}
+
+.st-how-page .st-how-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.st-how-page .st-how-tags span {
+  padding: 2px 7px;
+  border: 1px solid var(--st-nav-active-border);
+  border-radius: 4px;
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+}
+
+.st-how-page .st-how-branch {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) 18px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+
+.st-how-page .st-how-file-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 12px;
+  padding: 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+}
+
+.st-how-page .st-how-file-row > code {
+  grid-row: span 2;
+  align-self: start;
+}
+
+.st-how-page .st-how-file-row > span {
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+}
+
+.st-how-page .st-how-file-row > strong {
+  font-size: 13px;
+}
+
+.st-how-page .st-how-result {
+  padding: 18px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+}
+
+.st-how-page .st-how-result p {
+  margin: 6px 0 14px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.st-how-page .st-how-result-tail {
+  display: block;
+  padding-top: 12px;
+  border-top: 1px solid var(--st-nav-active-border);
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+}
+
+.st-how-page .st-how-loop {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-left: 2px solid var(--vp-c-brand-1);
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.st-how-page .st-how-loop > span {
+  margin-right: 6px;
+  color: var(--vp-c-brand-1);
+}
+
+.st-how-page .st-how-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+}
+
+.st-how-page .st-how-card-preview {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-alt);
+}
+
+.st-how-page .st-how-card-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+}
+
+.st-how-page .st-how-card-title > span {
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+}
+
+.st-how-page .st-how-card-body {
+  padding: 16px;
+}
+
+.st-how-page .st-how-card-line,
+.st-how-page .st-how-coverage-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+}
+
+.st-how-page .st-how-card-line + .st-how-card-line {
+  margin-top: 10px;
+}
+
+.st-how-page .st-how-code {
+  margin: 16px 0;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  line-height: 1.8;
+}
+
+.st-how-page .st-how-code code {
+  padding: 0;
+  background: transparent;
+  color: var(--vp-c-text-1);
+  font-size: 12px;
+}
+
+.st-how-page .st-how-panel h3 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+.st-how-page .st-how-panel p {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.st-how-page .st-how-mini-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+}
+
+.st-how-page .st-how-coverage-row {
+  padding: 10px 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+}
+
+.st-how-page .st-how-coverage-row + .st-how-coverage-row {
+  margin-top: 8px;
+}
+
+.st-how-page .st-how-coverage-new {
+  border-color: var(--st-nav-active-border);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+@container (max-width: 680px) {
+  .st-how-page .st-how-flow,
+  .st-how-page .st-how-store,
+  .st-how-page .st-how-branch {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .st-how-page .st-how-step {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 4px 12px;
+  }
+
+  .st-how-page .st-how-number {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .st-how-page .st-how-step p {
+    margin: 0;
+  }
+
+  .st-how-page .st-how-step:not(:last-child)::after {
+    top: auto;
+    right: auto;
+    bottom: -11px;
+    left: 23px;
+    transform: rotate(135deg);
+  }
+
+  .st-how-page .st-how-store > .st-how-arrow,
+  .st-how-page .st-how-branch > .st-how-arrow {
+    line-height: 1;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .st-how-page .st-how-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .st-how-page .st-how-panel {
+    padding: 16px;
+  }
+}

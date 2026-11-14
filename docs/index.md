@@ -1,4 +1,8 @@
-# SymbolTrail: Граф знаний о вашем коде для ИИ-агентов
+---
+aside: false
+---
+
+# SymbolTrail: граф кода для ИИ-агентов
 
 **SymbolTrail** — это локальный инструмент, который превращает JavaScript- и TypeScript-проекты в подробную карту (граф знаний). Он связывает функции, типы и зависимости воедино, причем работает это даже в рамках множества репозиториев.
 
@@ -7,6 +11,52 @@
 Всё работает локально, данные не уходят на сторону. При этом вы можете исследовать тот же граф вручную через [CLI](/tools) или [веб-интерфейс](/local-ui).
 
 > 🏆 **Результативность:** В [сравнительном тесте](/benchmarks/investigations) из 10 реальных задач исследования кода SymbolTrail занял **первое место**, обойдя CodeGraph и Graphify со средней оценкой ответов ИИ-агентов **9,42 из 10**.
+
+<section class="st-home-features" aria-label="Преимущества SymbolTrail">
+  <article class="st-home-feature">
+    <span class="st-home-feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <rect x="3" y="3" width="6" height="6" rx="1.5" />
+        <rect x="15" y="3" width="6" height="6" rx="1.5" />
+        <rect x="9" y="15" width="6" height="6" rx="1.5" />
+        <path d="M6 9v3h12V9M12 12v3" />
+      </svg>
+    </span>
+    <h2>Кроссрепо</h2>
+    <p>Фронтенд, бэкенд и общие библиотеки в одном индексе. Агент видит связи и потребителей кода за границами отдельного репозитория.</p>
+  </article>
+  <article class="st-home-feature">
+    <span class="st-home-feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <path d="M20 7v5h-5M4 17v-5h5" />
+        <path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17" />
+      </svg>
+    </span>
+    <h2>Быстрое обновление</h2>
+    <p>Инкрементальная сборка использует хеши и кэш, чтобы обновлять изменившиеся части. Режим <b>watch</b> поддерживает граф актуальным, пока вы работаете с кодом.</p>
+  </article>
+  <article class="st-home-feature">
+    <span class="st-home-feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <circle cx="12" cy="12" r="8" />
+        <path d="m8.5 12 2.5 2.5 4.5-5" />
+      </svg>
+    </span>
+    <h2>Высокая точность индекса</h2>
+    <p>Связывает любые вызовы с определениями и различает одноимённые символы в разных файлах и репозиториях.</p>
+  </article>
+  <article class="st-home-feature st-home-feature-tokens">
+    <span class="st-home-feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <path d="m4 6 8-4 8 4-8 4-8-4ZM4 12l8 4 8-4M4 18l8 4 8-4" />
+      </svg>
+    </span>
+    <h2>На 30% меньше токенов</h2>
+    <p>Экономия по сравнению с работой без MCP. Компактные карточки связей и фрагменты исходников оставляют больше контекста для самой задачи.</p>
+  </article>
+</section>
+
+### Как это работает на практике? (На примере React)
 
 <figure class="st-figure">
   <img src="/code-graph.svg" alt="Связи из индекса React-примера: App вызывает Counter через JSX, Counter вызывает useState и читает increment в onClick, а increment вызывает привязку setCount." width="760" height="390" />
@@ -36,8 +86,6 @@
 Обычные чтения `count` на схеме опущены. Схема показывает основные связи, а не полный граф всех фактов.
 
 </details>
-
-### Как это работает на практике? (На примере React)
 
 Представьте простой счетчик на React из двух файлов. Когда SymbolTrail индексирует их, он видит не просто текст, а логику:
 

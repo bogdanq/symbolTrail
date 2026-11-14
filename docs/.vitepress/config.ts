@@ -88,7 +88,10 @@ export default defineConfig({
       },
       {
         text: "Помощь",
-        items: [{ text: "Решение проблем", link: "/troubleshooting" }],
+        items: [
+          { text: "Как это работает", link: "/how-it-works" },
+          { text: "Решение проблем", link: "/troubleshooting" },
+        ],
       },
     ],
     outline: { label: "На этой странице", level: [2, 3] },
