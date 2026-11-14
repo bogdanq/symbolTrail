@@ -1,12 +1,5 @@
 export type ScenarioTool =
-  | "map"
-  | "find"
-  | "callers"
-  | "callees"
-  | "review"
-  | "shape"
-  | "dead"
-  | "cycles";
+  "map" | "find" | "callers" | "callees" | "review" | "dead" | "cycles";
 
 export type ScenarioStep = {
   title: string;
@@ -90,7 +83,6 @@ export const scenarioFlows = {
         title: "Найти контракт и связи",
         tools: ["find", "callers", "callees"],
       },
-      { title: "Изучить формы вызовов", tools: ["shape"] },
       { title: "Проверить аргументы и ошибки", context: "Чтение исходников" },
       { title: "Описать новый контракт", context: "Спецификация агента" },
     ],
@@ -123,7 +115,7 @@ export const scenarioFlows = {
       { title: "Найти границы области", tools: ["map", "find"] },
       {
         title: "Изучить зависимости и API",
-        tools: ["callers", "callees", "shape"],
+        tools: ["callers", "callees"],
       },
       {
         title: "Проверить похожие решения",
