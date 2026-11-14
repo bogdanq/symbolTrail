@@ -12,18 +12,18 @@
 
 > 💡 **Обозначения в командах:**
 >
-> - `/path/to/symboltrail-source` — каталог с исходниками самого инструмента SymbolTrail
-> - `/path/to/project` — проект, который вы хотите исследовать
+> - `path/to/symboltrail-source` — каталог с исходниками самого инструмента SymbolTrail
+> - `path/to/project` — проект, который вы хотите исследовать
 
 ## 1️⃣ Установите зависимости
 
 Откройте терминал в исходном репозитории SymbolTrail и выполните:
 
 ```sh
-cd /path/to/symboltrail-source
+cd path/to/symboltrail-source
 npm install
 
-cd /web/ui
+cd web/ui
 npm install
 ```
 

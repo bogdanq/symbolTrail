@@ -130,7 +130,7 @@ npm run filegraph -- --blame
 Вы можете объединить несколько проектов в один индекс одним запуском:
 
 ```sh
-npm run filegraph -- /path/to/project-a /path/to/project-b
+npm run filegraph -- path/to/project-a path/to/project-b
 ```
 
 - Проекты попадут в один общий индекс.
@@ -158,7 +158,7 @@ npm run filegraph -- /path/to/project-a /path/to/project-b
       "roots": [
         {
           "name": "frontend",
-          "path": "/path/to/frontend",
+          "path": "path/to/frontend",
           "alias": "app",
           "sourceRoot": "src",
           "exposes": {
@@ -169,13 +169,13 @@ npm run filegraph -- /path/to/project-a /path/to/project-b
         },
         {
           "name": "backend",
-          "path": "/path/to/backend",
+          "path": "path/to/backend",
           "alias": "core",
           "sourceRoot": "src"
         },
         {
           "name": "shared",
-          "path": "/path/to/shared",
+          "path": "path/to/shared",
           "alias": "ui-kit",
           "sourceRoot": "src"
         }
@@ -186,11 +186,11 @@ npm run filegraph -- /path/to/project-a /path/to/project-b
       "roots": [
         {
           "name": "cli",
-          "path": "/path/to/cli"
+          "path": "path/to/cli"
         },
         {
           "name": "sdk",
-          "path": "/path/to/sdk"
+          "path": "path/to/sdk"
         }
       ]
     }
@@ -215,7 +215,7 @@ npm run filegraph -- /path/to/project-a /path/to/project-b
 Если каталог индексов отсутствует, `FILEGRAPH_ROOT` задаёт один путь к проекту. Без этой переменной используется текущая папка. Относительные пути считаются от рабочей папки; явные аргументы-пути и `FILEGRAPH_ROOTS` имеют приоритет.
 
 ```sh
-FILEGRAPH_ROOTS="/path/to/project-a:/path/to/project-b" npm run filegraph
+FILEGRAPH_ROOTS="path/to/project-a:path/to/project-b" npm run filegraph
 ```
 
 **Пример использования (macOS/Linux):**
@@ -238,7 +238,7 @@ FILEGRAPH_SET=cli npm run mcp:cli -- 'cycles({ queries: [{}] })'
 | `name`       | Уникальное имя участника индекса. Используется в параметре `repo` для MCP и в полях `origin.repo`. Если не задано, берется имя папки из `path`.                                |
 | `alias`      | Префикс импорта. Например, библиотека с `name: "shared"` может быть доступна как `ui-kit`. Заменяет автоматические префиксы (имя пакета, Microfrontend name).                  |
 | `sourceRoot` | Папка с исходниками относительно `path` (необязательно). Позволяет мапить импорт `ui-kit/foo` в файл `src/foo.ts`. Если модуль не найден тут, поиск идет от корня репозитория. |
-| `exposes`    | Ручная карта публичных модулей микрофронта: ключ — путь импорта без префикса, значение — путь к исходнику относительно `path`. Заменяет автоматическую карту из Rspack. |
+| `exposes`    | Ручная карта публичных модулей микрофронта: ключ — путь импорта без префикса, значение — путь к исходнику относительно `path`. Заменяет автоматическую карту из Rspack.        |
 
 > 💡 **Важно:** `alias` меняет способ импорта, но не меняет внутреннее `name`. Для вызова функции из библиотеки `ui-kit` (где `name: "shared"`), поле `origin.repo` будет равно `shared`.
 

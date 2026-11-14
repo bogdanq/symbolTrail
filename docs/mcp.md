@@ -16,7 +16,7 @@ MCP-сервер SymbolTrail предоставляет **7 инструмент
 Самый простой способ интеграции, из корня репозитория SymbolTrail выполните:
 
 ```sh
-npm run setup -- --project /path/to/project --agent cursor
+npm run setup -- --project path/to/project --agent cursor
 ```
 
 **Что сделает установщик:**
@@ -43,7 +43,7 @@ npm run setup -- --project /path/to/project --agent cursor
 Установщик поддерживает `cursor`, `codex` и `gigacode`. Чтобы настроить несколько клиентов сразу, перечислите их через запятую:
 
 ```sh
-npm run setup -- --project /path/to/project --agent cursor,codex,gigacode
+npm run setup -- --project path/to/project --agent cursor,codex,gigacode
 ```
 
 Конфигурация сохраняется в стандартные файлы проекта:
@@ -77,10 +77,10 @@ npm run mcp
       "command": "node",
       "args": [
         "--import",
-        "file:///path/to/symboltrail-source/node_modules/tsx/dist/loader.mjs",
-        "/path/to/symboltrail-source/src/mcp-graph/index.ts"
+        "file://path/to/symboltrail-source/node_modules/tsx/dist/loader.mjs",
+        "path/to/symboltrail-source/src/mcp-graph/index.ts"
       ],
-      "cwd": "/path/to/symboltrail-source"
+      "cwd": "path/to/symboltrail-source"
     }
   }
 }

@@ -29,11 +29,11 @@ import { withBase } from "vitepress";
 
 > 💡 **Обозначения в путях:**
 >
-> - `/path/to/symboltrail-source` — путь к исходникам SymbolTrail.
-> - `/path/to/project` — путь к исследуемому проекту.
+> - `path/to/symboltrail-source` — путь к исходникам SymbolTrail.
+> - `path/to/project` — путь к исследуемому проекту.
 
 ```sh
-cd /path/to/symboltrail-source
+cd path/to/symboltrail-source
 npm install
 npm --prefix web/ui install
 npm run filegraph
