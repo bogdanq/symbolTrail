@@ -34,8 +34,8 @@ import { withBase } from "vitepress";
 
 ```sh
 cd path/to/symboltrail-source
-npm install
-npm --prefix web/ui install
+npm install:all
+
 npm run filegraph
 npm run ui
 ```

@@ -21,10 +21,7 @@
 
 ```sh
 cd path/to/symboltrail-source
-npm install
-
-cd web/ui
-npm install
+npm install:all
 ```
 
 Все последующие команды выполняются из этого же каталога.

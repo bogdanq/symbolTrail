@@ -3,7 +3,7 @@
 Самостоятельный сайт на VitePress 1.6.4. Нужны Node.js 20.19+ и npm.
 
 ```sh
-npm install
+npm install:all
 npm run docs:dev
 ```
 
