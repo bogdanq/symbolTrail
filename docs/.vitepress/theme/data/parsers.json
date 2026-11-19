@@ -1,6 +1,6 @@
 {
   "table": {
-    "caption": "Общие результаты · 38 примеров",
+    "caption": "Общие результаты · 44 примера",
     "columns": [
       {
         "key": "declarations",
@@ -43,37 +43,37 @@
       {
         "id": "graph",
         "label": "SymbolTrail",
-        "note": "Рабочая версия · повторная проверка 05.11.2026",
+        "note": "Рабочая версия",
         "cells": {
           "declarations": {
-            "value": 364,
-            "suffix": "/ 364",
+            "value": 438,
+            "suffix": "/ 438",
             "note": "Полнота 100,0%"
           },
           "dependencies": {
-            "value": 184,
-            "suffix": "/ 184",
+            "value": 210,
+            "suffix": "/ 210",
             "note": "Лишних 0"
           },
           "relations": {
-            "value": 222,
-            "suffix": "/ 229",
-            "note": "Лишних 0 · пропущено 7"
+            "value": 272,
+            "suffix": "/ 281",
+            "note": "Лишних 0 · пропущено 9"
           },
           "score": {
-            "value": 9.84478935698448,
+            "value": 9.837251356238697,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 228,
-            "suffix": "/ 229",
-            "note": "В несколько переходов: 6"
+            "value": 280,
+            "suffix": "/ 281",
+            "note": "В несколько переходов: 8"
           },
           "context": {
-            "value": 229,
-            "suffix": "/ 229",
-            "note": "Структура и типы — не доказательство вызова"
+            "value": 281,
+            "suffix": "/ 281",
+            "note": ""
           }
         }
       },
@@ -83,34 +83,34 @@
         "note": "1.6.0",
         "cells": {
           "declarations": {
-            "value": 325,
-            "suffix": "/ 364",
-            "note": "Полнота 89,3%"
+            "value": 399,
+            "suffix": "/ 438",
+            "note": "Полнота 91,1%"
           },
           "dependencies": {
-            "value": 168,
-            "suffix": "/ 184",
-            "note": "Лишних 8"
+            "value": 180,
+            "suffix": "/ 210",
+            "note": "Лишних 10"
           },
           "relations": {
-            "value": 157,
-            "suffix": "/ 229",
-            "note": "Лишних 38 · пропущено 72"
+            "value": 189,
+            "suffix": "/ 281",
+            "note": "Лишних 46 · пропущено 92"
           },
           "score": {
-            "value": 7.40566037735849,
+            "value": 7.325581395348837,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 162,
-            "suffix": "/ 229",
+            "value": 194,
+            "suffix": "/ 281",
             "note": "В несколько переходов: 5"
           },
           "context": {
-            "value": 174,
-            "suffix": "/ 229",
-            "note": "Структура и типы — не доказательство вызова"
+            "value": 218,
+            "suffix": "/ 281",
+            "note": ""
           }
         }
       },
@@ -120,34 +120,34 @@
         "note": "0.9.93 · локальный AST",
         "cells": {
           "declarations": {
-            "value": 325,
-            "suffix": "/ 364",
-            "note": "Полнота 89,3%"
+            "value": 399,
+            "suffix": "/ 438",
+            "note": "Полнота 91,1%"
           },
           "dependencies": {
-            "value": 184,
-            "suffix": "/ 184",
-            "note": "Лишних 10"
+            "value": 210,
+            "suffix": "/ 210",
+            "note": "Лишних 14"
           },
           "relations": {
-            "value": 147,
-            "suffix": "/ 229",
-            "note": "Лишних 9 · пропущено 82"
+            "value": 171,
+            "suffix": "/ 281",
+            "note": "Лишних 9 · пропущено 110"
           },
           "score": {
-            "value": 7.636363636363637,
+            "value": 7.418655097613883,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 149,
-            "suffix": "/ 229",
+            "value": 173,
+            "suffix": "/ 281",
             "note": "В несколько переходов: 2"
           },
           "context": {
-            "value": 165,
-            "suffix": "/ 229",
-            "note": "Структура и типы — не доказательство вызова"
+            "value": 207,
+            "suffix": "/ 281",
+            "note": ""
           }
         }
       },
@@ -157,34 +157,71 @@
         "note": "scip-typescript 0.4.0",
         "cells": {
           "declarations": {
-            "value": 364,
-            "suffix": "/ 364",
+            "value": 438,
+            "suffix": "/ 438",
             "note": "Полнота 100,0% · вне эталона 2"
           },
           "dependencies": {
-            "value": 184,
-            "suffix": "/ 184",
+            "value": 210,
+            "suffix": "/ 210",
             "note": "Лишних 0"
           },
           "relations": {
-            "value": 219,
-            "suffix": "/ 229",
-            "note": "Лишних 4 · пропущено 10"
+            "value": 261,
+            "suffix": "/ 281",
+            "note": "Лишних 4 · пропущено 20"
           },
           "score": {
-            "value": 9.690265486725663,
+            "value": 9.56043956043956,
             "suffix": "/ 10",
             "note": ""
           },
           "reachable": {
-            "value": 227,
-            "suffix": "/ 229",
+            "value": 269,
+            "suffix": "/ 281",
             "note": "В несколько переходов: 8"
           },
           "context": {
-            "value": 228,
-            "suffix": "/ 229",
-            "note": "Структура и типы — не доказательство вызова"
+            "value": 270,
+            "suffix": "/ 281",
+            "note": ""
+          }
+        }
+      },
+      {
+        "id": "gitnexus",
+        "label": "GitNexus",
+        "note": "1.6.12 · локальная индексация",
+        "cells": {
+          "declarations": {
+            "value": 418,
+            "suffix": "/ 438",
+            "note": "Полнота 95,4%"
+          },
+          "dependencies": {
+            "value": 210,
+            "suffix": "/ 210",
+            "note": "Лишних 0"
+          },
+          "relations": {
+            "value": 199,
+            "suffix": "/ 281",
+            "note": "Лишних 12 · пропущено 82"
+          },
+          "score": {
+            "value": 8.089430894308943,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "reachable": {
+            "value": 206,
+            "suffix": "/ 281",
+            "note": "В несколько переходов: 7"
+          },
+          "context": {
+            "value": 231,
+            "suffix": "/ 281",
+            "note": ""
           }
         }
       }
@@ -285,7 +322,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -322,7 +359,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -359,7 +396,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -396,7 +433,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -501,7 +575,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -538,7 +612,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -575,7 +649,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -612,7 +686,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -713,7 +824,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -750,7 +861,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -787,7 +898,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -824,7 +935,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -925,7 +1073,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -962,7 +1110,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -999,7 +1147,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1036,7 +1184,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -1137,7 +1322,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1174,7 +1359,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1211,7 +1396,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1248,7 +1433,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 5,
+                "suffix": "/ 5",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -1349,7 +1571,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1386,7 +1608,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1423,7 +1645,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1460,7 +1682,44 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 8.571428571428571,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": ""
               }
             }
           }
@@ -1561,7 +1820,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1598,7 +1857,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1635,7 +1894,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1672,7 +1931,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": "Лишних 1 · пропущено 1"
+              },
+              "score": {
+                "value": 5.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -1773,7 +2069,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1810,7 +2106,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1847,7 +2143,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -1884,7 +2180,44 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 3",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": ""
               }
             }
           }
@@ -1985,7 +2318,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2022,7 +2355,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2059,7 +2392,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2096,7 +2429,44 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 5,
+                "suffix": "/ 5",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": "Лишних 1 · пропущено 1"
+              },
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": ""
               }
             }
           }
@@ -2201,7 +2571,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2238,7 +2608,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2275,7 +2645,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2312,7 +2682,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -2413,7 +2820,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2450,7 +2857,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2487,7 +2894,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2524,7 +2931,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 6.666666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -2625,7 +3069,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2662,7 +3106,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2699,7 +3143,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2736,7 +3180,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -2837,7 +3318,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2874,7 +3355,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2911,7 +3392,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -2948,7 +3429,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -3053,7 +3571,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3090,7 +3608,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3127,7 +3645,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3164,7 +3682,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -3265,7 +3820,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3302,7 +3857,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3339,7 +3894,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3376,7 +3931,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -3477,7 +4069,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3514,7 +4106,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3551,7 +4143,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3588,7 +4180,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -3689,7 +4318,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3726,7 +4355,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3763,7 +4392,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3800,7 +4429,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 5,
+                "suffix": "/ 5",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -3901,7 +4567,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3938,7 +4604,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -3975,7 +4641,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4012,7 +4678,44 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 8.571428571428571,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": ""
               }
             }
           }
@@ -4113,7 +4816,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4150,7 +4853,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4187,7 +4890,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4224,7 +4927,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": "Лишних 1 · пропущено 1"
+              },
+              "score": {
+                "value": 5.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -4325,7 +5065,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4362,7 +5102,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4399,7 +5139,7 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4436,7 +5176,44 @@
               "context": {
                 "value": 3,
                 "suffix": "/ 3",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 2,
+                "suffix": "/ 3",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": ""
               }
             }
           }
@@ -4537,7 +5314,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4574,7 +5351,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4611,7 +5388,7 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4648,7 +5425,44 @@
               "context": {
                 "value": 4,
                 "suffix": "/ 4",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 5,
+                "suffix": "/ 5",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": "Лишних 1 · пропущено 1"
+              },
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 4",
+                "note": ""
               }
             }
           }
@@ -4753,7 +5567,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4790,7 +5604,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4827,7 +5641,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -4864,7 +5678,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 4,
+                "suffix": "/ 4",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -4965,7 +5816,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5002,7 +5853,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5039,7 +5890,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5076,7 +5927,44 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 2",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 2",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 6.666666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 2",
+                "note": ""
               }
             }
           }
@@ -5177,7 +6065,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5214,7 +6102,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5251,7 +6139,7 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5288,7 +6176,44 @@
               "context": {
                 "value": 1,
                 "suffix": "/ 1",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
+              },
+              "context": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": ""
               }
             }
           }
@@ -5441,7 +6366,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5478,7 +6403,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5515,7 +6440,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5552,7 +6477,44 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": ""
+              },
+              "context": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": ""
               }
             }
           }
@@ -5685,7 +6647,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5722,7 +6684,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5759,7 +6721,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5796,7 +6758,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 17,
+                "suffix": "/ 17",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -5925,7 +6924,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5962,7 +6961,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -5999,7 +6998,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6036,7 +7035,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": "Лишних 1 · пропущено 3"
+              },
+              "score": {
+                "value": 7.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -6161,7 +7197,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6198,7 +7234,7 @@
               "context": {
                 "value": 8,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6235,7 +7271,7 @@
               "context": {
                 "value": 8,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6272,7 +7308,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 14,
+                "suffix": "/ 14",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 6,
+                "suffix": "/ 6",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -6401,7 +7474,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6438,7 +7511,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6475,7 +7548,7 @@
               "context": {
                 "value": 6,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6512,7 +7585,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 16,
+                "suffix": "/ 16",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -6645,7 +7755,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6682,7 +7792,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6719,7 +7829,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6756,7 +7866,44 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": ""
+              },
+              "context": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": ""
               }
             }
           }
@@ -6909,7 +8056,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6946,7 +8093,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -6983,7 +8130,7 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7020,7 +8167,44 @@
               "context": {
                 "value": 13,
                 "suffix": "/ 13",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": ""
+              },
+              "context": {
+                "value": 13,
+                "suffix": "/ 13",
+                "note": ""
               }
             }
           }
@@ -7153,7 +8337,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7190,7 +8374,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7227,7 +8411,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7264,7 +8448,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 17,
+                "suffix": "/ 17",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -7393,7 +8614,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7430,7 +8651,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7467,7 +8688,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7504,7 +8725,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 15,
+                "suffix": "/ 15",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -7629,7 +8887,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7666,7 +8924,7 @@
               "context": {
                 "value": 8,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7703,7 +8961,7 @@
               "context": {
                 "value": 8,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7740,7 +8998,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 14,
+                "suffix": "/ 14",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 7,
+                "suffix": "/ 7",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 8,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 9.411764705882353,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -7869,7 +9164,7 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7906,7 +9201,7 @@
               "context": {
                 "value": 7,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7943,7 +9238,7 @@
               "context": {
                 "value": 6,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -7980,7 +9275,44 @@
               "context": {
                 "value": 9,
                 "suffix": "/ 9",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 16,
+                "suffix": "/ 16",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
+              },
+              "context": {
+                "value": 6,
+                "suffix": "/ 9",
+                "note": ""
               }
             }
           }
@@ -8113,7 +9445,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8150,7 +9482,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8187,7 +9519,7 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8224,7 +9556,44 @@
               "context": {
                 "value": 11,
                 "suffix": "/ 11",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": ""
+              },
+              "context": {
+                "value": 11,
+                "suffix": "/ 11",
+                "note": ""
               }
             }
           }
@@ -8341,7 +9710,7 @@
               "context": {
                 "value": 17,
                 "suffix": "/ 17",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8378,7 +9747,7 @@
               "context": {
                 "value": 16,
                 "suffix": "/ 17",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8415,7 +9784,7 @@
               "context": {
                 "value": 17,
                 "suffix": "/ 17",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8452,7 +9821,44 @@
               "context": {
                 "value": 16,
                 "suffix": "/ 17",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 47,
+                "suffix": "/ 48",
+                "note": "Полнота 97,9%"
+              },
+              "dependencies": {
+                "value": 12,
+                "suffix": "/ 12",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 17,
+                "suffix": "/ 17",
+                "note": "Лишних 4 · пропущено 0"
+              },
+              "score": {
+                "value": 8.947368421052632,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 17,
+                "suffix": "/ 17",
+                "note": ""
+              },
+              "context": {
+                "value": 17,
+                "suffix": "/ 17",
+                "note": ""
               }
             }
           }
@@ -8545,7 +9951,7 @@
               "context": {
                 "value": 40,
                 "suffix": "/ 40",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8582,7 +9988,7 @@
               "context": {
                 "value": 2,
                 "suffix": "/ 40",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8619,7 +10025,7 @@
               "context": {
                 "value": 0,
                 "suffix": "/ 40",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
               }
             }
           },
@@ -8656,7 +10062,1594 @@
               "context": {
                 "value": 40,
                 "suffix": "/ 40",
-                "note": "Структура и типы — не доказательство вызова"
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 21,
+                "suffix": "/ 40",
+                "note": "Полнота 52,5%"
+              },
+              "dependencies": {
+                "value": 0,
+                "suffix": "/ 0",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 40",
+                "note": "Лишних 2 · пропущено 34"
+              },
+              "score": {
+                "value": 2.5,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 40",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 40",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "39-reexport-twins-js",
+      "title": "Цепочки реэкспортов с одноимёнными целями",
+      "language": "JavaScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Две ветки по четыре реэкспорта. В каждой сочетаются псевдоним, export * и экспорт пространства имён. Проверяются вызов, ссылка на функцию и вызов функции, возвращённой из selectLeft.",
+      "files": [
+        {
+          "path": "39-reexport-twins-js/entry.js",
+          "code": "import * as api from \"./surface.js\";\n\nexport function runLeft() {\n  return api.left.run();\n}\n\nexport function runRight() {\n  return api.right.run();\n}\n\nexport function selectLeft() {\n  return api.left.run;\n}\n\nexport function selectRight() {\n  return api.right.run;\n}\n\nexport function applyLeft() {\n  return selectLeft()();\n}\n"
+        },
+        {
+          "path": "39-reexport-twins-js/left-alias.js",
+          "code": "export { run as execute } from \"./left.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/left-barrel.js",
+          "code": "export * from \"./left-alias.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/left-final.js",
+          "code": "export { execute as run } from \"./left-barrel.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/left.js",
+          "code": "function finish() {\n  return \"left\";\n}\n\nexport function run() {\n  return finish();\n}\n"
+        },
+        {
+          "path": "39-reexport-twins-js/right-alias.js",
+          "code": "export { run as execute } from \"./right.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/right-barrel.js",
+          "code": "export * from \"./right-alias.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/right-final.js",
+          "code": "export { execute as run } from \"./right-barrel.js\";\n"
+        },
+        {
+          "path": "39-reexport-twins-js/right.js",
+          "code": "function finish() {\n  return \"right\";\n}\n\nexport function run() {\n  return finish();\n}\n"
+        },
+        {
+          "path": "39-reexport-twins-js/surface.js",
+          "code": "export * as left from \"./left-final.js\";\nexport * as right from \"./right-final.js\";\n"
+        }
+      ],
+      "table": {
+        "caption": "Цепочки реэкспортов с одноимёнными целями",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 7,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 9.333333333333334,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 9",
+                "note": "Лишних 1"
+              },
+              "relations": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": "Лишних 1 · пропущено 4"
+              },
+              "score": {
+                "value": 6.153846153846154,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 2"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "40-reexport-twins-ts",
+      "title": "Цепочки реэкспортов с одноимёнными целями",
+      "language": "TypeScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Две ветки по четыре реэкспорта. В каждой сочетаются псевдоним, export * и экспорт пространства имён. Проверяются вызов, ссылка на функцию и вызов функции, возвращённой из selectLeft.",
+      "files": [
+        {
+          "path": "40-reexport-twins-ts/entry.ts",
+          "code": "import * as api from \"./surface.ts\";\n\nexport function runLeft() {\n  return api.left.run();\n}\n\nexport function runRight() {\n  return api.right.run();\n}\n\nexport function selectLeft() {\n  return api.left.run;\n}\n\nexport function selectRight() {\n  return api.right.run;\n}\n\nexport function applyLeft() {\n  return selectLeft()();\n}\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/left-alias.ts",
+          "code": "export { run as execute } from \"./left.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/left-barrel.ts",
+          "code": "export * from \"./left-alias.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/left-final.ts",
+          "code": "export { execute as run } from \"./left-barrel.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/left.ts",
+          "code": "function finish() {\n  return \"left\";\n}\n\nexport function run() {\n  return finish();\n}\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/right-alias.ts",
+          "code": "export { run as execute } from \"./right.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/right-barrel.ts",
+          "code": "export * from \"./right-alias.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/right-final.ts",
+          "code": "export { execute as run } from \"./right-barrel.ts\";\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/right.ts",
+          "code": "function finish() {\n  return \"right\";\n}\n\nexport function run() {\n  return finish();\n}\n"
+        },
+        {
+          "path": "40-reexport-twins-ts/surface.ts",
+          "code": "export * as left from \"./left-final.ts\";\nexport * as right from \"./right-final.ts\";\n"
+        }
+      ],
+      "table": {
+        "caption": "Цепочки реэкспортов с одноимёнными целями",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 7,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 1"
+              },
+              "score": {
+                "value": 9.333333333333334,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "В несколько переходов: 1"
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 2,
+                "suffix": "/ 9",
+                "note": "Лишних 1"
+              },
+              "relations": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": "Лишних 1 · пропущено 4"
+              },
+              "score": {
+                "value": 6.153846153846154,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 4,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 2"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 9,
+                "suffix": "/ 9",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 5"
+              },
+              "score": {
+                "value": 5.454545454545454,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 3,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "41-deep-member-twins-js",
+      "title": "Глубокий доступ к одноимённым методам",
+      "language": "JavaScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Обе ветки проходят через service.stage.worker.run. В одном вызове объект приходит напрямую из фабрики, во втором через локальную переменную. Проверяются также ссылка на run и два вызова this.format.",
+      "files": [
+        {
+          "path": "41-deep-member-twins-js/entry.js",
+          "code": "import { createWorkspace } from \"./workspace.js\";\n\nexport function runPrimary() {\n  return createWorkspace().primary.service.stage.worker.run();\n}\n\nexport function runFallback() {\n  const workspace = createWorkspace();\n\n  return workspace.fallback.service.stage.worker.run();\n}\n\nexport function selectPrimary() {\n  return createWorkspace().primary.service.stage.worker.run;\n}\n"
+        },
+        {
+          "path": "41-deep-member-twins-js/left.js",
+          "code": "export class LeftWorker {\n  run() {\n    return this.format();\n  }\n\n  format() {\n    return \"left\";\n  }\n}\n"
+        },
+        {
+          "path": "41-deep-member-twins-js/right.js",
+          "code": "export class RightWorker {\n  run() {\n    return this.format();\n  }\n\n  format() {\n    return \"right\";\n  }\n}\n"
+        },
+        {
+          "path": "41-deep-member-twins-js/workspace.js",
+          "code": "import { LeftWorker } from \"./left.js\";\nimport { RightWorker } from \"./right.js\";\n\nexport function createWorkspace() {\n  return {\n    primary: {\n      service: { stage: { worker: new LeftWorker() } },\n    },\n    fallback: {\n      service: { stage: { worker: new RightWorker() } },\n    },\n  };\n}\n"
+        }
+      ],
+      "table": {
+        "caption": "Глубокий доступ к одноимённым методам",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 8",
+                "note": "Лишних 1 · пропущено 2"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 7.6923076923076925,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 7.6923076923076925,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "42-deep-member-twins-ts",
+      "title": "Глубокий доступ к одноимённым методам",
+      "language": "TypeScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Обе ветки проходят через service.stage.worker.run. В одном вызове объект приходит напрямую из фабрики, во втором через локальную переменную. Проверяются также ссылка на run и два вызова this.format.",
+      "files": [
+        {
+          "path": "42-deep-member-twins-ts/entry.ts",
+          "code": "import { createWorkspace } from \"./workspace.ts\";\n\nexport function runPrimary() {\n  return createWorkspace().primary.service.stage.worker.run();\n}\n\nexport function runFallback() {\n  const workspace = createWorkspace();\n\n  return workspace.fallback.service.stage.worker.run();\n}\n\nexport function selectPrimary() {\n  return createWorkspace().primary.service.stage.worker.run;\n}\n"
+        },
+        {
+          "path": "42-deep-member-twins-ts/left.ts",
+          "code": "export class LeftWorker {\n  run() {\n    return this.format();\n  }\n\n  format() {\n    return \"left\";\n  }\n}\n"
+        },
+        {
+          "path": "42-deep-member-twins-ts/right.ts",
+          "code": "export class RightWorker {\n  run() {\n    return this.format();\n  }\n\n  format() {\n    return \"right\";\n  }\n}\n"
+        },
+        {
+          "path": "42-deep-member-twins-ts/workspace.ts",
+          "code": "import { LeftWorker } from \"./left.ts\";\nimport { RightWorker } from \"./right.ts\";\n\nexport function createWorkspace() {\n  return {\n    primary: {\n      service: { stage: { worker: new LeftWorker() } },\n    },\n    fallback: {\n      service: { stage: { worker: new RightWorker() } },\n    },\n  };\n}\n"
+        }
+      ],
+      "table": {
+        "caption": "Глубокий доступ к одноимённым методам",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 8",
+                "note": "Лишних 1 · пропущено 2"
+              },
+              "score": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 7.6923076923076925,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 3,
+                "suffix": "/ 3",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": "Лишних 0 · пропущено 3"
+              },
+              "score": {
+                "value": 7.6923076923076925,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 5,
+                "suffix": "/ 8",
+                "note": ""
+              },
+              "context": {
+                "value": 8,
+                "suffix": "/ 8",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "43-fluent-method-twins-js",
+      "title": "Цепочки одноимённых методов в одном файле",
+      "language": "JavaScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Две цепочки build…().next().next().run() проходят через разные классы. Четыре определения next и два определения run находятся в одном файле и различаются по строкам.",
+      "files": [
+        {
+          "path": "43-fluent-method-twins-js/chain.js",
+          "code": "function finishAlpha() {\n  return \"alpha\";\n}\n\nclass AlphaStart {\n  next() {\n    return new AlphaStage();\n  }\n}\n\nclass AlphaStage {\n  next() {\n    return new AlphaReady();\n  }\n}\n\nclass AlphaReady {\n  run() {\n    return finishAlpha();\n  }\n}\n\nexport function buildAlpha() {\n  return new AlphaStart();\n}\n\nfunction finishBeta() {\n  return \"beta\";\n}\n\nclass BetaStart {\n  next() {\n    return new BetaStage();\n  }\n}\n\nclass BetaStage {\n  next() {\n    return new BetaReady();\n  }\n}\n\nclass BetaReady {\n  run() {\n    return finishBeta();\n  }\n}\n\nexport function buildBeta() {\n  return new BetaStart();\n}\n"
+        },
+        {
+          "path": "43-fluent-method-twins-js/entry.js",
+          "code": "import { buildAlpha, buildBeta } from \"./chain.js\";\n\nexport function runAlpha() {\n  return buildAlpha().next().next().run();\n}\n\nexport function runBeta() {\n  return buildBeta().next().next().run();\n}\n"
+        }
+      ],
+      "table": {
+        "caption": "Цепочки одноимённых методов в одном файле",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": "Лишних 2 · пропущено 4"
+              },
+              "score": {
+                "value": 6.666666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 6"
+              },
+              "score": {
+                "value": 5.7142857142857135,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 6"
+              },
+              "score": {
+                "value": 5.7142857142857135,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "44-fluent-method-twins-ts",
+      "title": "Цепочки одноимённых методов в одном файле",
+      "language": "TypeScript",
+      "group": "Цепочки реэкспортов и методов",
+      "description": "Две цепочки build…().next().next().run() проходят через разные классы. Четыре определения next и два определения run находятся в одном файле и различаются по строкам.",
+      "files": [
+        {
+          "path": "44-fluent-method-twins-ts/chain.ts",
+          "code": "function finishAlpha() {\n  return \"alpha\";\n}\n\nclass AlphaStart {\n  next(): AlphaStage {\n    return new AlphaStage();\n  }\n}\n\nclass AlphaStage {\n  next(): AlphaReady {\n    return new AlphaReady();\n  }\n}\n\nclass AlphaReady {\n  run() {\n    return finishAlpha();\n  }\n}\n\nexport function buildAlpha(): AlphaStart {\n  return new AlphaStart();\n}\n\nfunction finishBeta() {\n  return \"beta\";\n}\n\nclass BetaStart {\n  next(): BetaStage {\n    return new BetaStage();\n  }\n}\n\nclass BetaStage {\n  next(): BetaReady {\n    return new BetaReady();\n  }\n}\n\nclass BetaReady {\n  run() {\n    return finishBeta();\n  }\n}\n\nexport function buildBeta(): BetaStart {\n  return new BetaStart();\n}\n"
+        },
+        {
+          "path": "44-fluent-method-twins-ts/entry.ts",
+          "code": "import { buildAlpha, buildBeta } from \"./chain.ts\";\n\nexport function runAlpha() {\n  return buildAlpha().next().next().run();\n}\n\nexport function runBeta() {\n  return buildBeta().next().next().run();\n}\n"
+        }
+      ],
+      "table": {
+        "caption": "Цепочки одноимённых методов в одном файле",
+        "columns": [
+          {
+            "key": "declarations",
+            "label": "Объявления",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "dependencies",
+            "label": "Зависимости файлов",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "relations",
+            "label": "Точные цели call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "score",
+            "label": "Оценка связей / 10",
+            "precision": 2,
+            "direction": "higher"
+          },
+          {
+            "key": "reachable",
+            "label": "Цель через call/ref",
+            "precision": 0,
+            "direction": "higher"
+          },
+          {
+            "key": "context",
+            "label": "Цель через любые связи",
+            "precision": 0,
+            "direction": "higher"
+          }
+        ],
+        "rows": [
+          {
+            "id": "graph",
+            "label": "SymbolTrail",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "codegraph",
+            "label": "CodeGraph",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": "Лишних 2 · пропущено 4"
+              },
+              "score": {
+                "value": 6.666666666666666,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 6,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "graphify",
+            "label": "Graphify",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 6"
+              },
+              "score": {
+                "value": 5.7142857142857135,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 4,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "scip",
+            "label": "SCIP",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": "Лишних 0 · пропущено 0"
+              },
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "declarations": {
+                "value": 18,
+                "suffix": "/ 18",
+                "note": "Полнота 100,0%"
+              },
+              "dependencies": {
+                "value": 1,
+                "suffix": "/ 1",
+                "note": "Лишних 0"
+              },
+              "relations": {
+                "value": 7,
+                "suffix": "/ 10",
+                "note": "Лишних 1 · пропущено 3"
+              },
+              "score": {
+                "value": 7.777777777777778,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "reachable": {
+                "value": 7,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "context": {
+                "value": 10,
+                "suffix": "/ 10",
+                "note": ""
               }
             }
           }

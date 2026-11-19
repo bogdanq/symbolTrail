@@ -10,7 +10,7 @@ aside: false
 
 Всё работает локально, данные не уходят на сторону. При этом вы можете исследовать тот же граф вручную через [CLI](/tools) или [веб-интерфейс](/local-ui).
 
-> 🏆 **Результативность:** В [сравнительном тесте](/benchmarks/investigations) из 10 реальных задач исследования кода SymbolTrail занял **первое место**, обойдя CodeGraph и Graphify со средней оценкой ответов ИИ-агентов **9,42 из 10**.
+> 🏆 **Результативность.** SymbolTrail и Graphify получили по **10 из 10** за полноту ответов в сравнении на десяти задачах. Для SymbolTrail в сводку вошли два контрольных повтора. [Результаты сравнения](/benchmarks/investigations)
 
 <section class="st-home-features" aria-label="Преимущества SymbolTrail">
   <article class="st-home-feature">

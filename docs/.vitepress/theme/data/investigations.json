@@ -15,6 +15,12 @@
         "direction": "lower"
       },
       {
+        "key": "uncached",
+        "label": "Вход без кэша",
+        "precision": 0,
+        "direction": "lower"
+      },
+      {
         "key": "output",
         "label": "Выходные токены",
         "precision": 0,
@@ -22,15 +28,21 @@
       },
       {
         "key": "actions",
-        "label": "Действия",
+        "label": "Вызовы MCP",
         "precision": 0,
         "direction": "lower"
       },
       {
         "key": "usefulness",
-        "label": "Полезность графа / 10",
+        "label": "Полезность MCP / 10",
         "precision": 1,
         "direction": "higher"
+      },
+      {
+        "key": "repeats",
+        "label": "Повторные строки",
+        "precision": 0,
+        "direction": "lower"
       },
       {
         "key": "minutes",
@@ -46,32 +58,42 @@
         "note": "",
         "cells": {
           "score": {
-            "value": 9.416666666666666,
+            "value": 10.0,
             "suffix": "/ 10",
-            "note": ""
+            "note": "60 / 60 по критериям"
           },
           "input": {
-            "value": 4915369,
+            "value": 7199742,
             "suffix": "",
-            "note": "Из них кэш: 4 225 792"
+            "note": "Из них кэш 6 469 504"
+          },
+          "uncached": {
+            "value": 730238,
+            "suffix": "",
+            "note": ""
           },
           "output": {
-            "value": 63120,
+            "value": 75062,
             "suffix": "",
             "note": ""
           },
           "actions": {
-            "value": 590,
+            "value": 498,
             "suffix": "",
-            "note": "Индекс: 68 · исходники: 522"
+            "note": "Граф 167 · чтения 273 · поиски 46 · списки файлов 12"
           },
           "usefulness": {
-            "value": 6.2,
+            "value": 7.6,
             "suffix": "/ 10",
             "note": ""
           },
+          "repeats": {
+            "value": 74,
+            "suffix": "",
+            "note": "Совпавших ответов 1"
+          },
           "minutes": {
-            "value": 29.12575,
+            "value": 29.1,
             "suffix": "",
             "note": ""
           }
@@ -83,32 +105,42 @@
         "note": "",
         "cells": {
           "score": {
-            "value": 9.333333333333334,
+            "value": 9.916666666667,
             "suffix": "/ 10",
-            "note": ""
+            "note": "59,5 / 60 по критериям"
           },
           "input": {
-            "value": 5816291,
+            "value": 6036162,
             "suffix": "",
-            "note": "Из них кэш: 5 078 656"
+            "note": "Из них кэш 5 222 528"
+          },
+          "uncached": {
+            "value": 813634,
+            "suffix": "",
+            "note": ""
           },
           "output": {
-            "value": 57809,
+            "value": 60591,
             "suffix": "",
             "note": ""
           },
           "actions": {
-            "value": 528,
+            "value": 467,
             "suffix": "",
-            "note": "Индекс: 26 · исходники: 502"
+            "note": "Граф 31 · чтения 332 · поиски 83 · списки файлов 21"
           },
           "usefulness": {
-            "value": 6,
+            "value": 7.4,
             "suffix": "/ 10",
             "note": ""
           },
+          "repeats": {
+            "value": 533,
+            "suffix": "",
+            "note": "Совпавших ответов 1"
+          },
           "minutes": {
-            "value": 26.872066666666665,
+            "value": 26.89355,
             "suffix": "",
             "note": ""
           }
@@ -120,32 +152,89 @@
         "note": "",
         "cells": {
           "score": {
-            "value": 9.333333333333334,
+            "value": 10.0,
             "suffix": "/ 10",
-            "note": ""
+            "note": "60 / 60 по критериям"
           },
           "input": {
-            "value": 5132784,
+            "value": 8466477,
             "suffix": "",
-            "note": "Из них кэш: 4 407 680"
+            "note": "Из них кэш 7 593 216"
+          },
+          "uncached": {
+            "value": 873261,
+            "suffix": "",
+            "note": ""
           },
           "output": {
-            "value": 60610,
+            "value": 70970,
             "suffix": "",
             "note": ""
           },
           "actions": {
-            "value": 661,
+            "value": 655,
             "suffix": "",
-            "note": "Индекс: 142 · исходники: 519"
+            "note": "Граф 133 · чтения 429 · поиски 68 · списки файлов 25"
           },
           "usefulness": {
-            "value": 6,
+            "value": 7.4,
             "suffix": "/ 10",
             "note": ""
           },
+          "repeats": {
+            "value": 972,
+            "suffix": "",
+            "note": "Совпавших ответов 2"
+          },
           "minutes": {
-            "value": 26.491866666666667,
+            "value": 30.44095,
+            "suffix": "",
+            "note": ""
+          }
+        }
+      },
+      {
+        "id": "gitnexus",
+        "label": "GitNexus",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 9.666666666667,
+            "suffix": "/ 10",
+            "note": "58 / 60 по критериям"
+          },
+          "input": {
+            "value": 6907008,
+            "suffix": "",
+            "note": "Из них кэш 6 046 848"
+          },
+          "uncached": {
+            "value": 860160,
+            "suffix": "",
+            "note": ""
+          },
+          "output": {
+            "value": 63763,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 629,
+            "suffix": "",
+            "note": "Граф 126 · поиск ресурсов 10 · чтения 401 · поиски 67 · списки файлов 25"
+          },
+          "usefulness": {
+            "value": 7.0,
+            "suffix": "/ 10",
+            "note": ""
+          },
+          "repeats": {
+            "value": 719,
+            "suffix": "",
+            "note": "Совпавших ответов 2"
+          },
+          "minutes": {
+            "value": 27.463966666666668,
             "suffix": "",
             "note": ""
           }
@@ -173,6 +262,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -180,15 +275,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -206,30 +307,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 330612,
+                "value": 558988,
+                "suffix": "",
+                "note": "Из них кэш 512 384"
+              },
+              "uncached": {
+                "value": 46604,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 4900,
+                "value": 5781,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 37,
+                "value": 32,
                 "suffix": "",
-                "note": "Индекс: 7 · исходники: 30"
+                "note": "Граф 16 · чтения 13 · поиски 3"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 1,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.606133333333333,
+                "value": 2.4681333333333333,
                 "suffix": "",
                 "note": ""
               }
@@ -241,32 +352,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 10.0,
+                "value": 9.166666666667,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "5,5 / 6 по критериям"
               },
               "input": {
-                "value": 325049,
+                "value": 457179,
+                "suffix": "",
+                "note": "Из них кэш 383 744"
+              },
+              "uncached": {
+                "value": 73435,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5348,
+                "value": 5223,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 37,
+                "value": 33,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 34"
+                "note": "Граф 4 · чтения 21 · поиски 7 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 32,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.3658333333333332,
+                "value": 2.30545,
                 "suffix": "",
                 "note": ""
               }
@@ -280,30 +401,87 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 323530,
+                "value": 544182,
+                "suffix": "",
+                "note": "Из них кэш 462 080"
+              },
+              "uncached": {
+                "value": 82102,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 4639,
+                "value": 5774,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 43,
+                "value": 50,
                 "suffix": "",
-                "note": "Индекс: 14 · исходники: 29"
+                "note": "Граф 16 · чтения 28 · поиски 5 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 43,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.2367,
+                "value": 2.4258333333333333,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666667,
+                "suffix": "/ 10",
+                "note": "5,5 / 6 по критериям"
+              },
+              "input": {
+                "value": 526560,
+                "suffix": "",
+                "note": "Из них кэш 470 016"
+              },
+              "uncached": {
+                "value": 56544,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5546,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 45,
+                "suffix": "",
+                "note": "Граф 11 · чтения 27 · поиски 6 · списки файлов 1"
+              },
+              "usefulness": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 93,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.32485,
                 "suffix": "",
                 "note": ""
               }
@@ -331,6 +509,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -338,15 +522,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -362,32 +552,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 457999,
+                "value": 591937,
+                "suffix": "",
+                "note": "Из них кэш 522 880"
+              },
+              "uncached": {
+                "value": 69057,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6647,
+                "value": 6570,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 58,
+                "value": 40,
                 "suffix": "",
-                "note": "Индекс: 7 · исходники: 51"
+                "note": "Граф 15 · чтения 19 · поиски 6"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 12,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.19755,
+                "value": 3.17185,
                 "suffix": "",
                 "note": ""
               }
@@ -401,30 +601,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 455830,
+                "value": 680999,
+                "suffix": "",
+                "note": "Из них кэш 612 864"
+              },
+              "uncached": {
+                "value": 68135,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5006,
+                "value": 5057,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 52,
+                "value": 33,
                 "suffix": "",
-                "note": "Индекс: 2 · исходники: 50"
+                "note": "Граф 5 · чтения 19 · поиски 8 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 38,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.354616666666667,
+                "value": 2.3198166666666666,
                 "suffix": "",
                 "note": ""
               }
@@ -436,32 +646,89 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 473167,
+                "value": 681207,
+                "suffix": "",
+                "note": "Из них кэш 592 512"
+              },
+              "uncached": {
+                "value": 88695,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6425,
+                "value": 7624,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 61,
+                "value": 67,
                 "suffix": "",
-                "note": "Индекс: 13 · исходники: 48"
+                "note": "Граф 14 · чтения 44 · поиски 7 · списки файлов 2"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 37,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.772666666666667,
+                "value": 3.16975,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 641879,
+                "suffix": "",
+                "note": "Из них кэш 554 496"
+              },
+              "uncached": {
+                "value": 87383,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5418,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 58,
+                "suffix": "",
+                "note": "Граф 11 · поиск ресурсов 1 · чтения 37 · поиски 5 · списки файлов 4"
+              },
+              "usefulness": {
+                "value": 6.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 78,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.2921,
                 "suffix": "",
                 "note": ""
               }
@@ -489,6 +756,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -496,15 +769,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -522,30 +801,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 281798,
+                "value": 393783,
+                "suffix": "",
+                "note": "Из них кэш 350 208"
+              },
+              "uncached": {
+                "value": 43575,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5880,
+                "value": 5603,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 49,
+                "value": 27,
                 "suffix": "",
-                "note": "Индекс: 7 · исходники: 42"
+                "note": "Граф 14 · чтения 11 · поиски 2"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 3,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.577,
+                "value": 2.5542833333333332,
                 "suffix": "",
                 "note": ""
               }
@@ -557,32 +846,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 235118,
+                "value": 390071,
+                "suffix": "",
+                "note": "Из них кэш 332 672"
+              },
+              "uncached": {
+                "value": 57399,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5258,
+                "value": 5872,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 37,
+                "value": 42,
                 "suffix": "",
-                "note": "Индекс: 2 · исходники: 35"
+                "note": "Граф 2 · чтения 34 · поиски 5 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 29,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.5395666666666665,
+                "value": 2.60375,
                 "suffix": "",
                 "note": ""
               }
@@ -594,32 +893,89 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 349655,
+                "value": 494973,
+                "suffix": "",
+                "note": "Из них кэш 426 112"
+              },
+              "uncached": {
+                "value": 68861,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5431,
+                "value": 5333,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 59,
+                "value": 43,
                 "suffix": "",
-                "note": "Индекс: 11 · исходники: 48"
+                "note": "Граф 9 · чтения 30 · поиски 3 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 39,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 1.35455,
+                "value": 2.2653833333333333,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 386400,
+                "suffix": "",
+                "note": "Из них кэш 305 280"
+              },
+              "uncached": {
+                "value": 81120,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6173,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 51,
+                "suffix": "",
+                "note": "Граф 12 · чтения 34 · поиски 5"
+              },
+              "usefulness": {
+                "value": 6.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 49,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.377266666666667,
                 "suffix": "",
                 "note": ""
               }
@@ -647,6 +1003,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -654,15 +1016,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -678,32 +1046,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 8.333333333333334,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 389628,
+                "value": 712296,
+                "suffix": "",
+                "note": "Из них кэш 648 320"
+              },
+              "uncached": {
+                "value": 63976,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5505,
+                "value": 6083,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 48,
+                "value": 41,
                 "suffix": "",
-                "note": "Индекс: 6 · исходники: 42"
+                "note": "Граф 12 · чтения 28 · поиски 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 3,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.4715333333333334,
+                "value": 2.9597,
                 "suffix": "",
                 "note": ""
               }
@@ -715,32 +1093,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 8.333333333333334,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 582866,
+                "value": 602471,
+                "suffix": "",
+                "note": "Из них кэш 517 632"
+              },
+              "uncached": {
+                "value": 84839,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6612,
+                "value": 5435,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 44,
+                "value": 27,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 41"
+                "note": "Граф 5 · чтения 17 · поиски 5"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 23,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.0515,
+                "value": 2.51385,
                 "suffix": "",
                 "note": ""
               }
@@ -752,32 +1140,89 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 8.333333333333334,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 369396,
+                "value": 574008,
+                "suffix": "",
+                "note": "Из них кэш 495 744"
+              },
+              "uncached": {
+                "value": 78264,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5556,
+                "value": 6648,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 50,
+                "value": 57,
                 "suffix": "",
-                "note": "Индекс: 12 · исходники: 38"
+                "note": "Граф 13 · чтения 37 · поиски 4 · списки файлов 3"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 44,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.45555,
+                "value": 2.7486333333333333,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 8.333333333333,
+                "suffix": "/ 10",
+                "note": "5 / 6 по критериям"
+              },
+              "input": {
+                "value": 580936,
+                "suffix": "",
+                "note": "Из них кэш 509 056"
+              },
+              "uncached": {
+                "value": 71880,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6223,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 54,
+                "suffix": "",
+                "note": "Граф 14 · поиск ресурсов 2 · чтения 33 · поиски 2 · списки файлов 3"
+              },
+              "usefulness": {
+                "value": 6.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 17,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.7495166666666666,
                 "suffix": "",
                 "note": ""
               }
@@ -805,6 +1250,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -812,15 +1263,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -838,30 +1295,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 472820,
+                "value": 545326,
+                "suffix": "",
+                "note": "Из них кэш 436 480"
+              },
+              "uncached": {
+                "value": 108846,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5467,
+                "value": 8104,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 58,
+                "value": 39,
                 "suffix": "",
-                "note": "Индекс: 9 · исходники: 49"
+                "note": "Граф 9 · чтения 24 · поиски 6"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 24,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.67685,
+                "value": 3.6271,
                 "suffix": "",
                 "note": ""
               }
@@ -875,30 +1342,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 619765,
+                "value": 538192,
+                "suffix": "",
+                "note": "Из них кэш 464 512"
+              },
+              "uncached": {
+                "value": 73680,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5274,
+                "value": 7196,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 57,
+                "value": 38,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 54"
+                "note": "Граф 4 · чтения 25 · поиски 8 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 122,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.44335,
+                "value": 3.2260166666666668,
                 "suffix": "",
                 "note": ""
               }
@@ -912,30 +1389,87 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 364812,
+                "value": 694009,
+                "suffix": "",
+                "note": "Из них кэш 625 408"
+              },
+              "uncached": {
+                "value": 68601,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6386,
+                "value": 7062,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 57,
+                "value": 56,
                 "suffix": "",
-                "note": "Индекс: 14 · исходники: 43"
+                "note": "Граф 9 · чтения 37 · поиски 10"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 20,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
               "minutes": {
-                "value": 2.9505166666666667,
+                "value": 2.83985,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 619261,
+                "suffix": "",
+                "note": "Из них кэш 553 600"
+              },
+              "uncached": {
+                "value": 65661,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6899,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 65,
+                "suffix": "",
+                "note": "Граф 11 · чтения 38 · поиски 14 · списки файлов 2"
+              },
+              "usefulness": {
+                "value": 6.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 93,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
+              "minutes": {
+                "value": 3.0627166666666668,
                 "suffix": "",
                 "note": ""
               }
@@ -963,6 +1497,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -970,15 +1510,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -994,32 +1540,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 498782,
+                "value": 533145,
+                "suffix": "",
+                "note": "Из них кэш 487 808"
+              },
+              "uncached": {
+                "value": 45337,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6637,
+                "value": 6099,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 59,
+                "value": 43,
                 "suffix": "",
-                "note": "Индекс: 5 · исходники: 54"
+                "note": "Граф 14 · чтения 23 · поиски 2 · списки файлов 4"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 1,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.2335166666666666,
+                "value": 2.8925,
                 "suffix": "",
                 "note": ""
               }
@@ -1031,32 +1587,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 453296,
+                "value": 416436,
+                "suffix": "",
+                "note": "Из них кэш 367 488"
+              },
+              "uncached": {
+                "value": 48948,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5464,
+                "value": 4633,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 48,
+                "value": 33,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 45"
+                "note": "Граф 2 · чтения 27 · поиски 4"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 45,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.5764,
+                "value": 1.97375,
                 "suffix": "",
                 "note": ""
               }
@@ -1068,32 +1634,89 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 353649,
+                "value": 499270,
+                "suffix": "",
+                "note": "Из них кэш 430 720"
+              },
+              "uncached": {
+                "value": 68550,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 4937,
+                "value": 6499,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 61,
+                "value": 46,
                 "suffix": "",
-                "note": "Индекс: 16 · исходники: 45"
+                "note": "Граф 12 · чтения 29 · поиски 4 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 0,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 1.8488666666666667,
+                "value": 2.75215,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 347570,
+                "suffix": "",
+                "note": "Из них кэш 283 008"
+              },
+              "uncached": {
+                "value": 64562,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 4897,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 47,
+                "suffix": "",
+                "note": "Граф 12 · поиск ресурсов 1 · чтения 27 · поиски 5 · списки файлов 2"
+              },
+              "usefulness": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 33,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.106716666666667,
                 "suffix": "",
                 "note": ""
               }
@@ -1121,6 +1744,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -1128,15 +1757,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -1149,35 +1784,45 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Контрольный повтор",
             "cells": {
               "score": {
-                "value": 7.5,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 360164,
+                "value": 634162,
+                "suffix": "",
+                "note": "Из них кэш 565 504"
+              },
+              "uncached": {
+                "value": 68658,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5608,
+                "value": 7270,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 50,
+                "value": 55,
                 "suffix": "",
-                "note": "Индекс: 5 · исходники: 45"
+                "note": "Граф 14 · чтения 38 · поиски 3"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 5,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.3560666666666665,
+                "value": 3.08945,
                 "suffix": "",
                 "note": ""
               }
@@ -1189,32 +1834,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 7.5,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 391536,
+                "value": 422177,
+                "suffix": "",
+                "note": "Из них кэш 326 144"
+              },
+              "uncached": {
+                "value": 96033,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5166,
+                "value": 6086,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 51,
+                "value": 50,
                 "suffix": "",
-                "note": "Индекс: 2 · исходники: 49"
+                "note": "Граф 2 · чтения 38 · поиски 9 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 37,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.4797,
+                "value": 2.5899,
                 "suffix": "",
                 "note": ""
               }
@@ -1226,32 +1881,89 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 7.5,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 523742,
+                "value": 955903,
+                "suffix": "",
+                "note": "Из них кэш 867 840"
+              },
+              "uncached": {
+                "value": 88063,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5372,
+                "value": 7151,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 63,
+                "value": 77,
                 "suffix": "",
-                "note": "Индекс: 11 · исходники: 52"
+                "note": "Граф 16 · чтения 53 · поиски 8"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 46,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.6039666666666665,
+                "value": 3.12025,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 705684,
+                "suffix": "",
+                "note": "Из них кэш 631 808"
+              },
+              "uncached": {
+                "value": 73876,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 5871,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 68,
+                "suffix": "",
+                "note": "Граф 14 · поиск ресурсов 2 · чтения 44 · поиски 6 · списки файлов 2"
+              },
+              "usefulness": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 84,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.4843,
                 "suffix": "",
                 "note": ""
               }
@@ -1279,6 +1991,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -1286,15 +2004,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -1312,30 +2036,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 577941,
+                "value": 864310,
+                "suffix": "",
+                "note": "Из них кэш 776 960"
+              },
+              "uncached": {
+                "value": 87350,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 7971,
+                "value": 9161,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 68,
+                "value": 64,
                 "suffix": "",
-                "note": "Индекс: 6 · исходники: 62"
+                "note": "Граф 28 · чтения 30 · поиски 6"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 5,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.0522833333333335,
+                "value": 4.1683,
                 "suffix": "",
                 "note": ""
               }
@@ -1349,30 +2083,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 732104,
+                "value": 609759,
+                "suffix": "",
+                "note": "Из них кэш 505 088"
+              },
+              "uncached": {
+                "value": 104671,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5702,
+                "value": 6829,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 58,
+                "value": 55,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 55"
+                "note": "Граф 2 · чтения 42 · поиски 10 · списки файлов 1"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 56,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.667666666666667,
+                "value": 2.85405,
                 "suffix": "",
                 "note": ""
               }
@@ -1386,30 +2130,87 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 690125,
+                "value": 1176613,
+                "suffix": "",
+                "note": "Из них кэш 1 073 408"
+              },
+              "uncached": {
+                "value": 103205,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6218,
+                "value": 8347,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 76,
+                "value": 80,
                 "suffix": "",
-                "note": "Индекс: 12 · исходники: 64"
+                "note": "Граф 12 · чтения 55 · поиски 11 · списки файлов 2"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 87,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.04315,
+                "value": 3.677966666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 827192,
+                "suffix": "",
+                "note": "Из них кэш 696 704"
+              },
+              "uncached": {
+                "value": 130488,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 6433,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 69,
+                "suffix": "",
+                "note": "Граф 12 · чтения 45 · поиски 12"
+              },
+              "usefulness": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 84,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 2.8251,
                 "suffix": "",
                 "note": ""
               }
@@ -1437,6 +2238,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -1444,15 +2251,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -1470,30 +2283,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 753910,
+                "value": 1453669,
+                "suffix": "",
+                "note": "Из них кэш 1 335 168"
+              },
+              "uncached": {
+                "value": 118501,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 6933,
+                "value": 11447,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 70,
+                "value": 77,
                 "suffix": "",
-                "note": "Индекс: 8 · исходники: 62"
+                "note": "Граф 29 · чтения 42 · поиски 3 · списки файлов 3"
               },
               "usefulness": {
-                "value": 8,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 11,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.2447,
+                "value": 4.995266666666667,
                 "suffix": "",
                 "note": ""
               }
@@ -1507,30 +2330,40 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 784507,
+                "value": 917189,
+                "suffix": "",
+                "note": "Из них кэш 811 392"
+              },
+              "uncached": {
+                "value": 105797,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 5702,
+                "value": 7282,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
                 "value": 61,
                 "suffix": "",
-                "note": "Индекс: 2 · исходники: 59"
+                "note": "Граф 3 · чтения 45 · поиски 9 · списки файлов 4"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 24,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 2.7539833333333332,
+                "value": 3.3269,
                 "suffix": "",
                 "note": ""
               }
@@ -1544,30 +2377,87 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 817773,
+                "value": 1077619,
+                "suffix": "",
+                "note": "Из них кэш 969 088"
+              },
+              "uncached": {
+                "value": 108531,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 7622,
+                "value": 7890,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 87,
+                "value": 81,
                 "suffix": "",
-                "note": "Индекс: 15 · исходники: 72"
+                "note": "Граф 15 · чтения 51 · поиски 6 · списки файлов 9"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 288,
+                "suffix": "",
+                "note": ""
+              },
               "minutes": {
-                "value": 3.57915,
+                "value": 3.3472166666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 10.0,
+                "suffix": "/ 10",
+                "note": "6 / 6 по критериям"
+              },
+              "input": {
+                "value": 1166491,
+                "suffix": "",
+                "note": "Из них кэш 1 068 416"
+              },
+              "uncached": {
+                "value": 98075,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 8675,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 75,
+                "suffix": "",
+                "note": "Граф 14 · поиск ресурсов 2 · чтения 49 · поиски 5 · списки файлов 5"
+              },
+              "usefulness": {
+                "value": 8.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 87,
+                "suffix": "",
+                "note": ""
+              },
+              "minutes": {
+                "value": 3.7159166666666668,
                 "suffix": "",
                 "note": ""
               }
@@ -1595,6 +2485,12 @@
             "direction": "lower"
           },
           {
+            "key": "uncached",
+            "label": "Вход без кэша",
+            "precision": 0,
+            "direction": "lower"
+          },
+          {
             "key": "output",
             "label": "Выходные токены",
             "precision": 0,
@@ -1602,15 +2498,21 @@
           },
           {
             "key": "actions",
-            "label": "Действия",
+            "label": "Вызовы MCP",
             "precision": 0,
             "direction": "lower"
           },
           {
             "key": "usefulness",
-            "label": "Полезность графа / 10",
+            "label": "Полезность MCP / 10",
             "precision": 1,
             "direction": "higher"
+          },
+          {
+            "key": "repeats",
+            "label": "Повторные строки",
+            "precision": 0,
+            "direction": "lower"
           },
           {
             "key": "minutes",
@@ -1623,35 +2525,45 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Контрольный повтор",
             "cells": {
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 791715,
+                "value": 912126,
+                "suffix": "",
+                "note": "Из них кэш 833 792"
+              },
+              "uncached": {
+                "value": 78334,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 7572,
+                "value": 8944,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 93,
+                "value": 80,
                 "suffix": "",
-                "note": "Индекс: 8 · исходники: 85"
+                "note": "Граф 16 · чтения 45 · поиски 14 · списки файлов 5"
               },
               "usefulness": {
-                "value": 6,
+                "value": 8.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 9,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
               "minutes": {
-                "value": 2.7101166666666665,
+                "value": 3.8602333333333334,
                 "suffix": "",
                 "note": ""
               }
@@ -1663,32 +2575,42 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 9.166666666666666,
+                "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 1236220,
+                "value": 1001689,
+                "suffix": "",
+                "note": "Из них кэш 900 992"
+              },
+              "uncached": {
+                "value": 100697,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 8277,
+                "value": 6978,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 83,
+                "value": 95,
                 "suffix": "",
-                "note": "Индекс: 3 · исходники: 80"
+                "note": "Граф 2 · чтения 64 · поиски 18 · списки файлов 11"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 127,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
               "minutes": {
-                "value": 3.63945,
+                "value": 3.180066666666667,
                 "suffix": "",
                 "note": ""
               }
@@ -1702,30 +2624,87 @@
               "score": {
                 "value": 10.0,
                 "suffix": "/ 10",
-                "note": ""
+                "note": "6 / 6 по критериям"
               },
               "input": {
-                "value": 866935,
+                "value": 1768693,
+                "suffix": "",
+                "note": "Из них кэш 1 650 304"
+              },
+              "uncached": {
+                "value": 118389,
                 "suffix": "",
                 "note": ""
               },
               "output": {
-                "value": 8024,
+                "value": 8642,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 104,
+                "value": 98,
                 "suffix": "",
-                "note": "Индекс: 24 · исходники: 80"
+                "note": "Граф 17 · чтения 65 · поиски 10 · списки файлов 6"
               },
               "usefulness": {
-                "value": 6,
+                "value": 6.0,
                 "suffix": "/ 10",
                 "note": ""
               },
+              "repeats": {
+                "value": 368,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
               "minutes": {
-                "value": 3.64675,
+                "value": 4.093916666666667,
+                "suffix": "",
+                "note": ""
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 9.166666666667,
+                "suffix": "/ 10",
+                "note": "5,5 / 6 по критериям"
+              },
+              "input": {
+                "value": 1105035,
+                "suffix": "",
+                "note": "Из них кэш 974 464"
+              },
+              "uncached": {
+                "value": 130571,
+                "suffix": "",
+                "note": ""
+              },
+              "output": {
+                "value": 7628,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 97,
+                "suffix": "",
+                "note": "Граф 15 · поиск ресурсов 2 · чтения 67 · поиски 7 · списки файлов 6"
+              },
+              "usefulness": {
+                "value": 6.0,
+                "suffix": "/ 10",
+                "note": ""
+              },
+              "repeats": {
+                "value": 101,
+                "suffix": "",
+                "note": "Совпавших ответов 1"
+              },
+              "minutes": {
+                "value": 3.5254833333333333,
                 "suffix": "",
                 "note": ""
               }

@@ -43,37 +43,37 @@
       {
         "id": "graph",
         "label": "SymbolTrail",
-        "note": "",
+        "note": "Расчёт токенов, времени и стоимости",
         "cells": {
           "score": {
-            "value": 97.666,
+            "value": 98.4,
             "suffix": "/ 100",
             "note": ""
           },
           "input": {
-            "value": 10201924,
+            "value": 11464944,
             "suffix": "",
-            "note": "Из них кэш: 9 573 760"
+            "note": "Без кэша: 525 387 · Кэш: 10 939 557 · Факт: 11 905 445 (545 573 без кэша)"
           },
           "output": {
-            "value": 80899,
+            "value": 94211,
             "suffix": "",
-            "note": ""
+            "note": "Факт: 97 831"
           },
           "actions": {
-            "value": 252,
+            "value": 233,
             "suffix": "",
-            "note": "shell: 222 · MCP: 9 · patch: 21"
+            "note": "shell: 183 · MCP: 28 · patch: 22"
           },
           "minutes": {
-            "value": 35.60458333333333,
+            "value": 41.0,
             "suffix": "",
-            "note": ""
+            "note": "Факт: 44,91 мин"
           },
           "cost": {
-            "value": 3.022694,
+            "value": 3.0868397,
             "suffix": "",
-            "note": "≈ 75,57 расчётных кредитов"
+            "note": "≈ 77,17 расчётных кредитов · По замерам: $3,21"
           }
         }
       },
@@ -83,34 +83,34 @@
         "note": "",
         "cells": {
           "score": {
-            "value": 97.666,
+            "value": 98.0,
             "suffix": "/ 100",
             "note": ""
           },
           "input": {
-            "value": 8254685,
+            "value": 10401542,
             "suffix": "",
-            "note": "Из них кэш: 7 734 144"
+            "note": "Без кэша: 474 118 · Кэш: 9 927 424"
           },
           "output": {
-            "value": 72501,
+            "value": 91380,
             "suffix": "",
             "note": ""
           },
           "actions": {
-            "value": 204,
+            "value": 213,
             "suffix": "",
-            "note": "shell: 163 · MCP: 19 · patch: 22"
+            "note": "shell: 179 · MCP: 21 · patch: 13"
           },
           "minutes": {
-            "value": 32.26481666666667,
+            "value": 44.397083333333335,
             "suffix": "",
             "note": ""
           },
           "cost": {
-            "value": 2.5395064,
+            "value": 2.8547784,
             "suffix": "",
-            "note": "≈ 63,49 расчётных кредитов"
+            "note": "≈ 71,37 расчётных кредитов"
           }
         }
       },
@@ -120,34 +120,71 @@
         "note": "",
         "cells": {
           "score": {
-            "value": 100.0,
+            "value": 97.8,
             "suffix": "/ 100",
             "note": ""
           },
           "input": {
-            "value": 12201993,
+            "value": 14897355,
             "suffix": "",
-            "note": "Из них кэш: 11 470 080"
+            "note": "Без кэша: 550 219 · Кэш: 14 347 136"
           },
           "output": {
-            "value": 83510,
+            "value": 101354,
             "suffix": "",
             "note": ""
           },
           "actions": {
-            "value": 226,
+            "value": 265,
             "suffix": "",
-            "note": "shell: 203 · MCP: 4 · patch: 19"
+            "note": "shell: 226 · MCP: 13 · patch: 26"
           },
           "minutes": {
-            "value": 37.18033333333333,
+            "value": 48.05275,
             "suffix": "",
             "note": ""
           },
           "cost": {
-            "value": 3.4459340000000003,
+            "value": 3.5486916,
             "suffix": "",
-            "note": "≈ 86,15 расчётных кредитов"
+            "note": "≈ 88,72 расчётных кредитов"
+          }
+        }
+      },
+      {
+        "id": "gitnexus",
+        "label": "GitNexus",
+        "note": "",
+        "cells": {
+          "score": {
+            "value": 98.2,
+            "suffix": "/ 100",
+            "note": ""
+          },
+          "input": {
+            "value": 13341573,
+            "suffix": "",
+            "note": "Без кэша: 572 165 · Кэш: 12 769 408"
+          },
+          "output": {
+            "value": 97263,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 260,
+            "suffix": "",
+            "note": "shell: 221 · MCP: 16 · patch: 23"
+          },
+          "minutes": {
+            "value": 46.8693,
+            "suffix": "",
+            "note": ""
+          },
+          "cost": {
+            "value": 3.3939008,
+            "suffix": "",
+            "note": "≈ 84,85 расчётных кредитов"
           }
         }
       }
@@ -201,37 +238,37 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Расчёт токенов, времени и стоимости",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2721874,
+                "value": 1749889,
                 "suffix": "",
-                "note": "Из них кэш: 2 616 064"
+                "note": "Без кэша: 106 040 · Кэш: 1 643 849 · Факт: 1 817 122 (110 114 без кэша)"
               },
               "output": {
-                "value": 18896,
+                "value": 17598,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 18 274"
               },
               "actions": {
-                "value": 69,
+                "value": 44,
                 "suffix": "",
-                "note": "shell: 57 · MCP: 2 · patch: 10"
+                "note": "shell: 32 · MCP: 4 · patch: 8"
               },
               "minutes": {
-                "value": 7.436016666666666,
+                "value": 6.632666666666666,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 7,27 мин"
               },
               "cost": {
-                "value": 0.6621864000000001,
+                "value": 0.5524449,
                 "suffix": "",
-                "note": "≈ 16,55 расчётных кредитов"
+                "note": "≈ 13,81 расчётных кредитов · По замерам: $0,57"
               }
             }
           },
@@ -241,34 +278,34 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 1833138,
+                "value": 2106963,
                 "suffix": "",
-                "note": "Из них кэш: 1 715 584"
+                "note": "Без кэша: 104 147 · Кэш: 2 002 816"
               },
               "output": {
-                "value": 15988,
+                "value": 17372,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 51,
+                "value": 47,
                 "suffix": "",
-                "note": "shell: 40 · MCP: 2 · patch: 9"
+                "note": "shell: 41 · MCP: 6 · patch: 0"
               },
               "minutes": {
-                "value": 6.785833333333334,
+                "value": 8.111516666666667,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.5665464,
+                "value": 0.5822956,
                 "suffix": "",
-                "note": "≈ 14,16 расчётных кредитов"
+                "note": "≈ 14,56 расчётных кредитов"
               }
             }
           },
@@ -278,34 +315,71 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 3835396,
+                "value": 2439992,
                 "suffix": "",
-                "note": "Из них кэш: 3 618 432"
+                "note": "Без кэша: 113 336 · Кэш: 2 326 656"
               },
               "output": {
-                "value": 20577,
+                "value": 17490,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 65,
+                "value": 48,
                 "suffix": "",
-                "note": "shell: 54 · MCP: 1 · patch: 10"
+                "note": "shell: 46 · MCP: 2 · patch: 0"
               },
               "minutes": {
-                "value": 8.93225,
+                "value": 7.304,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 1.0015412,
+                "value": 0.6342376,
                 "suffix": "",
-                "note": "≈ 25,04 расчётных кредитов"
+                "note": "≈ 15,86 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2543626,
+                "suffix": "",
+                "note": "Без кэша: 117 386 · Кэш: 2 426 240"
+              },
+              "output": {
+                "value": 20600,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 53,
+                "suffix": "",
+                "note": "shell: 44 · MCP: 3 · patch: 6"
+              },
+              "minutes": {
+                "value": 9.204366666666667,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.683396,
+                "suffix": "",
+                "note": "≈ 17,08 расчётных кредитов"
               }
             }
           }
@@ -359,37 +433,37 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Расчёт токенов, времени и стоимости",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 908028,
+                "value": 1065021,
                 "suffix": "",
-                "note": "Из них кэш: 818 944"
+                "note": "Без кэша: 80 265 · Кэш: 984 756 · Факт: 1 105 941 (83 349 без кэша)"
               },
               "output": {
-                "value": 12832,
+                "value": 13669,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 14 195"
               },
               "actions": {
-                "value": 40,
+                "value": 42,
                 "suffix": "",
-                "note": "shell: 33 · MCP: 2 · patch: 5"
+                "note": "shell: 32 · MCP: 5 · patch: 5"
               },
               "minutes": {
-                "value": 5.446166666666667,
+                "value": 5.0945,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 5,58 мин"
               },
               "cost": {
-                "value": 0.3883824,
+                "value": 0.3956956,
                 "suffix": "",
-                "note": "≈ 9,71 расчётных кредитов"
+                "note": "≈ 9,89 расчётных кредитов · По замерам: $0,41"
               }
             }
           },
@@ -399,34 +473,34 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 1033941,
+                "value": 959584,
                 "suffix": "",
-                "note": "Из них кэш: 949 376"
+                "note": "Без кэша: 63 072 · Кэш: 896 512"
               },
               "output": {
-                "value": 12492,
+                "value": 13883,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 35,
+                "value": 34,
                 "suffix": "",
-                "note": "shell: 26 · MCP: 4 · patch: 5"
+                "note": "shell: 28 · MCP: 2 · patch: 4"
               },
               "minutes": {
-                "value": 5.4188,
+                "value": 6.116216666666666,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.3889876,
+                "value": 0.3546252,
                 "suffix": "",
-                "note": "≈ 9,72 расчётных кредитов"
+                "note": "≈ 8,87 расчётных кредитов"
               }
             }
           },
@@ -436,34 +510,71 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 1078133,
+                "value": 1908478,
                 "suffix": "",
-                "note": "Из них кэш: 981 760"
+                "note": "Без кэша: 86 014 · Кэш: 1 822 464"
               },
               "output": {
-                "value": 12287,
+                "value": 16858,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 31,
+                "value": 43,
                 "suffix": "",
-                "note": "shell: 28 · MCP: 0 · patch: 3"
+                "note": "shell: 36 · MCP: 2 · patch: 5"
               },
               "minutes": {
-                "value": 5.287633333333333,
+                "value": 7.3086,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.413792,
+                "value": 0.5228544,
                 "suffix": "",
-                "note": "≈ 10,34 расчётных кредитов"
+                "note": "≈ 13,07 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 1203576,
+                "suffix": "",
+                "note": "Без кэша: 74 616 · Кэш: 1 128 960"
+              },
+              "output": {
+                "value": 15409,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 35,
+                "suffix": "",
+                "note": "shell: 27 · MCP: 4 · patch: 4"
+              },
+              "minutes": {
+                "value": 6.6363,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.416218,
+                "suffix": "",
+                "note": "≈ 10,41 расчётных кредитов"
               }
             }
           }
@@ -517,37 +628,37 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Расчёт токенов, времени и стоимости",
             "cells": {
               "score": {
-                "value": 100,
+                "value": 92,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2063213,
+                "value": 1684142,
                 "suffix": "",
-                "note": "Из них кэш: 1 849 472"
+                "note": "Без кэша: 105 993 · Кэш: 1 578 149 · Факт: 1 748 850 (110 066 без кэша)"
               },
               "output": {
-                "value": 9211,
+                "value": 11425,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 11 863"
               },
               "actions": {
-                "value": 37,
+                "value": 32,
                 "suffix": "",
-                "note": "shell: 36 · MCP: 1 · patch: 0"
+                "note": "shell: 30 · MCP: 2 · patch: 0"
               },
               "minutes": {
-                "value": 5.601366666666666,
+                "value": 4.9382166666666665,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 5,41 мин"
               },
               "cost": {
-                "value": 0.7045391999999999,
+                "value": 0.4840509,
                 "suffix": "",
-                "note": "≈ 17,61 расчётных кредитов"
+                "note": "≈ 12,10 расчётных кредитов · По замерам: $0,50"
               }
             }
           },
@@ -557,34 +668,34 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100,
+                "value": 91,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 1334734,
+                "value": 1514605,
                 "suffix": "",
-                "note": "Из них кэш: 1 235 712"
+                "note": "Без кэша: 104 301 · Кэш: 1 410 304"
               },
               "output": {
-                "value": 8846,
+                "value": 12055,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 32,
+                "value": 34,
                 "suffix": "",
-                "note": "shell: 28 · MCP: 4 · patch: 0"
+                "note": "shell: 29 · MCP: 4 · patch: 1"
               },
               "minutes": {
-                "value": 4.1524,
+                "value": 5.552866666666667,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.41007520000000003,
+                "value": 0.4701824,
                 "suffix": "",
-                "note": "≈ 10,25 расчётных кредитов"
+                "note": "≈ 11,75 расчётных кредитов"
               }
             }
           },
@@ -594,34 +705,71 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100,
+                "value": 91,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2159038,
+                "value": 3390580,
                 "suffix": "",
-                "note": "Из них кэш: 1 991 424"
+                "note": "Без кэша: 133 620 · Кэш: 3 256 960"
               },
               "output": {
-                "value": 15532,
+                "value": 14367,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 39,
+                "value": 45,
                 "suffix": "",
-                "note": "shell: 36 · MCP: 3 · patch: 0"
+                "note": "shell: 41 · MCP: 4 · patch: 0"
               },
               "minutes": {
-                "value": 7.37635,
+                "value": 6.936283333333333,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.6896904,
+                "value": 0.736606,
                 "suffix": "",
-                "note": "≈ 17,24 расчётных кредитов"
+                "note": "≈ 18,42 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 91,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2255601,
+                "suffix": "",
+                "note": "Без кэша: 132 209 · Кэш: 2 123 392"
+              },
+              "output": {
+                "value": 12222,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 42,
+                "suffix": "",
+                "note": "shell: 38 · MCP: 3 · patch: 1"
+              },
+              "minutes": {
+                "value": 5.9439166666666665,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.5989772,
+                "suffix": "",
+                "note": "≈ 14,97 расчётных кредитов"
               }
             }
           }
@@ -675,37 +823,37 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Расчёт токенов, времени и стоимости",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2308866,
+                "value": 2547745,
                 "suffix": "",
-                "note": "Из них кэш: 2 193 408"
+                "note": "Без кэша: 110 816 · Кэш: 2 436 929 · Факт: 2 645 633 (115 073 без кэша)"
               },
               "output": {
-                "value": 19543,
+                "value": 19475,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 20 223"
               },
               "actions": {
-                "value": 58,
+                "value": 53,
                 "suffix": "",
-                "note": "shell: 50 · MCP: 2 · patch: 6"
+                "note": "shell: 38 · MCP: 13 · patch: 2"
               },
               "minutes": {
-                "value": 8.168533333333333,
+                "value": 7.705583333333333,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 8,44 мин"
               },
               "cost": {
-                "value": 0.6456868,
+                "value": 0.6600749,
                 "suffix": "",
-                "note": "≈ 16,14 расчётных кредитов"
+                "note": "≈ 16,50 расчётных кредитов · По замерам: $0,69"
               }
             }
           },
@@ -715,34 +863,34 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 1441938,
+                "value": 1962301,
                 "suffix": "",
-                "note": "Из них кэш: 1 333 888"
+                "note": "Без кэша: 89 405 · Кэш: 1 872 896"
               },
               "output": {
-                "value": 13520,
+                "value": 17031,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 36,
+                "value": 42,
                 "suffix": "",
-                "note": "shell: 31 · MCP: 4 · patch: 1"
+                "note": "shell: 38 · MCP: 2 · patch: 2"
               },
               "minutes": {
-                "value": 5.7678666666666665,
+                "value": 7.407266666666667,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.48468880000000003,
+                "value": 0.5364096,
                 "suffix": "",
-                "note": "≈ 12,12 расчётных кредитов"
+                "note": "≈ 13,41 расчётных кредитов"
               }
             }
           },
@@ -752,34 +900,71 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 100.0,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2208858,
+                "value": 2451021,
                 "suffix": "",
-                "note": "Из них кэш: 2 085 248"
+                "note": "Без кэша: 109 901 · Кэш: 2 341 120"
               },
               "output": {
-                "value": 15237,
+                "value": 20895,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 37,
+                "value": 63,
                 "suffix": "",
-                "note": "shell: 37 · MCP: 0 · patch: 0"
+                "note": "shell: 54 · MCP: 2 · patch: 7"
               },
               "minutes": {
-                "value": 6.603783333333333,
+                "value": 9.009733333333333,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.6081148000000001,
+                "value": 0.662864,
                 "suffix": "",
-                "note": "≈ 15,20 расчётных кредитов"
+                "note": "≈ 16,57 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
+                "value": 100,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 2287292,
+                "suffix": "",
+                "note": "Без кэша: 127 676 · Кэш: 2 159 616"
+              },
+              "output": {
+                "value": 15873,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 46,
+                "suffix": "",
+                "note": "shell: 43 · MCP: 3 · patch: 0"
+              },
+              "minutes": {
+                "value": 6.85425,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.6300436,
+                "suffix": "",
+                "note": "≈ 15,75 расчётных кредитов"
               }
             }
           }
@@ -833,37 +1018,37 @@
           {
             "id": "graph",
             "label": "SymbolTrail",
-            "note": "",
+            "note": "Расчёт токенов, времени и стоимости",
             "cells": {
               "score": {
-                "value": 88.33,
+                "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2199943,
+                "value": 4418147,
                 "suffix": "",
-                "note": "Из них кэш: 2 095 872"
+                "note": "Без кэша: 122 273 · Кэш: 4 295 874 · Факт: 4 587 899 (126 971 без кэша)"
               },
               "output": {
-                "value": 20417,
+                "value": 32044,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 33 276"
               },
               "actions": {
-                "value": 48,
+                "value": 62,
                 "suffix": "",
-                "note": "shell: 46 · MCP: 2 · patch: 0"
+                "note": "shell: 51 · MCP: 4 · patch: 7"
               },
               "minutes": {
-                "value": 8.9525,
+                "value": 16.629033333333332,
                 "suffix": "",
-                "note": ""
+                "note": "Факт: 18,22 мин"
               },
               "cost": {
-                "value": 0.6218992,
+                "value": 0.9945734,
                 "suffix": "",
-                "note": "≈ 15,55 расчётных кредитов"
+                "note": "≈ 24,86 расчётных кредитов · По замерам: $1,03"
               }
             }
           },
@@ -873,34 +1058,34 @@
             "note": "",
             "cells": {
               "score": {
-                "value": 88.33,
+                "value": 99,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2610934,
+                "value": 3858089,
                 "suffix": "",
-                "note": "Из них кэш: 2 499 584"
+                "note": "Без кэша: 113 193 · Кэш: 3 744 896"
               },
               "output": {
-                "value": 21655,
+                "value": 31039,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 50,
+                "value": 56,
                 "suffix": "",
-                "note": "shell: 38 · MCP: 5 · patch: 7"
+                "note": "shell: 43 · MCP: 7 · patch: 6"
               },
               "minutes": {
-                "value": 10.139916666666666,
+                "value": 17.209216666666666,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.6892084,
+                "value": 0.9112656,
                 "suffix": "",
-                "note": "≈ 17,23 расчётных кредитов"
+                "note": "≈ 22,78 расчётных кредитов"
               }
             }
           },
@@ -910,34 +1095,71 @@
             "note": "",
             "cells": {
               "score": {
+                "value": 98,
+                "suffix": "/ 100",
+                "note": ""
+              },
+              "input": {
+                "value": 4707284,
+                "suffix": "",
+                "note": "Без кэша: 107 348 · Кэш: 4 599 936"
+              },
+              "output": {
+                "value": 31744,
+                "suffix": "",
+                "note": ""
+              },
+              "actions": {
+                "value": 66,
+                "suffix": "",
+                "note": "shell: 49 · MCP: 3 · patch: 14"
+              },
+              "minutes": {
+                "value": 17.494133333333334,
+                "suffix": "",
+                "note": ""
+              },
+              "cost": {
+                "value": 0.9921296,
+                "suffix": "",
+                "note": "≈ 24,80 расчётных кредитов"
+              }
+            }
+          },
+          {
+            "id": "gitnexus",
+            "label": "GitNexus",
+            "note": "",
+            "cells": {
+              "score": {
                 "value": 100,
                 "suffix": "/ 100",
                 "note": ""
               },
               "input": {
-                "value": 2920568,
+                "value": 5051478,
                 "suffix": "",
-                "note": "Из них кэш: 2 793 216"
+                "note": "Без кэша: 120 278 · Кэш: 4 931 200"
               },
               "output": {
-                "value": 19877,
+                "value": 33159,
                 "suffix": "",
                 "note": ""
               },
               "actions": {
-                "value": 54,
+                "value": 84,
                 "suffix": "",
-                "note": "shell: 48 · MCP: 0 · patch: 6"
+                "note": "shell: 69 · MCP: 3 · patch: 12"
               },
               "minutes": {
-                "value": 8.980316666666667,
+                "value": 18.23046666666667,
                 "suffix": "",
                 "note": ""
               },
               "cost": {
-                "value": 0.7327956000000001,
+                "value": 1.065266,
                 "suffix": "",
-                "note": "≈ 18,32 расчётных кредитов"
+                "note": "≈ 26,63 расчётных кредитов"
               }
             }
           }
