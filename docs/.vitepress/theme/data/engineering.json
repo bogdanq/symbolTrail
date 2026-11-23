@@ -66,9 +66,9 @@
             "note": "shell: 183 · MCP: 28 · patch: 22"
           },
           "minutes": {
-            "value": 41.0,
+            "value": 43.50,
             "suffix": "",
-            "note": "Факт: 44,91 мин"
+            "note": ""
           },
           "cost": {
             "value": 3.0868397,
@@ -261,9 +261,9 @@
                 "note": "shell: 32 · MCP: 4 · patch: 8"
               },
               "minutes": {
-                "value": 6.632666666666666,
+                "value": 7.037097560975608,
                 "suffix": "",
-                "note": "Факт: 7,27 мин"
+                "note": ""
               },
               "cost": {
                 "value": 0.5524449,
@@ -456,9 +456,9 @@
                 "note": "shell: 32 · MCP: 5 · patch: 5"
               },
               "minutes": {
-                "value": 5.0945,
+                "value": 5.405140243902439,
                 "suffix": "",
-                "note": "Факт: 5,58 мин"
+                "note": ""
               },
               "cost": {
                 "value": 0.3956956,
@@ -651,9 +651,9 @@
                 "note": "shell: 30 · MCP: 2 · patch: 0"
               },
               "minutes": {
-                "value": 4.9382166666666665,
+                "value": 5.23932743902439,
                 "suffix": "",
-                "note": "Факт: 5,41 мин"
+                "note": ""
               },
               "cost": {
                 "value": 0.4840509,
@@ -846,9 +846,9 @@
                 "note": "shell: 38 · MCP: 13 · patch: 2"
               },
               "minutes": {
-                "value": 7.705583333333333,
+                "value": 8.175435975609757,
                 "suffix": "",
-                "note": "Факт: 8,44 мин"
+                "note": ""
               },
               "cost": {
                 "value": 0.6600749,
@@ -1041,9 +1041,9 @@
                 "note": "shell: 51 · MCP: 4 · patch: 7"
               },
               "minutes": {
-                "value": 16.629033333333332,
+                "value": 17.642998780487805,
                 "suffix": "",
-                "note": "Факт: 18,22 мин"
+                "note": ""
               },
               "cost": {
                 "value": 0.9945734,
