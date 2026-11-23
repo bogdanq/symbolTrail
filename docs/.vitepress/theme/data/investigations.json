@@ -65,7 +65,8 @@
           "input": {
             "value": 7199742,
             "suffix": "",
-            "note": "Из них кэш 6 469 504"
+            "cachedTokens": 6469504,
+            "note": ""
           },
           "uncached": {
             "value": 730238,
@@ -112,7 +113,8 @@
           "input": {
             "value": 6036162,
             "suffix": "",
-            "note": "Из них кэш 5 222 528"
+            "cachedTokens": 5222528,
+            "note": ""
           },
           "uncached": {
             "value": 813634,
@@ -159,7 +161,8 @@
           "input": {
             "value": 8466477,
             "suffix": "",
-            "note": "Из них кэш 7 593 216"
+            "cachedTokens": 7593216,
+            "note": ""
           },
           "uncached": {
             "value": 873261,
@@ -206,7 +209,8 @@
           "input": {
             "value": 6907008,
             "suffix": "",
-            "note": "Из них кэш 6 046 848"
+            "cachedTokens": 6046848,
+            "note": ""
           },
           "uncached": {
             "value": 860160,
@@ -312,7 +316,8 @@
               "input": {
                 "value": 558988,
                 "suffix": "",
-                "note": "Из них кэш 512 384"
+                "cachedTokens": 512384,
+                "note": ""
               },
               "uncached": {
                 "value": 46604,
@@ -359,7 +364,8 @@
               "input": {
                 "value": 457179,
                 "suffix": "",
-                "note": "Из них кэш 383 744"
+                "cachedTokens": 383744,
+                "note": ""
               },
               "uncached": {
                 "value": 73435,
@@ -406,7 +412,8 @@
               "input": {
                 "value": 544182,
                 "suffix": "",
-                "note": "Из них кэш 462 080"
+                "cachedTokens": 462080,
+                "note": ""
               },
               "uncached": {
                 "value": 82102,
@@ -453,7 +460,8 @@
               "input": {
                 "value": 526560,
                 "suffix": "",
-                "note": "Из них кэш 470 016"
+                "cachedTokens": 470016,
+                "note": ""
               },
               "uncached": {
                 "value": 56544,
@@ -559,7 +567,8 @@
               "input": {
                 "value": 591937,
                 "suffix": "",
-                "note": "Из них кэш 522 880"
+                "cachedTokens": 522880,
+                "note": ""
               },
               "uncached": {
                 "value": 69057,
@@ -606,7 +615,8 @@
               "input": {
                 "value": 680999,
                 "suffix": "",
-                "note": "Из них кэш 612 864"
+                "cachedTokens": 612864,
+                "note": ""
               },
               "uncached": {
                 "value": 68135,
@@ -653,7 +663,8 @@
               "input": {
                 "value": 681207,
                 "suffix": "",
-                "note": "Из них кэш 592 512"
+                "cachedTokens": 592512,
+                "note": ""
               },
               "uncached": {
                 "value": 88695,
@@ -700,7 +711,8 @@
               "input": {
                 "value": 641879,
                 "suffix": "",
-                "note": "Из них кэш 554 496"
+                "cachedTokens": 554496,
+                "note": ""
               },
               "uncached": {
                 "value": 87383,
@@ -806,7 +818,8 @@
               "input": {
                 "value": 393783,
                 "suffix": "",
-                "note": "Из них кэш 350 208"
+                "cachedTokens": 350208,
+                "note": ""
               },
               "uncached": {
                 "value": 43575,
@@ -853,7 +866,8 @@
               "input": {
                 "value": 390071,
                 "suffix": "",
-                "note": "Из них кэш 332 672"
+                "cachedTokens": 332672,
+                "note": ""
               },
               "uncached": {
                 "value": 57399,
@@ -900,7 +914,8 @@
               "input": {
                 "value": 494973,
                 "suffix": "",
-                "note": "Из них кэш 426 112"
+                "cachedTokens": 426112,
+                "note": ""
               },
               "uncached": {
                 "value": 68861,
@@ -947,7 +962,8 @@
               "input": {
                 "value": 386400,
                 "suffix": "",
-                "note": "Из них кэш 305 280"
+                "cachedTokens": 305280,
+                "note": ""
               },
               "uncached": {
                 "value": 81120,
@@ -1053,7 +1069,8 @@
               "input": {
                 "value": 712296,
                 "suffix": "",
-                "note": "Из них кэш 648 320"
+                "cachedTokens": 648320,
+                "note": ""
               },
               "uncached": {
                 "value": 63976,
@@ -1100,7 +1117,8 @@
               "input": {
                 "value": 602471,
                 "suffix": "",
-                "note": "Из них кэш 517 632"
+                "cachedTokens": 517632,
+                "note": ""
               },
               "uncached": {
                 "value": 84839,
@@ -1147,7 +1165,8 @@
               "input": {
                 "value": 574008,
                 "suffix": "",
-                "note": "Из них кэш 495 744"
+                "cachedTokens": 495744,
+                "note": ""
               },
               "uncached": {
                 "value": 78264,
@@ -1194,7 +1213,8 @@
               "input": {
                 "value": 580936,
                 "suffix": "",
-                "note": "Из них кэш 509 056"
+                "cachedTokens": 509056,
+                "note": ""
               },
               "uncached": {
                 "value": 71880,
@@ -1300,7 +1320,8 @@
               "input": {
                 "value": 545326,
                 "suffix": "",
-                "note": "Из них кэш 436 480"
+                "cachedTokens": 436480,
+                "note": ""
               },
               "uncached": {
                 "value": 108846,
@@ -1347,7 +1368,8 @@
               "input": {
                 "value": 538192,
                 "suffix": "",
-                "note": "Из них кэш 464 512"
+                "cachedTokens": 464512,
+                "note": ""
               },
               "uncached": {
                 "value": 73680,
@@ -1394,7 +1416,8 @@
               "input": {
                 "value": 694009,
                 "suffix": "",
-                "note": "Из них кэш 625 408"
+                "cachedTokens": 625408,
+                "note": ""
               },
               "uncached": {
                 "value": 68601,
@@ -1441,7 +1464,8 @@
               "input": {
                 "value": 619261,
                 "suffix": "",
-                "note": "Из них кэш 553 600"
+                "cachedTokens": 553600,
+                "note": ""
               },
               "uncached": {
                 "value": 65661,
@@ -1547,7 +1571,8 @@
               "input": {
                 "value": 533145,
                 "suffix": "",
-                "note": "Из них кэш 487 808"
+                "cachedTokens": 487808,
+                "note": ""
               },
               "uncached": {
                 "value": 45337,
@@ -1594,7 +1619,8 @@
               "input": {
                 "value": 416436,
                 "suffix": "",
-                "note": "Из них кэш 367 488"
+                "cachedTokens": 367488,
+                "note": ""
               },
               "uncached": {
                 "value": 48948,
@@ -1641,7 +1667,8 @@
               "input": {
                 "value": 499270,
                 "suffix": "",
-                "note": "Из них кэш 430 720"
+                "cachedTokens": 430720,
+                "note": ""
               },
               "uncached": {
                 "value": 68550,
@@ -1688,7 +1715,8 @@
               "input": {
                 "value": 347570,
                 "suffix": "",
-                "note": "Из них кэш 283 008"
+                "cachedTokens": 283008,
+                "note": ""
               },
               "uncached": {
                 "value": 64562,
@@ -1794,7 +1822,8 @@
               "input": {
                 "value": 634162,
                 "suffix": "",
-                "note": "Из них кэш 565 504"
+                "cachedTokens": 565504,
+                "note": ""
               },
               "uncached": {
                 "value": 68658,
@@ -1841,7 +1870,8 @@
               "input": {
                 "value": 422177,
                 "suffix": "",
-                "note": "Из них кэш 326 144"
+                "cachedTokens": 326144,
+                "note": ""
               },
               "uncached": {
                 "value": 96033,
@@ -1888,7 +1918,8 @@
               "input": {
                 "value": 955903,
                 "suffix": "",
-                "note": "Из них кэш 867 840"
+                "cachedTokens": 867840,
+                "note": ""
               },
               "uncached": {
                 "value": 88063,
@@ -1935,7 +1966,8 @@
               "input": {
                 "value": 705684,
                 "suffix": "",
-                "note": "Из них кэш 631 808"
+                "cachedTokens": 631808,
+                "note": ""
               },
               "uncached": {
                 "value": 73876,
@@ -2041,7 +2073,8 @@
               "input": {
                 "value": 864310,
                 "suffix": "",
-                "note": "Из них кэш 776 960"
+                "cachedTokens": 776960,
+                "note": ""
               },
               "uncached": {
                 "value": 87350,
@@ -2088,7 +2121,8 @@
               "input": {
                 "value": 609759,
                 "suffix": "",
-                "note": "Из них кэш 505 088"
+                "cachedTokens": 505088,
+                "note": ""
               },
               "uncached": {
                 "value": 104671,
@@ -2135,7 +2169,8 @@
               "input": {
                 "value": 1176613,
                 "suffix": "",
-                "note": "Из них кэш 1 073 408"
+                "cachedTokens": 1073408,
+                "note": ""
               },
               "uncached": {
                 "value": 103205,
@@ -2182,7 +2217,8 @@
               "input": {
                 "value": 827192,
                 "suffix": "",
-                "note": "Из них кэш 696 704"
+                "cachedTokens": 696704,
+                "note": ""
               },
               "uncached": {
                 "value": 130488,
@@ -2288,7 +2324,8 @@
               "input": {
                 "value": 1453669,
                 "suffix": "",
-                "note": "Из них кэш 1 335 168"
+                "cachedTokens": 1335168,
+                "note": ""
               },
               "uncached": {
                 "value": 118501,
@@ -2335,7 +2372,8 @@
               "input": {
                 "value": 917189,
                 "suffix": "",
-                "note": "Из них кэш 811 392"
+                "cachedTokens": 811392,
+                "note": ""
               },
               "uncached": {
                 "value": 105797,
@@ -2382,7 +2420,8 @@
               "input": {
                 "value": 1077619,
                 "suffix": "",
-                "note": "Из них кэш 969 088"
+                "cachedTokens": 969088,
+                "note": ""
               },
               "uncached": {
                 "value": 108531,
@@ -2429,7 +2468,8 @@
               "input": {
                 "value": 1166491,
                 "suffix": "",
-                "note": "Из них кэш 1 068 416"
+                "cachedTokens": 1068416,
+                "note": ""
               },
               "uncached": {
                 "value": 98075,
@@ -2535,7 +2575,8 @@
               "input": {
                 "value": 912126,
                 "suffix": "",
-                "note": "Из них кэш 833 792"
+                "cachedTokens": 833792,
+                "note": ""
               },
               "uncached": {
                 "value": 78334,
@@ -2582,7 +2623,8 @@
               "input": {
                 "value": 1001689,
                 "suffix": "",
-                "note": "Из них кэш 900 992"
+                "cachedTokens": 900992,
+                "note": ""
               },
               "uncached": {
                 "value": 100697,
@@ -2629,7 +2671,8 @@
               "input": {
                 "value": 1768693,
                 "suffix": "",
-                "note": "Из них кэш 1 650 304"
+                "cachedTokens": 1650304,
+                "note": ""
               },
               "uncached": {
                 "value": 118389,
@@ -2676,7 +2719,8 @@
               "input": {
                 "value": 1105035,
                 "suffix": "",
-                "note": "Из них кэш 974 464"
+                "cachedTokens": 974464,
+                "note": ""
               },
               "uncached": {
                 "value": 130571,

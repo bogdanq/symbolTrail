@@ -47,7 +47,11 @@ const bestValues = computed(
         </tr>
       </thead>
       <tbody>
-        <tr v-for="row in table.rows" :key="row.id">
+        <tr
+          v-for="row in table.rows"
+          :key="row.id"
+          :class="{ 'st-bench-symboltrail': row.label === 'SymbolTrail' }"
+        >
           <th scope="row">
             {{ row.label }}
             <small v-if="row.note">{{ row.note }}</small>

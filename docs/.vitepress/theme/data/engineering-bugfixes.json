@@ -1,0 +1,881 @@
+{
+  "columns": [
+    {
+      "key": "input",
+      "label": "Входные токены",
+      "precision": 0,
+      "direction": "lower"
+    },
+    {
+      "key": "output",
+      "label": "Выходные токены",
+      "precision": 0,
+      "direction": "lower"
+    },
+    {
+      "key": "total",
+      "label": "Всего токенов",
+      "precision": 0,
+      "direction": "lower"
+    },
+    {
+      "key": "actions",
+      "label": "Действия",
+      "precision": 0,
+      "direction": "lower"
+    },
+    {
+      "key": "seconds",
+      "label": "Время (−5%), с",
+      "precision": 3,
+      "direction": "lower"
+    }
+  ],
+  "table": {
+    "caption": "Исправление ошибок · сумма по четырём задачам",
+    "rows": [
+      {
+        "id": "symboltrail",
+        "label": "SymbolTrail",
+        "note": "",
+        "cells": {
+          "input": {
+            "value": 522124,
+            "suffix": "",
+            "cachedTokens": 436736,
+            "note": ""
+          },
+          "output": {
+            "value": 2367,
+            "suffix": ""
+          },
+          "total": {
+            "value": 524491,
+            "suffix": "",
+            "note": "−19,6%"
+          },
+          "actions": {
+            "value": 29,
+            "suffix": "",
+            "note": "MCP 6 · shell 19 · правка 4"
+          },
+          "seconds": {
+            "value": 91.1582,
+            "suffix": "",
+            "note": "−9,6%"
+          }
+        }
+      },
+      {
+        "id": "codegraph",
+        "label": "CodeGraph",
+        "note": "",
+        "cells": {
+          "input": {
+            "value": 850248,
+            "suffix": "",
+            "cachedTokens": 740864,
+            "note": ""
+          },
+          "output": {
+            "value": 2855,
+            "suffix": "",
+            "note": ""
+          },
+          "total": {
+            "value": 853103,
+            "suffix": "",
+            "note": "+30,7%"
+          },
+          "actions": {
+            "value": 29,
+            "suffix": "",
+            "note": "MCP 11 · shell 14 · правка 4"
+          },
+          "seconds": {
+            "value": 108.5869,
+            "suffix": "",
+            "note": "+7,7%"
+          }
+        }
+      },
+      {
+        "id": "graphify",
+        "label": "Graphify",
+        "note": "",
+        "cells": {
+          "input": {
+            "value": 502448,
+            "suffix": "",
+            "cachedTokens": 382080,
+            "note": ""
+          },
+          "output": {
+            "value": 2632,
+            "suffix": "",
+            "note": ""
+          },
+          "total": {
+            "value": 505080,
+            "suffix": "",
+            "note": "−22,6%"
+          },
+          "actions": {
+            "value": 23,
+            "suffix": "",
+            "note": "MCP 4 · shell 15 · правка 4"
+          },
+          "seconds": {
+            "value": 90.8599,
+            "suffix": "",
+            "note": "−9,9%"
+          }
+        }
+      },
+      {
+        "id": "gitnexus",
+        "label": "GitNexus",
+        "note": "",
+        "cells": {
+          "input": {
+            "value": 662357,
+            "suffix": "",
+            "cachedTokens": 556672,
+            "note": ""
+          },
+          "output": {
+            "value": 2461,
+            "suffix": "",
+            "note": ""
+          },
+          "total": {
+            "value": 664818,
+            "suffix": "",
+            "note": "+1,9%"
+          },
+          "actions": {
+            "value": 24,
+            "suffix": "",
+            "note": "MCP 4 · shell 16 · правка 4"
+          },
+          "seconds": {
+            "value": 88.7547,
+            "suffix": "",
+            "note": "−12,0%"
+          }
+        }
+      },
+      {
+        "id": "no-mcp",
+        "label": "Без MCP",
+        "note": "Контроль",
+        "cells": {
+          "input": {
+            "value": 649764,
+            "suffix": "",
+            "cachedTokens": 514176,
+            "note": ""
+          },
+          "output": {
+            "value": 2804,
+            "suffix": "",
+            "note": ""
+          },
+          "total": {
+            "value": 652568,
+            "suffix": "",
+            "note": ""
+          },
+          "actions": {
+            "value": 25,
+            "suffix": "",
+            "note": "MCP 0 · shell 21 · правка 4"
+          },
+          "seconds": {
+            "value": 100.87005,
+            "suffix": "",
+            "note": ""
+          }
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "caption": "Багфикс 01 · результаты",
+      "rows": [
+        {
+          "id": "symboltrail",
+          "label": "SymbolTrail",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 158596,
+              "suffix": "",
+              "cachedTokens": 126976,
+              "note": ""
+            },
+            "output": {
+              "value": 676,
+              "suffix": ""
+            },
+            "total": {
+              "value": 159272,
+              "suffix": "",
+              "note": "−12,4%"
+            },
+            "actions": {
+              "value": 9,
+              "suffix": "",
+              "note": "MCP 2 · shell 6 · правка 1"
+            },
+            "seconds": {
+              "value": 27.0579,
+              "suffix": "",
+              "note": "−5,1%"
+            }
+          }
+        },
+        {
+          "id": "codegraph",
+          "label": "CodeGraph",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 339766,
+              "suffix": "",
+              "cachedTokens": 302336,
+              "note": ""
+            },
+            "output": {
+              "value": 1049,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 340815,
+              "suffix": "",
+              "note": "+87,5%"
+            },
+            "actions": {
+              "value": 11,
+              "suffix": "",
+              "note": "MCP 3 · shell 7 · правка 1"
+            },
+            "seconds": {
+              "value": 37.84515,
+              "suffix": "",
+              "note": "+32,8%"
+            }
+          }
+        },
+        {
+          "id": "graphify",
+          "label": "Graphify",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 119135,
+              "suffix": "",
+              "cachedTokens": 101504,
+              "note": ""
+            },
+            "output": {
+              "value": 626,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 119761,
+              "suffix": "",
+              "note": "−34,1%"
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 1 · shell 3 · правка 1"
+            },
+            "seconds": {
+              "value": 23.00805,
+              "suffix": "",
+              "note": "−19,3%"
+            }
+          }
+        },
+        {
+          "id": "gitnexus",
+          "label": "GitNexus",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 205053,
+              "suffix": "",
+              "cachedTokens": 175488,
+              "note": ""
+            },
+            "output": {
+              "value": 665,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 205718,
+              "suffix": "",
+              "note": "+13,2%"
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 1 · shell 5 · правка 1"
+            },
+            "seconds": {
+              "value": 24.89665,
+              "suffix": "",
+              "note": "−12,6%"
+            }
+          }
+        },
+        {
+          "id": "no-mcp",
+          "label": "Без MCP",
+          "note": "Контроль",
+          "cells": {
+            "input": {
+              "value": 181001,
+              "suffix": "",
+              "cachedTokens": 142592,
+              "note": ""
+            },
+            "output": {
+              "value": 781,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 181782,
+              "suffix": "",
+              "note": ""
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 0 · shell 6 · правка 1"
+            },
+            "seconds": {
+              "value": 28.50095,
+              "suffix": "",
+              "note": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caption": "Багфикс 02 · результаты",
+      "rows": [
+        {
+          "id": "symboltrail",
+          "label": "SymbolTrail",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 155755,
+              "suffix": "",
+              "cachedTokens": 134912,
+              "note": ""
+            },
+            "output": {
+              "value": 693,
+              "suffix": ""
+            },
+            "total": {
+              "value": 156448,
+              "suffix": "",
+              "note": "−30,0%"
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 1 · shell 5 · правка 1"
+            },
+            "seconds": {
+              "value": 25.1769,
+              "suffix": "",
+              "note": "−19,5%"
+            }
+          }
+        },
+        {
+          "id": "codegraph",
+          "label": "CodeGraph",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 278219,
+              "suffix": "",
+              "cachedTokens": 245120,
+              "note": ""
+            },
+            "output": {
+              "value": 834,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 279053,
+              "suffix": "",
+              "note": "+24,8%"
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 4 · shell 2 · правка 1"
+            },
+            "seconds": {
+              "value": 31.5153,
+              "suffix": "",
+              "note": "+0,7%"
+            }
+          }
+        },
+        {
+          "id": "graphify",
+          "label": "Graphify",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 171074,
+              "suffix": "",
+              "cachedTokens": 129536,
+              "note": ""
+            },
+            "output": {
+              "value": 893,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 171967,
+              "suffix": "",
+              "note": "−23,1%"
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 1 · shell 5 · правка 1"
+            },
+            "seconds": {
+              "value": 29.1802,
+              "suffix": "",
+              "note": "−6,7%"
+            }
+          }
+        },
+        {
+          "id": "gitnexus",
+          "label": "GitNexus",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 178858,
+              "suffix": "",
+              "cachedTokens": 147968,
+              "note": ""
+            },
+            "output": {
+              "value": 692,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 179550,
+              "suffix": "",
+              "note": "−19,7%"
+            },
+            "actions": {
+              "value": 6,
+              "suffix": "",
+              "note": "MCP 1 · shell 4 · правка 1"
+            },
+            "seconds": {
+              "value": 23.3092,
+              "suffix": "",
+              "note": "−25,5%"
+            }
+          }
+        },
+        {
+          "id": "no-mcp",
+          "label": "Без MCP",
+          "note": "Контроль",
+          "cells": {
+            "input": {
+              "value": 222542,
+              "suffix": "",
+              "cachedTokens": 188544,
+              "note": ""
+            },
+            "output": {
+              "value": 1006,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 223548,
+              "suffix": "",
+              "note": ""
+            },
+            "actions": {
+              "value": 7,
+              "suffix": "",
+              "note": "MCP 0 · shell 6 · правка 1"
+            },
+            "seconds": {
+              "value": 31.2873,
+              "suffix": "",
+              "note": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caption": "Багфикс 03 · результаты",
+      "rows": [
+        {
+          "id": "symboltrail",
+          "label": "SymbolTrail",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 85305,
+              "suffix": "",
+              "cachedTokens": 65152,
+              "note": ""
+            },
+            "output": {
+              "value": 494,
+              "suffix": ""
+            },
+            "total": {
+              "value": 85799,
+              "suffix": "",
+              "note": "−31,2%"
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 1 · shell 3 · правка 1"
+            },
+            "seconds": {
+              "value": 17.83245,
+              "suffix": "",
+              "note": "−20,0%"
+            }
+          }
+        },
+        {
+          "id": "codegraph",
+          "label": "CodeGraph",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 106887,
+              "suffix": "",
+              "cachedTokens": 88704,
+              "note": ""
+            },
+            "output": {
+              "value": 479,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 107366,
+              "suffix": "",
+              "note": "−13,9%"
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 2 · shell 2 · правка 1"
+            },
+            "seconds": {
+              "value": 18.84135,
+              "suffix": "",
+              "note": "−15,5%"
+            }
+          }
+        },
+        {
+          "id": "graphify",
+          "label": "Graphify",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 89148,
+              "suffix": "",
+              "cachedTokens": 76672,
+              "note": ""
+            },
+            "output": {
+              "value": 535,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 89683,
+              "suffix": "",
+              "note": "−28,1%"
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 1 · shell 3 · правка 1"
+            },
+            "seconds": {
+              "value": 19.16055,
+              "suffix": "",
+              "note": "−14,0%"
+            }
+          }
+        },
+        {
+          "id": "gitnexus",
+          "label": "GitNexus",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 143292,
+              "suffix": "",
+              "cachedTokens": 124032,
+              "note": ""
+            },
+            "output": {
+              "value": 584,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 143876,
+              "suffix": "",
+              "note": "+15,3%"
+            },
+            "actions": {
+              "value": 6,
+              "suffix": "",
+              "note": "MCP 1 · shell 4 · правка 1"
+            },
+            "seconds": {
+              "value": 19.37335,
+              "suffix": "",
+              "note": "−13,1%"
+            }
+          }
+        },
+        {
+          "id": "no-mcp",
+          "label": "Без MCP",
+          "note": "Контроль",
+          "cells": {
+            "input": {
+              "value": 124215,
+              "suffix": "",
+              "cachedTokens": 103808,
+              "note": ""
+            },
+            "output": {
+              "value": 529,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 124744,
+              "suffix": "",
+              "note": ""
+            },
+            "actions": {
+              "value": 6,
+              "suffix": "",
+              "note": "MCP 0 · shell 5 · правка 1"
+            },
+            "seconds": {
+              "value": 22.2908,
+              "suffix": "",
+              "note": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caption": "Багфикс 04 · результаты",
+      "rows": [
+        {
+          "id": "symboltrail",
+          "label": "SymbolTrail",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 122468,
+              "suffix": "",
+              "cachedTokens": 109696,
+              "note": ""
+            },
+            "output": {
+              "value": 504,
+              "suffix": ""
+            },
+            "total": {
+              "value": 122972,
+              "suffix": "",
+              "note": "+0,4%"
+            },
+            "actions": {
+              "value": 8,
+              "suffix": "",
+              "note": "MCP 2 · shell 5 · правка 1"
+            },
+            "seconds": {
+              "value": 21.09095,
+              "suffix": "",
+              "note": "+12,2%"
+            }
+          }
+        },
+        {
+          "id": "codegraph",
+          "label": "CodeGraph",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 125376,
+              "suffix": "",
+              "cachedTokens": 104704,
+              "note": ""
+            },
+            "output": {
+              "value": 493,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 125869,
+              "suffix": "",
+              "note": "+2,8%"
+            },
+            "actions": {
+              "value": 6,
+              "suffix": "",
+              "note": "MCP 2 · shell 3 · правка 1"
+            },
+            "seconds": {
+              "value": 20.3851,
+              "suffix": "",
+              "note": "+8,5%"
+            }
+          }
+        },
+        {
+          "id": "graphify",
+          "label": "Graphify",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 123091,
+              "suffix": "",
+              "cachedTokens": 74368,
+              "note": ""
+            },
+            "output": {
+              "value": 578,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 123669,
+              "suffix": "",
+              "note": "+1,0%"
+            },
+            "actions": {
+              "value": 6,
+              "suffix": "",
+              "note": "MCP 1 · shell 4 · правка 1"
+            },
+            "seconds": {
+              "value": 19.5111,
+              "suffix": "",
+              "note": "+3,8%"
+            }
+          }
+        },
+        {
+          "id": "gitnexus",
+          "label": "GitNexus",
+          "note": "",
+          "cells": {
+            "input": {
+              "value": 135154,
+              "suffix": "",
+              "cachedTokens": 109184,
+              "note": ""
+            },
+            "output": {
+              "value": 520,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 135674,
+              "suffix": "",
+              "note": "+10,8%"
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 1 · shell 3 · правка 1"
+            },
+            "seconds": {
+              "value": 21.1755,
+              "suffix": "",
+              "note": "+12,7%"
+            }
+          }
+        },
+        {
+          "id": "no-mcp",
+          "label": "Без MCP",
+          "note": "Контроль",
+          "cells": {
+            "input": {
+              "value": 122006,
+              "suffix": "",
+              "cachedTokens": 79232,
+              "note": ""
+            },
+            "output": {
+              "value": 488,
+              "suffix": "",
+              "note": ""
+            },
+            "total": {
+              "value": 122494,
+              "suffix": "",
+              "note": ""
+            },
+            "actions": {
+              "value": 5,
+              "suffix": "",
+              "note": "MCP 0 · shell 4 · правка 1"
+            },
+            "seconds": {
+              "value": 18.791,
+              "suffix": "",
+              "note": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -77,6 +77,12 @@
   font-weight: 550;
 }
 
+.vp-doc .st-bench-table .st-bench-symboltrail > :is(th, td) {
+  background:
+    linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)),
+    var(--vp-c-bg-alt);
+}
+
 .vp-doc .st-bench-table small,
 .vp-doc .st-bench-kicker {
   color: var(--vp-c-text-3);
